@@ -14,8 +14,8 @@ class MarkerROI:
 
 
 class Detector:
-    BOUNDING_BOX_MARGIN_VERTICAL = 0.5
-    BOUNDING_BOX_MARGIN_HORIZONTAL = 1
+    BOUNDING_BOX_MARGIN_VERTICAL = 50
+    BOUNDING_BOX_MARGIN_HORIZONTAL = 150
     RESIZED_PIXEL_WIDTH = 100
 
     def __init__(self):
@@ -73,16 +73,14 @@ class Detector:
 
         largest_marker_corners, largest_marker_id = self._get_best_candidate(corners, ids)
 
-        # Set the ROI to be width * bounding margin
+        # Create the ROI
         min_x = int(min(largest_marker_corners[:, 0]))
         min_y = int(min(largest_marker_corners[:, 1]))
         max_x = int(max(largest_marker_corners[:, 0]))
         max_y = int(max(largest_marker_corners[:, 1]))
 
-        roi_width = (max_x - min_x) * self.BOUNDING_BOX_MARGIN_HORIZONTAL
-        roi_height = (max_y - min_y) * self.BOUNDING_BOX_MARGIN_VERTICAL
-        roi_width = int(roi_width)
-        roi_height = int(roi_height)
+        roi_width = (max_x - min_x) + self.BOUNDING_BOX_MARGIN_HORIZONTAL
+        roi_height = (max_y - min_y) + self.BOUNDING_BOX_MARGIN_VERTICAL
 
         new_roi_bottom_left_x = max(min_x - roi_width, 0)
         new_roi_bottom_left_y = max(min_y - roi_height, 0)
@@ -98,15 +96,6 @@ class Detector:
 
         # Draw the largest marker on the image
         if display:
-            print(
-                f"Marker ROI size: (%d, %d)"
-                % (
-                    new_roi_top_right_x - new_roi_bottom_left_x,
-                    new_roi_top_right_y - new_roi_bottom_left_y,
-                )
-            )
-            print(f"Marker size: (%d, %d)" % (max_x - min_x, max_y - min_y))
-
             cv2.rectangle(
                 image,
                 (int(min_x), int(min_y)),
