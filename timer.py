@@ -14,7 +14,7 @@ while True:
         break
     
     start_time = time.time()
-    corners, id = detector.detect(frame)
+    corners, id = detector.detect(frame, display=False, resize=False)
     end_time = time.time()
     
     times.append((end_time - start_time)* 1000)
@@ -34,4 +34,3 @@ plt.ylabel('Time (ms)')
 plt.xlabel('Frame')
 plt.show()
 plt.savefig("time.png")
-    

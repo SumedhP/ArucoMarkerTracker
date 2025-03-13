@@ -14,9 +14,9 @@ class MarkerROI:
 
 
 class Detector:
-    BOUNDING_BOX_MARGIN_VERTICAL = 50
-    BOUNDING_BOX_MARGIN_HORIZONTAL = 150
-    RESIZED_PIXEL_WIDTH = 100
+    BOUNDING_BOX_MARGIN_VERTICAL = 25
+    BOUNDING_BOX_MARGIN_HORIZONTAL = 75
+    RESIZED_PIXEL_WIDTH = 150
 
     def __init__(self):
         self.dictionary = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_6X6_1000)
@@ -34,14 +34,14 @@ class Detector:
 
         self.ROI: MarkerROI = None
 
-    def _detect_ROI(self, image: np.ndarray) -> Tuple[List[List[int]], List[int]]:
+    def _detect_ROI(self, image: np.ndarray, resize: bool) -> Tuple[List[List[int]], List[int]]:
         assert self.ROI is not None
         img_roi = image[
             self.ROI.bottom_left_y1 : self.ROI.top_right_y2,
             self.ROI.bottom_left_x1 : self.ROI.top_right_x2,
         ]
 
-        scale_factor = self.RESIZED_PIXEL_WIDTH / img_roi.shape[1]
+        scale_factor = 1 / (img_roi.shape[1] / self.RESIZED_PIXEL_WIDTH) if resize else 1
 
         img_roi = cv2.resize(img_roi, (0, 0), fx=scale_factor, fy=scale_factor)
         corners, ids, _ = self.detector.detectMarkers(img_roi)
@@ -56,10 +56,10 @@ class Detector:
 
         return corners, ids
 
-    def detect(self, image: np.ndarray, display: bool = False):
+    def detect(self, image: np.ndarray, display: bool = False, resize: bool = True) -> Tuple[List[int], int]:
         corners, ids = None, None
         if self.ROI is not None:
-            corners, ids = self._detect_ROI(image)
+            corners, ids = self._detect_ROI(image, resize)
 
         if corners is None:
             # Either we didn't have an ROI or we didn't find any markers in the ROI
