@@ -15,6 +15,17 @@ from cv2.aruco import (
 import cv2.typing as cvt
 import numpy as np
 
+def list_detectors():
+    return [Detector.getName()] + [cls.getName() for cls in Detector.__subclasses__()]
+
+def get_detector(detector_name: str):
+    if Detector.getName() == detector_name:
+        return Detector()
+    for cls in Detector.__subclasses__():
+        if cls.getName() == detector_name:
+            return cls()
+    raise ValueError(f"Detector {detector_name} not found")
+
 
 class Detector(metaclass=abc.ABCMeta):
     def __init__(self):
@@ -32,8 +43,9 @@ class Detector(metaclass=abc.ABCMeta):
     def detectMarkers(self, image: cvt.MatLike):
         return self.detector.detectMarkers(image)
 
-    def getName(self) -> str:
-        return "Baseline Detector"
+    @staticmethod
+    def getName() -> str:
+        return "BaselineDetector"
     
     def getAnnotatedFrame(self, image: cvt.MatLike, corners, ids, rejected):
         frame = cv2.aruco.drawDetectedMarkers(image, corners, ids)
@@ -53,6 +65,7 @@ class Aruco3Detector(Detector):
 
     def detectMarkers(self, image: cvt.MatLike):
         corners, ids, rejected = self.detector.detectMarkers(image)
+        
         # Find the smallest marker size
         if len(corners) > 0:
             rectangles: List[cvt.RotatedRect] = [
@@ -62,8 +75,9 @@ class Aruco3Detector(Detector):
 
             # Update the minimum length being detected by Aruco3
             self.detector_params.minMarkerLengthRatioOriginalImg = (
-                self.min_marker_size / max(image.shape[:2])
+                (self.min_marker_size * 0.5) / max(image.shape[:2])
             )
+            
             self.detector.setDetectorParameters(self.detector_params)
         else:
             # If no markers are found, reset the min marker size
@@ -73,7 +87,8 @@ class Aruco3Detector(Detector):
 
         return corners, ids, rejected
 
-    def getName(self) -> str:
+    @staticmethod
+    def getName() -> str:
         return "Aruco3"
 
     def getMinMarkerSize(self) -> float:
@@ -85,7 +100,7 @@ class Aruco3Detector(Detector):
         # Add the current min marker size to the top left of the frame
         cv2.putText(
             frame,
-            f"Min Marker Size: {self.min_marker_size:.2f}",
+            f"Min Marker ratio: {self.detector_params.minMarkerLengthRatioOriginalImg:.2f}",
             (10, 30),
             cv2.FONT_HERSHEY_SIMPLEX,
             1,
