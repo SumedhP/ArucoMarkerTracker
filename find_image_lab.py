@@ -2,6 +2,7 @@ from src.ImageSource import VideoImageSource
 import cv2
 import numpy as np
 from src.Util import apply_color_threshold
+
 # Open up a video and allow the user to select a region on interest. In there, convert it to LAB and return the lowest and highest values of the L channel
 
 feed = VideoImageSource("data/video/blue_aruco_marker.mp4")
@@ -20,7 +21,7 @@ if roi is None:
 
 # Crop the image to the selected ROI
 x, y, w, h = roi
-roi_image = frame[y:y+h, x:x+w]
+roi_image = frame[y : y + h, x : x + w]
 
 # Convert the cropped image to LAB color space
 lab_image = cv2.cvtColor(roi_image, cv2.COLOR_BGR2Lab)
@@ -88,7 +89,6 @@ while True:
     if frame is None:
         break
 
-
     lab_image = cv2.cvtColor(frame, cv2.COLOR_BGR2Lab)
     mask = cv2.inRange(lab_image, lower_bound, upper_bound)
     # blue_mask = cv2.inRange(lab_image, blue_lower_bound, blue_upper_bound)
@@ -103,12 +103,12 @@ while True:
 
     cv2.imshow("Masked Image", masked_image)
     cv2.imshow("Original Image", frame)
-    
+
     # success, top, bottom, cropped_image, mask = apply_color_threshold(frame)
     # if success:
     #     cv2.imshow("Cropped Image", cropped_image)
     #     cv2.imshow("Mask", mask)
-    
+
     # cv2.imshow("Original Image", frame)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(1) & 0xFF == ord("q"):
         break
