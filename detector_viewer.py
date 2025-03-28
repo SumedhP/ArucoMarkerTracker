@@ -17,7 +17,7 @@ def main():
     parser.add_argument(
         "--detector",
         type=str,
-        default="BaselineDetector",
+        default="Baseline",
         help=f"Choose the detector to use. Options are: {list_detectors()}",
     )
     args = parser.parse_args()

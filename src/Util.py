@@ -60,14 +60,55 @@ def update_roi(corners, horizontal_padding: int = 100, vertical_padding: int = 5
     return roi
 
 
-def apply_color_threshold(image: cvt.MatLike, red_bound, blue_bound):
+def apply_color_threshold(image: cvt.MatLike) -> Tuple[bool, int, int, cvt.MatLike]:
     """
     Apple a color threshold to an image using the LAB color space.
 
     :param image: Input image.
-    :param red_bound: Threshold for red color.
-    :param blue_bound: Threshold for blue color.
-    :return: Binary mask of the image.
+    :return: whether the image has red or blue color, the top left x and y coordinates of the detected color, and the cropped image.
     """
+    
+    RED_LOWER_BOUND = np.array([130, 200, 190], dtype=np.uint8)
+    RED_UPPER_BOUND = np.array([140, 210, 200], dtype=np.uint8)
+    
+    BLUE_LOWER_BOUND = np.array([75, 200, 15], dtype=np.uint8)
+    BLUE_UPPER_BOUND = np.array([85, 210, 30], dtype=np.uint8)
+    
+    IMAGE_STEP_SIZE = 4
+    
+    downsampled_image = image[::IMAGE_STEP_SIZE, ::IMAGE_STEP_SIZE, :]
 
-    lab_space_image = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)
+    lab_space_image = cv2.cvtColor(downsampled_image, cv2.COLOR_BGR2LAB)
+    # Apply the mask to the original image
+    red_mask = cv2.inRange(lab_space_image, RED_LOWER_BOUND, RED_UPPER_BOUND)
+    blue_mask = cv2.inRange(lab_space_image, BLUE_LOWER_BOUND, BLUE_UPPER_BOUND)
+    mask = cv2.bitwise_or(red_mask, blue_mask)
+    
+    # Check if the mask is empty
+    if np.count_nonzero(mask) == 0:
+        return False, 0, 0, None
+    
+    def get_min_max_index(arr, scalar, maximum):
+        PADDING = 50
+        lower_bound: int = np.argmax(arr).astype(int) * scalar
+        lower_bound = max(lower_bound - PADDING, 0)
+        upper_bound: int = (len(arr) - np.argmax(arr[::-1]).astype(int)) * scalar
+        upper_bound = min(upper_bound + PADDING, maximum)
+        return lower_bound, upper_bound
+    
+    columns_in_mask = np.any(mask, axis=0)
+    rows_in_mask = np.any(mask, axis=1)
+    
+    min_col, max_col = get_min_max_index(columns_in_mask, IMAGE_STEP_SIZE, image.shape[1])
+    min_row, max_row = get_min_max_index(rows_in_mask, IMAGE_STEP_SIZE, image.shape[0])
+    
+    print(f"Min row: {min_row}, Min col: {min_col}")
+    print(f"Max row: {max_row}, Max col: {max_col}")
+    
+    # Crop the image around this area
+    cropped_image = image[min_row:max_row, min_col:max_col]
+    
+    
+    return True, min_row, min_col, cropped_image, mask
+
+    
