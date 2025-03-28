@@ -155,19 +155,31 @@ class CroppedDetector(Detector):
 
 
 class ROIDetector(Detector):
-    def __init__(self):
+    def __init__(self, resize: bool = True, resize_height: int = 50):
         super().__init__()
         self.roi: Optional[cvt.Rect] = None
+        self.resize = resize
+        self.resize_height = resize_height
 
     def detectMarkers(self, image):
         # If we have an ROI, first attempt to scan in that region. If no markers are found, scan the entire image
         corners, ids, rejected = None, None, None
+        print(self.roi)
 
         if self.roi is not None:
             roi_image = crop_roi(image, self.roi)
+
+            if self.resize:
+                scale = self.resize_height / roi_image.shape[0]
+                roi_image = cv2.resize(roi_image, (0, 0), fx=scale, fy=scale)
+
             corners, ids, rejected = super().detectMarkers(roi_image)
+
             roi_x, roi_y, _, _ = self.roi
             for corner in corners:
+                if self.resize:
+                    corner /= scale
+
                 corner += (roi_x, roi_y)
 
         if corners is None or len(corners) == 0:
