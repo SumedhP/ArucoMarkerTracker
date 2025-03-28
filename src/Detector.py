@@ -22,10 +22,13 @@ def list_detectors():
 
 
 def get_detector(detector_name: str):
-    if Detector.getName() == detector_name:
+    def stringEqualsIgnoreCase(string1: str, string2: str) -> str:
+        return string1.lower().strip() == string2.lower().strip()
+    
+    if stringEqualsIgnoreCase(Detector.getName(), detector_name):
         return Detector()
     for cls in Detector.__subclasses__():
-        if cls.getName() == detector_name:
+        if stringEqualsIgnoreCase(cls.getName(), detector_name):
             return cls()
     raise ValueError(f"Detector {detector_name} not found")
 
