@@ -3,7 +3,7 @@
 # Something that combines all 3 of these things
 
 import abc
-from typing import List
+from typing import List, Optional
 
 import cv2
 from cv2.aruco import (
@@ -14,7 +14,7 @@ from cv2.aruco import (
 )
 import cv2.typing as cvt
 import numpy as np
-from .Util import crop_top_bottom
+from .Util import *
 
 
 def list_detectors():
@@ -121,8 +121,7 @@ class AprilTagDetector(Detector):
     def __init__(self):
         super().__init__()
         self.detector_params.cornerRefinementMethod = cv2.aruco.CORNER_REFINE_APRILTAG
-        self.detector_params.aprilTagQuadDecimate = 1.0
-        self.detector.setDetectorParameters(self.detector_params)
+        self.setDecimation(1.0)
 
     def setDecimation(self, decimation: float):
         assert decimation >= 1.0
@@ -144,7 +143,7 @@ class CroppedDetector(Detector):
         cropped_image, top = crop_top_bottom(image, self.top_crop, self.bottom_crop)
         corners, ids, rejected = super().detectMarkers(cropped_image)
 
-        # Adjust the corners to the original image
+        # Adjust the corners to the original image to account for cropping
         for corner in corners:
             corner += (0, top)
 
@@ -153,3 +152,42 @@ class CroppedDetector(Detector):
     @staticmethod
     def getName() -> str:
         return "Cropped"
+
+class ROIDetector(Detector):
+    def __init__(self):
+        super().__init__()
+        self.roi : Optional[cvt.Rect] = None
+        
+    def detectMarkers(self, image):
+        # If we have an ROI, first attempt to scan in that region. If no markers are found, scan the entire image
+        corners, ids, rejected = None, None, None
+        
+        if self.roi is not None:
+            print("Using ROI of ", self.roi)
+            roi_image = crop_roi(image, self.roi)
+            corners, ids, rejected = super().detectMarkers(roi_image)
+            roi_x, roi_y, _, _ = self.roi
+            for corner in corners:
+                corner += (roi_x, roi_y)
+            
+        if corners is None or len(corners) == 0:
+            corners, ids, rejected = super().detectMarkers(image)
+        
+        if len(corners) > 0:
+            self.roi = update_roi(corners)
+        else:
+            print("No markers, resetting ROI")
+            self.roi = None
+
+        return corners, ids, rejected
+
+    @staticmethod
+    def getName() -> str:
+        return "ROI"
+    
+    def getAnnotatedFrame(self, image, corners, ids, rejected):
+        frame = super().getAnnotatedFrame(image, corners, ids, rejected)
+        if self.roi is not None:
+            x,y,w,h = self.roi
+            cv2.rectangle(frame, (x,y), (x+w, y+h), (0,255,0), 2)
+        return frame
