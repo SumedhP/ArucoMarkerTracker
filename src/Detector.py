@@ -24,7 +24,7 @@ def list_detectors():
 def get_detector(detector_name: str):
     def stringEqualsIgnoreCase(string1: str, string2: str) -> str:
         return string1.lower().strip() == string2.lower().strip()
-    
+
     if stringEqualsIgnoreCase(Detector.getName(), detector_name):
         return Detector()
     for cls in Detector.__subclasses__():
@@ -148,35 +148,34 @@ class CroppedDetector(Detector):
             corner += (0, top)
 
         return corners, ids, rejected
-    
+
     @staticmethod
     def getName() -> str:
         return "Cropped"
 
+
 class ROIDetector(Detector):
     def __init__(self):
         super().__init__()
-        self.roi : Optional[cvt.Rect] = None
-        
+        self.roi: Optional[cvt.Rect] = None
+
     def detectMarkers(self, image):
         # If we have an ROI, first attempt to scan in that region. If no markers are found, scan the entire image
         corners, ids, rejected = None, None, None
-        
+
         if self.roi is not None:
-            print("Using ROI of ", self.roi)
             roi_image = crop_roi(image, self.roi)
             corners, ids, rejected = super().detectMarkers(roi_image)
             roi_x, roi_y, _, _ = self.roi
             for corner in corners:
                 corner += (roi_x, roi_y)
-            
+
         if corners is None or len(corners) == 0:
             corners, ids, rejected = super().detectMarkers(image)
-        
+
         if len(corners) > 0:
             self.roi = update_roi(corners)
         else:
-            print("No markers, resetting ROI")
             self.roi = None
 
         return corners, ids, rejected
@@ -184,10 +183,10 @@ class ROIDetector(Detector):
     @staticmethod
     def getName() -> str:
         return "ROI"
-    
+
     def getAnnotatedFrame(self, image, corners, ids, rejected):
         frame = super().getAnnotatedFrame(image, corners, ids, rejected)
         if self.roi is not None:
-            x,y,w,h = self.roi
-            cv2.rectangle(frame, (x,y), (x+w, y+h), (0,255,0), 2)
+            x, y, w, h = self.roi
+            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
         return frame

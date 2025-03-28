@@ -36,20 +36,38 @@ def crop_roi(image: cvt.MatLike, ROI: cvt.Rect) -> cvt.MatLike:
     :param ROI: Region of interest.
     :return: Cropped image.
     """
-    x,y,width,height = ROI
-    return image[y:y+height, x:x+width]
+    x, y, width, height = ROI
+    return image[y : y + height, x : x + width]
 
-def update_roi(corners, horizontal_padding:int=75, vertical_padding:int=25):
+
+def update_roi(corners, horizontal_padding: int = 75, vertical_padding: int = 25):
     rectangles: List[cvt.RotatedRect] = [
-                cv2.minAreaRect(corners[i]) for i in range(len(corners))
-            ]
-            
+        cv2.minAreaRect(corners[i]) for i in range(len(corners))
+    ]
+
     largest_marker_corners = corners[np.argmax([max(r[1]) for r in rectangles])]
     roi = cv2.boundingRect(np.array(largest_marker_corners))
 
     # Expand the ROI by padding
     x, y, w, h = roi
-    
-    roi = (max(0, x - horizontal_padding), max(0, y - vertical_padding), w + horizontal_padding * 2, h + vertical_padding * 2)
+
+    roi = (
+        max(0, x - horizontal_padding),
+        max(0, y - vertical_padding),
+        w + horizontal_padding * 2,
+        h + vertical_padding * 2,
+    )
     return roi
-    
+
+
+def apply_color_threshold(image: cvt.MatLike, red_bound, blue_bound):
+    """
+    Apple a color threshold to an image using the LAB color space.
+
+    :param image: Input image.
+    :param red_bound: Threshold for red color.
+    :param blue_bound: Threshold for blue color.
+    :return: Binary mask of the image.
+    """
+
+    lab_space_image = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)

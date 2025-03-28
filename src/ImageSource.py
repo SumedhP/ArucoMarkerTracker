@@ -55,9 +55,7 @@ class VideoImageSource(ImageSource):
 
         self.frames: List[cvt.MatLike] = []
 
-        total_frames = int(
-            self.video.get(cv2.CAP_PROP_FRAME_COUNT)
-        )
+        total_frames = int(self.video.get(cv2.CAP_PROP_FRAME_COUNT))
 
         for _ in tqdm(range(total_frames), desc="Loading Video", unit="frame"):
             ret, frame = self.video.read()
