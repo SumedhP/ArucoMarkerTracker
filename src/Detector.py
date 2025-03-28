@@ -134,7 +134,7 @@ class AprilTagDetector(Detector):
 
 
 class CroppedDetector(Detector):
-    def __init__(self, top_crop: int = 150, bottom_crop: int = 150):
+    def __init__(self, top_crop: int = 50, bottom_crop: int = 50):
         super().__init__()
         self.top_crop = top_crop
         self.bottom_crop = bottom_crop
@@ -164,7 +164,6 @@ class ROIDetector(Detector):
     def detectMarkers(self, image):
         # If we have an ROI, first attempt to scan in that region. If no markers are found, scan the entire image
         corners, ids, rejected = None, None, None
-        print(self.roi)
 
         if self.roi is not None:
             roi_image = crop_roi(image, self.roi)
