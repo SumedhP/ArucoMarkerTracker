@@ -1,198 +1,2706 @@
 Detector,Frame,Time (ms)
-ROI,0,16.5765
-ROI,1,9.0036
-ROI,2,3.8486
-ROI,3,12.3756
-ROI,4,0.7511
-ROI,5,12.9245
-ROI,6,11.3699
-ROI,7,8.4724
-ROI,8,8.6524
-ROI,9,6.8945
-ROI,10,7.2084
-ROI,11,9.4884
-ROI,12,7.0037
-ROI,13,7.4198
-ROI,14,4.2332
-ROI,15,10.5679
-ROI,16,2.955
-ROI,17,9.4869
-ROI,18,7.446
-ROI,19,7.3409
-ROI,20,9.3671
-ROI,21,8.003
-ROI,22,5.772
-ROI,23,5.5196
-ROI,24,10.7337
-ROI,25,5.887
-ROI,26,4.9598
-ROI,27,9.8509
-ROI,28,6.9996
-ROI,29,6.0001
-ROI,30,0.0
-ROI,31,12.0843
-ROI,32,4.7313
-ROI,33,11.2568
-ROI,34,8.8778
-ROI,35,6.0006
-ROI,36,7.5074
-ROI,37,4.0191
-ROI,38,6.9982
-ROI,39,5.235
-ROI,40,9.8486
-ROI,41,6.928
-ROI,42,10.3544
-ROI,43,6.6364
-ROI,44,7.3316
-ROI,45,2.2054
-ROI,46,12.2279
-ROI,47,4.4257
-ROI,48,9.2526
-ROI,49,6.9918
-ROI,50,6.0025
-ROI,51,0.9173
-ROI,52,10.2039
-ROI,53,6.6993
-ROI,54,9.7454
-ROI,55,7.3385
-ROI,56,4.8348
-ROI,57,8.2201
-ROI,58,3.4245
-ROI,59,11.3141
-ROI,60,8.4031
-ROI,61,4.8184
-ROI,62,9.0575
-ROI,63,5.9991
-ROI,64,5.9988
-ROI,65,7.0009
-ROI,66,7.0001
-ROI,67,6.9259
-ROI,68,6.0445
-ROI,69,5.9972
-ROI,70,6.7562
-ROI,71,6.9833
-ROI,72,5.0168
-ROI,73,1.9788
-ROI,74,10.0386
-ROI,75,0.0
-ROI,76,11.2321
-ROI,77,0.0
-ROI,78,14.6906
-ROI,79,6.0024
-ROI,80,5.999
-ROI,81,7.0703
-ROI,82,6.9968
-ROI,83,4.7582
-ROI,84,0.0
-ROI,85,10.2566
-ROI,86,9.9541
-ROI,87,6.0015
-ROI,88,7.0003
-ROI,89,6.1366
-ROI,90,6.0037
-ROI,91,4.9998
-ROI,92,0.0
-ROI,93,13.9663
-ROI,94,8.7968
-ROI,95,5.9999
-ROI,96,7.1658
-ROI,97,6.9958
-ROI,98,6.0009
-ROI,99,3.054
-ROI,100,10.4619
-ROI,101,7.4139
-ROI,102,6.9982
-ROI,103,6.8934
-ROI,104,5.9969
-ROI,105,8.0021
-ROI,106,6.9971
-ROI,107,6.0004
-ROI,108,6.1045
-ROI,109,6.9983
-ROI,110,6.9994
-ROI,111,7.5126
-ROI,112,7.9947
-ROI,113,2.9997
-ROI,114,10.4557
-ROI,115,0.0
-ROI,116,9.8294
-ROI,117,10.1397
-ROI,118,6.0439
-ROI,119,4.2683
-ROI,120,11.1026
-ROI,121,7.7016
-ROI,122,9.5837
-ROI,123,7.9945
-ROI,124,6.7304
-ROI,125,6.3718
-ROI,126,9.3595
-ROI,127,8.0107
-ROI,128,7.0018
-ROI,129,8.9667
-ROI,130,8.0002
-ROI,131,2.0177
-ROI,132,10.1376
-ROI,133,7.8458
-ROI,134,2.5082
-ROI,135,13.4227
-ROI,136,7.0212
-ROI,137,6.9794
+Baseline,0,23.0005
+Baseline,1,16.0023
+Baseline,2,13.0057
+Baseline,3,13.0173
+Baseline,4,10.9743
+Baseline,5,11.0009
+Baseline,6,13.0038
+Baseline,7,12.0207
+Baseline,8,10.9774
+Baseline,9,11.9966
+Baseline,10,10.9985
+Baseline,11,12.0001
+Baseline,12,11.0011
+Baseline,13,11.0007
+Baseline,14,13.0183
+Baseline,15,11.0273
+Baseline,16,16.9708
+Baseline,17,14.0182
+Baseline,18,16.0129
+Baseline,19,16.9746
+Baseline,20,11.0126
+Baseline,21,12.2027
+Baseline,22,13.9574
+Baseline,23,14.8397
+Baseline,24,11.0912
+Baseline,25,10.9204
+Baseline,26,10.9765
+Baseline,27,12.9995
+Baseline,28,10.0128
+Baseline,29,10.984
+Baseline,30,15.0032
+Baseline,31,11.9996
+Baseline,32,12.4245
+Baseline,33,10.5739
+Baseline,34,10.0145
+Baseline,35,11.0031
+Baseline,36,10.9832
+Baseline,37,14.0025
+Baseline,38,10.9951
+Baseline,39,12.007
+Baseline,40,10.9958
+Baseline,41,12.0151
+Baseline,42,11.0092
+Baseline,43,10.989
+Baseline,44,11.0003
+Baseline,45,12.9904
+Baseline,46,13.0095
+Baseline,47,12.993
+Baseline,48,10.9949
+Baseline,49,12.0009
+Baseline,50,10.9983
+Baseline,51,16.0015
+Baseline,52,10.9968
+Baseline,53,11.9993
+Baseline,54,13.047
+Baseline,55,11.9556
+Baseline,56,14.0125
+Baseline,57,15.0127
+Baseline,58,11.9715
+Baseline,59,11.9996
+Baseline,60,10.028
+Baseline,61,10.989
+Baseline,62,10.0009
+Baseline,63,10.9829
+Baseline,64,10.0011
+Baseline,65,10.0254
+Baseline,66,9.9999
+Baseline,67,10.9757
+Baseline,68,11.9987
+Baseline,69,10.0259
+Baseline,70,9.9944
+Baseline,71,8.9945
+Baseline,72,8.9996
+Baseline,73,9.9884
+Baseline,74,9.998
+Baseline,75,8.0172
+Baseline,76,10.9857
+Baseline,77,10.0118
+Baseline,78,10.0101
+Baseline,79,11.978
+Baseline,80,11.0007
+Baseline,81,11.9977
+Baseline,82,12.0254
+Baseline,83,8.9709
+Baseline,84,10.0007
+Baseline,85,8.9998
+Baseline,86,10.0006
+Baseline,87,11.0066
+Baseline,88,10.9697
+Baseline,89,11.3636
+Baseline,90,11.0022
+Baseline,91,11.9966
+Baseline,92,11.0039
+Baseline,93,10.9988
+Baseline,94,12.0016
+Baseline,95,13.9991
+Baseline,96,13.0016
+Baseline,97,13.0
+Baseline,98,11.9958
+Baseline,99,11.0025
+Baseline,100,10.9999
+Baseline,101,14.9979
+Baseline,102,11.0035
+Baseline,103,14.9997
+Baseline,104,11.9983
+Baseline,105,12.0001
+Baseline,106,10.9969
+Baseline,107,12.0019
+Baseline,108,10.9987
+Baseline,109,10.9998
+Baseline,110,13.0022
+Baseline,111,10.0001
+Baseline,112,11.0042
+Baseline,113,12.0002
+Baseline,114,11.9931
+Baseline,115,10.0053
+Baseline,116,11.8424
+Baseline,117,11.0016
+Baseline,118,12.003
+Baseline,119,13.0086
+Baseline,120,13.9868
+Baseline,121,11.9968
+Baseline,122,13.0017
+Baseline,123,13.0258
+Baseline,124,12.9743
+Baseline,125,11.9995
+Baseline,126,11.0199
+Baseline,127,11.9782
+Baseline,128,10.0033
+Baseline,129,10.9968
+Baseline,130,11.0001
+Baseline,131,11.0023
+Baseline,132,12.998
+Baseline,133,11.0011
+Baseline,134,11.007
+Baseline,135,11.991
+Baseline,136,11.0004
+Baseline,137,10.0002
+Baseline,138,9.9992
+Baseline,139,9.0098
+Baseline,140,11.9945
+Baseline,141,10.9998
+Baseline,142,2.9959
+Baseline,143,3.0025
+Baseline,144,10.0035
+Baseline,145,9.9976
+Baseline,146,3.0123
+Baseline,147,9.9857
+Baseline,148,11.998
+Baseline,149,27.0307
+Baseline,150,23.9712
+Baseline,151,23.0288
+Baseline,152,25.0001
+Baseline,153,21.975
+Baseline,154,20.0002
+Baseline,155,20.9963
+Baseline,156,23.0011
+Baseline,157,18.018
+Baseline,158,21.0174
+Baseline,159,20.0013
+Baseline,160,21.0
+Baseline,161,20.9989
+Baseline,162,22.9974
+Baseline,163,19.9951
+Baseline,164,20.0021
+Baseline,165,18.9996
+Baseline,166,17.0004
+Baseline,167,17.633
+Baseline,168,18.9976
+Baseline,169,18.9977
+Baseline,170,16.0038
+Baseline,171,17.9985
+Baseline,172,17.0015
+Baseline,173,15.9996
+Baseline,174,15.9954
+Baseline,175,16.0016
+Baseline,176,15.004
+Baseline,177,13.9946
+Baseline,178,12.01
+Baseline,179,16.0026
+Baseline,180,14.9893
+Baseline,181,16.0014
+Baseline,182,14.9966
+Baseline,183,13.0051
+Baseline,184,13.9968
+Baseline,185,12.9985
+Baseline,186,14.0033
+Baseline,187,16.0071
+Baseline,188,15.9902
+Baseline,189,12.9979
+Baseline,190,14.0022
+Baseline,191,13.0003
+Baseline,192,14.004
+Baseline,193,12.9946
+Baseline,194,14.0
+Baseline,195,15.005
+Baseline,196,12.9942
+Baseline,197,13.0004
+Baseline,198,12.0001
+Baseline,199,11.9999
+Baseline,200,11.9998
+Baseline,201,10.9999
+Baseline,202,12.0008
+Baseline,203,11.0007
+Baseline,204,12.9988
+Baseline,205,11.9998
+Baseline,206,13.0028
+Baseline,207,9.9975
+Baseline,208,9.9991
+Baseline,209,11.0012
+Baseline,210,12.8493
+Baseline,211,12.0638
+Baseline,212,10.9975
+Baseline,213,12.0053
+Baseline,214,10.9981
+Baseline,215,10.9982
+Baseline,216,10.9985
+Baseline,217,12.9993
+Baseline,218,10.0065
+Baseline,219,11.0002
+Baseline,220,13.0045
+Baseline,221,12.9928
+Baseline,222,10.9966
+Baseline,223,12.0003
+Baseline,224,12.0006
+Baseline,225,12.0095
+Baseline,226,12.9912
+Baseline,227,11.0022
+Baseline,228,11.9996
+Baseline,229,11.9976
+Baseline,230,11.0
+Baseline,231,12.0024
+Baseline,232,11.0004
+Baseline,233,11.0022
+Baseline,234,10.9944
+Baseline,235,12.0118
+Baseline,236,10.9906
+Baseline,237,10.9981
+Baseline,238,14.0033
+Baseline,239,11.3677
+Baseline,240,12.0338
+Baseline,241,8.1633
+Baseline,242,16.5146
+Baseline,243,7.0529
+Baseline,244,16.352
+Baseline,245,10.5127
+Baseline,246,10.4395
+Baseline,247,10.8684
+Baseline,248,15.5619
+Baseline,249,9.0041
+Baseline,250,15.0752
+Baseline,251,8.039
+Baseline,252,10.06
+Baseline,253,10.157
+Baseline,254,12.4896
+Baseline,255,11.631
+Baseline,256,8.0515
+Baseline,257,8.0158
+Baseline,258,16.2322
+Baseline,259,12.6082
+Baseline,260,10.0303
+Baseline,261,10.5077
+Baseline,262,11.3082
+Baseline,263,12.2782
+Baseline,264,8.0395
+Baseline,265,8.0453
+Baseline,266,8.2277
+Baseline,267,8.0388
+Baseline,268,4.0823
+Baseline,269,16.1238
+Baseline,270,3.9795
+Baseline,271,20.1221
+Baseline,272,8.5548
+Baseline,273,7.7373
+Baseline,274,10.0909
+Baseline,275,14.8985
+Baseline,276,10.2323
+Baseline,277,6.3838
+Baseline,278,12.1135
+Baseline,279,8.1063
+Baseline,280,16.0619
+Baseline,281,14.5335
+Baseline,282,10.0592
+Baseline,283,7.5531
+Baseline,284,10.6754
+Baseline,285,12.4815
+Baseline,286,6.0132
+Baseline,287,14.2496
+Baseline,288,10.3369
+Baseline,289,10.5003
+Baseline,290,10.4588
+Baseline,291,14.0687
+Baseline,292,6.0997
+Baseline,293,14.4167
+Baseline,294,8.0164
+Baseline,295,8.6921
+Baseline,296,13.6469
+Baseline,297,4.2984
+Baseline,298,12.3633
+Baseline,299,9.4963
+Baseline,300,14.9613
+Baseline,301,9.9345
+Baseline,302,9.5679
+Baseline,303,7.1961
+Baseline,304,9.9001
+Baseline,305,10.3833
+Baseline,306,16.2985
+Baseline,307,15.4925
+Baseline,308,11.9882
+Baseline,309,15.379
+Baseline,310,8.3224
+Baseline,311,11.3123
+Baseline,312,14.5559
+Baseline,313,7.2058
+Baseline,314,11.5345
+Baseline,315,8.1578
+Baseline,316,15.6238
+Baseline,317,8.3521
+Baseline,318,6.1754
+Baseline,319,13.5922
+Baseline,320,14.3343
+Baseline,321,8.2611
+Baseline,322,8.7736
+Baseline,323,15.4639
+Baseline,324,8.0546
+Baseline,325,10.2152
+Baseline,326,12.1936
+Baseline,327,10.2356
+Baseline,328,10.4178
+Baseline,329,8.1521
+Baseline,330,10.5988
+Baseline,331,14.5784
+Baseline,332,8.6763
+Baseline,333,13.6919
+Baseline,334,9.9213
+Baseline,335,8.6016
+Baseline,336,6.3334
+Baseline,337,10.2945
+Baseline,338,8.7451
+Baseline,339,1.7607
+Baseline,340,10.3497
+Baseline,341,12.2701
+Baseline,342,8.4093
+Baseline,343,12.4763
+Baseline,344,8.7468
+Baseline,345,12.902
+Baseline,346,5.2752
+Baseline,347,11.0195
+Baseline,348,7.4594
+Baseline,349,9.5391
+Baseline,350,14.9032
+Baseline,351,8.0427
+Baseline,352,6.1611
+Baseline,353,8.1869
+Baseline,354,10.2577
+Baseline,355,11.6057
+Baseline,356,4.362
+Baseline,357,10.5187
+Baseline,358,10.7867
+Baseline,359,7.5723
+Baseline,360,9.6804
+Baseline,361,8.0412
+Baseline,362,8.3872
+Baseline,363,8.504
+Baseline,364,8.3168
+Baseline,365,10.2412
+Baseline,366,8.8733
+Baseline,367,7.2324
+Baseline,368,6.1928
+Baseline,369,11.7915
+Baseline,370,8.2331
+Baseline,371,8.2266
+Baseline,372,10.2975
+Baseline,373,6.0302
+Baseline,374,4.1566
+Baseline,375,11.8751
+Baseline,376,6.8324
+Baseline,377,7.5982
+Baseline,378,8.1227
+Baseline,379,8.1542
+Baseline,380,8.6942
+Baseline,381,6.1294
+Baseline,382,8.7637
+Baseline,383,5.3297
+Baseline,384,11.177
+Baseline,385,5.7585
+Baseline,386,11.2601
+Baseline,387,5.0656
+Baseline,388,8.48
+Baseline,389,4.5607
+Baseline,390,10.7278
+Baseline,391,4.1416
+Baseline,392,8.4496
+Baseline,393,8.5879
+Baseline,394,8.3118
+Baseline,395,8.2452
+Baseline,396,8.5965
+Baseline,397,7.92
+Baseline,398,6.1098
+Baseline,399,10.7703
+Baseline,400,7.6618
+Baseline,401,10.5297
+Baseline,402,8.2002
+Baseline,403,8.3364
+Baseline,404,8.4882
+Baseline,405,8.4825
+Baseline,406,8.1469
+Baseline,407,8.1824
+Baseline,408,10.0516
+Baseline,409,12.2105
+Baseline,410,5.9503
+Baseline,411,2.3455
+Baseline,412,11.947
+Baseline,413,9.193
+Baseline,414,9.5529
+Baseline,415,8.2972
+Baseline,416,8.3048
+Baseline,417,4.8345
+Baseline,418,7.5877
+Baseline,419,7.85
+Baseline,420,6.3897
+Baseline,421,2.0136
+Baseline,422,6.895
+Baseline,423,10.4191
+Baseline,424,4.4194
+Baseline,425,8.4637
+Baseline,426,5.8395
+Baseline,427,8.6746
+Baseline,428,5.6244
+Baseline,429,10.2045
+Baseline,430,8.4936
+Baseline,431,6.2863
+Baseline,432,14.9577
+Baseline,433,7.077
+Baseline,434,8.9194
+Baseline,435,1.6032
+Baseline,436,10.7492
+Baseline,437,7.5713
+Baseline,438,5.9587
+Baseline,439,8.2114
+Baseline,440,8.1896
+Baseline,441,7.7938
+Baseline,442,8.3822
+Baseline,443,0.0
+Baseline,444,8.5471
+Baseline,445,9.9953
+Baseline,446,6.4586
+Baseline,447,8.456
+Baseline,448,5.1662
+Baseline,449,5.3879
+Baseline,450,7.6124
+Baseline,451,6.758
+Baseline,452,5.4591
+Baseline,453,5.9738
+Baseline,454,6.5866
+Baseline,455,8.3643
+Baseline,456,4.999
+Baseline,457,5.0018
+Baseline,458,7.016
+Baseline,459,5.985
+Baseline,460,4.9966
+Baseline,461,5.0022
+Baseline,462,4.0023
+Baseline,463,5.999
+Baseline,464,4.9974
+Baseline,465,5.0243
+Baseline,466,4.9972
+Baseline,467,5.9793
+Baseline,468,5.0012
+Baseline,469,7.0007
+Baseline,470,5.0188
+Baseline,471,4.9787
+Baseline,472,6.0029
+Baseline,473,4.0019
+Baseline,474,4.9977
+Baseline,475,4.9979
+Baseline,476,4.999
+Baseline,477,5.0027
+Baseline,478,5.0079
+Baseline,479,5.0025
+Baseline,480,5.0283
+Baseline,481,5.8045
+Baseline,482,6.0002
+Baseline,483,5.9816
+Baseline,484,4.9991
+Baseline,485,6.0017
+Baseline,486,4.9987
+Baseline,487,4.0211
+Baseline,488,4.9776
+Baseline,489,5.0028
+Baseline,490,4.9988
+Baseline,491,5.0086
+Baseline,492,5.0065
+Baseline,493,5.0037
+Baseline,494,3.9778
+Baseline,495,5.0006
+Baseline,496,4.9997
+Baseline,497,6.0239
+Baseline,498,4.9787
+Baseline,499,5.001
+Baseline,500,4.0123
+Baseline,501,4.9887
+Baseline,502,5.001
+Baseline,503,5.9986
+Baseline,504,5.3985
+Baseline,505,4.7551
+Baseline,506,5.0072
+Baseline,507,5.0078
+Baseline,508,4.991
+Baseline,509,5.0041
+Baseline,510,5.9982
+Baseline,511,4.9978
+Baseline,512,4.0131
+Baseline,513,4.9886
+Baseline,514,4.0085
+Baseline,515,4.989
+Baseline,516,4.0148
+Baseline,517,3.997
+Baseline,518,4.991
+Baseline,519,5.0115
+Baseline,520,4.9877
+Baseline,521,4.9979
+Baseline,522,4.0112
+Baseline,523,4.9897
+Baseline,524,4.0125
+Baseline,525,4.9873
+Baseline,526,4.0118
+Baseline,527,4.9883
+Baseline,528,4.0146
+Baseline,529,4.9879
+Baseline,530,4.0088
+Baseline,531,5.9919
+Baseline,532,4.999
+Baseline,533,5.0098
+Baseline,534,4.1463
+Baseline,535,4.5351
+Baseline,536,6.0084
+Baseline,537,6.0006
+Baseline,538,4.0111
+Baseline,539,5.9903
+Baseline,540,4.9989
+Baseline,541,5.0078
+Baseline,542,4.9894
+Baseline,543,5.0006
+Baseline,544,5.0088
+Baseline,545,4.9931
+Baseline,546,7.0001
+Baseline,547,4.9974
+Baseline,548,4.0151
+Baseline,549,4.9878
+Baseline,550,4.0143
+Baseline,551,5.9902
+Baseline,552,4.9938
+Baseline,553,4.9982
+Baseline,554,6.0043
+Baseline,555,6.0179
+Baseline,556,4.9889
+Baseline,557,5.0022
+Baseline,558,6.008
+Baseline,559,4.9887
+Baseline,560,4.9907
+Baseline,561,5.0107
+Baseline,562,5.9933
+Baseline,563,4.0098
+Baseline,564,4.9957
+Baseline,565,4.9948
+Baseline,566,3.9965
+Baseline,567,4.0023
+Baseline,568,7.0012
+Baseline,569,5.998
+Baseline,570,4.9998
+Baseline,571,4.9978
+Baseline,572,4.0001
+Baseline,573,4.9994
+Baseline,574,5.0006
+Baseline,575,3.9996
+Baseline,576,5.0047
+Baseline,577,4.9965
+Baseline,578,5.0081
+Baseline,579,5.0008
+Baseline,580,4.9932
+Baseline,581,3.9993
+Baseline,582,4.0119
+Baseline,583,2.9987
+Baseline,584,3.9995
+Baseline,585,5.0175
+Baseline,586,5.0065
+Baseline,587,3.9766
+Baseline,588,5.0115
+Baseline,589,3.992
+Baseline,590,6.007
+Baseline,591,4.9906
+Baseline,592,5.0214
+Baseline,593,5.9788
+Baseline,594,5.0036
+Baseline,595,5.9991
+Baseline,596,5.0182
+Baseline,597,5.9801
+Baseline,598,5.024
+Baseline,599,7.9785
+Baseline,600,6.9984
+Baseline,601,5.997
+Baseline,602,7.0092
+Baseline,603,5.9904
+Baseline,604,6.0226
+Baseline,605,6.9791
+Baseline,606,5.9999
+Baseline,607,6.0204
+Baseline,608,4.9785
+Baseline,609,7.0005
+Baseline,610,5.9999
+Baseline,611,6.0054
+Baseline,612,4.9976
+Baseline,613,5.0156
+Baseline,614,6.0069
+Baseline,615,5.9744
+Baseline,616,7.0196
+Baseline,617,4.9841
+Baseline,618,6.9961
+Baseline,619,7.9997
+Baseline,620,7.0016
+Baseline,621,6.0018
+Baseline,622,6.0073
+Baseline,623,7.9899
+Baseline,624,7.0008
+Baseline,625,7.999
+Baseline,626,7.0033
+Baseline,627,7.9975
+Baseline,628,7.9981
+Baseline,629,10.0041
+Baseline,630,8.0018
+Baseline,631,7.0073
+Baseline,632,6.9888
+Baseline,633,7.0119
+Baseline,634,7.9863
+Baseline,635,8.0043
+Baseline,636,6.9974
+Baseline,637,10.0094
+Baseline,638,7.9895
+Baseline,639,9.0057
+Baseline,640,8.9979
+Baseline,641,7.9984
+Baseline,642,9.0033
+Baseline,643,9.0005
+Baseline,644,7.9956
+Baseline,645,9.0005
+Baseline,646,10.0087
+Baseline,647,8.9932
+Baseline,648,7.9995
+Baseline,649,8.9977
+Baseline,650,8.9997
+Baseline,651,8.9996
+Baseline,652,8.002
+Baseline,653,10.0003
+Baseline,654,8.9997
+Baseline,655,8.9974
+Baseline,656,9.0022
+Baseline,657,8.0041
+Baseline,658,8.9963
+Baseline,659,9.0003
+Baseline,660,8.9992
+Baseline,661,9.0018
+Baseline,662,10.9963
+Baseline,663,9.0005
+Baseline,664,9.0014
+Baseline,665,9.0011
+Baseline,666,8.9977
+Baseline,667,8.001
+Baseline,668,8.9992
+Baseline,669,9.0095
+Baseline,670,8.9911
+Baseline,671,9.0039
+Baseline,672,9.9953
+Baseline,673,11.0005
+Baseline,674,12.0
+Baseline,675,9.0003
+Baseline,676,10.0029
+Baseline,677,7.9955
+Baseline,678,9.0021
+Baseline,679,14.001
+Baseline,680,11.9967
+Baseline,681,12.0013
+Baseline,682,11.0002
+Baseline,683,8.9996
+Baseline,684,9.9988
+Baseline,685,9.0038
+Baseline,686,9.9993
+Baseline,687,8.9993
+Baseline,688,10.0026
+Baseline,689,10.002
+Baseline,690,9.9926
+Baseline,691,10.0038
+Baseline,692,9.9986
+Baseline,693,12.0017
+Baseline,694,9.9967
+Baseline,695,11.9997
+Baseline,696,12.0006
+Baseline,697,12.005
+Baseline,698,9.9945
+Baseline,699,11.0004
+Baseline,700,11.9989
+Baseline,701,11.0007
+Baseline,702,11.0034
+Baseline,703,11.9981
+Baseline,704,9.9984
+Baseline,705,11.0002
+Baseline,706,13.0017
+Baseline,707,10.9987
+Baseline,708,12.0008
+Baseline,709,12.0091
+Baseline,710,11.9892
+Baseline,711,11.0111
+Baseline,712,10.9894
+Baseline,713,10.0104
+Baseline,714,9.8717
+Baseline,715,10.0214
+Baseline,716,10.0006
+Baseline,717,10.0013
+Baseline,718,10.002
+Baseline,719,9.9967
+Baseline,720,9.0024
+Baseline,721,10.9975
+Baseline,722,9.0007
+Baseline,723,11.0016
+Baseline,724,11.0008
+Baseline,725,9.9989
+Baseline,726,10.0002
+Baseline,727,8.9974
+Baseline,728,10.0001
+Baseline,729,10.002
+Baseline,730,10.0189
+Baseline,731,9.9793
+Baseline,732,9.0018
+Baseline,733,10.0031
+Baseline,734,8.9977
+Baseline,735,10.9971
+Baseline,736,9.9997
+Baseline,737,9.0002
+Baseline,738,11.3856
+Baseline,739,10.0014
+Baseline,740,11.9959
+Baseline,741,12.0042
+Baseline,742,9.997
+Baseline,743,10.0
+Baseline,744,11.0033
+Baseline,745,9.9995
+Baseline,746,9.9992
+Baseline,747,10.003
+Baseline,748,8.9988
+Baseline,749,11.0016
+Baseline,750,9.9971
+Baseline,751,9.9973
+Baseline,752,9.0025
+Baseline,753,9.9976
+Baseline,754,9.0035
+Baseline,755,10.9981
+Baseline,756,10.0
+Baseline,757,10.0045
+Baseline,758,10.9987
+Baseline,759,9.998
+Baseline,760,9.0132
+Baseline,761,11.0106
+Baseline,762,8.9895
+Baseline,763,10.0039
+Baseline,764,9.9994
+Baseline,765,9.9997
+Baseline,766,11.0005
+Baseline,767,9.9979
+Baseline,768,9.0017
+Baseline,769,11.0067
+Baseline,770,9.9937
+Baseline,771,9.997
+Baseline,772,14.0012
+Baseline,773,10.9924
+Baseline,774,8.9968
+Baseline,775,10.0041
+Baseline,776,8.9975
+Baseline,777,8.9993
+Baseline,778,10.01
+Baseline,779,8.991
+Baseline,780,10.0089
+Baseline,781,10.9897
+Baseline,782,11.0006
+Baseline,783,9.0051
+Baseline,784,9.9949
+Baseline,785,10.0109
+Baseline,786,8.9932
+Baseline,787,8.007
+Baseline,788,9.9927
+Baseline,789,10.0114
+Baseline,790,8.9845
+Baseline,791,9.0021
+Baseline,792,8.0139
+Baseline,793,9.004
+Baseline,794,7.9962
+Baseline,795,10.0046
+Baseline,796,11.005
+Baseline,797,7.9907
+Baseline,798,10.9997
+Baseline,799,7.0156
+Baseline,800,8.9875
+Baseline,801,7.0112
+Baseline,802,8.9871
+Baseline,803,8.0003
+Baseline,804,9.0011
+Baseline,805,11.0062
+Baseline,806,9.9906
+Baseline,807,9.0
+Baseline,808,9.01
+Baseline,809,8.9995
+Baseline,810,9.9972
+Baseline,811,9.9971
+Baseline,812,8.9962
+Baseline,813,8.0018
+Baseline,814,10.0039
+Baseline,815,9.0039
+Baseline,816,10.995
+Baseline,817,8.995
+Baseline,818,9.0099
+Baseline,819,8.9916
+Baseline,820,9.9976
+Baseline,821,10.0032
+Baseline,822,9.0219
+Baseline,823,9.9766
+Baseline,824,9.0095
+Baseline,825,10.9901
+Baseline,826,10.0015
+Baseline,827,8.0006
+Baseline,828,8.9977
+Baseline,829,9.0013
+Baseline,830,10.0016
+Baseline,831,9.0001
+Baseline,832,9.9977
+Baseline,833,9.0025
+Baseline,834,9.9993
+Baseline,835,8.9987
+Aruco3,0,4.9339
+Aruco3,1,6.0007
+Aruco3,2,5.9873
+Aruco3,3,6.0157
+Aruco3,4,5.9905
+Aruco3,5,7.0019
+Aruco3,6,6.0007
+Aruco3,7,6.9958
+Aruco3,8,4.99
+Aruco3,9,4.9989
+Aruco3,10,4.9999
+Aruco3,11,5.0041
+Aruco3,12,4.9992
+Aruco3,13,5.9964
+Aruco3,14,6.0007
+Aruco3,15,6.003
+Aruco3,16,5.9973
+Aruco3,17,5.0043
+Aruco3,18,5.996
+Aruco3,19,5.0001
+Aruco3,20,5.9991
+Aruco3,21,4.0016
+Aruco3,22,5.9994
+Aruco3,23,5.0
+Aruco3,24,4.9979
+Aruco3,25,5.0014
+Aruco3,26,4.9995
+Aruco3,27,5.0002
+Aruco3,28,6.0224
+Aruco3,29,5.9885
+Aruco3,30,3.9914
+Aruco3,31,4.7231
+Aruco3,32,7.0534
+Aruco3,33,5.002
+Aruco3,34,4.9955
+Aruco3,35,6.0007
+Aruco3,36,5.0097
+Aruco3,37,5.0044
+Aruco3,38,5.9974
+Aruco3,39,5.0001
+Aruco3,40,5.0031
+Aruco3,41,5.0005
+Aruco3,42,5.9953
+Aruco3,43,4.9905
+Aruco3,44,7.0075
+Aruco3,45,5.9941
+Aruco3,46,5.0187
+Aruco3,47,5.9777
+Aruco3,48,4.0002
+Aruco3,49,5.0152
+Aruco3,50,5.0027
+Aruco3,51,4.9974
+Aruco3,52,5.0026
+Aruco3,53,6.0039
+Aruco3,54,4.9843
+Aruco3,55,4.9958
+Aruco3,56,6.0199
+Aruco3,57,6.0
+Aruco3,58,4.9792
+Aruco3,59,6.0209
+Aruco3,60,5.9892
+Aruco3,61,5.0057
+Aruco3,62,5.9956
+Aruco3,63,5.9988
+Aruco3,64,4.9902
+Aruco3,65,3.9988
+Aruco3,66,5.0022
+Aruco3,67,3.9987
+Aruco3,68,5.0026
+Aruco3,69,4.9976
+Aruco3,70,5.0
+Aruco3,71,5.9996
+Aruco3,72,5.0026
+Aruco3,73,4.9959
+Aruco3,74,4.0055
+Aruco3,75,5.9942
+Aruco3,76,5.0081
+Aruco3,77,4.9938
+Aruco3,78,5.9998
+Aruco3,79,6.0005
+Aruco3,80,4.9983
+Aruco3,81,4.0011
+Aruco3,82,7.0011
+Aruco3,83,5.0006
+Aruco3,84,4.9989
+Aruco3,85,7.001
+Aruco3,86,4.9991
+Aruco3,87,6.9982
+Aruco3,88,7.0014
+Aruco3,89,5.9996
+Aruco3,90,5.9991
+Aruco3,91,6.0017
+Aruco3,92,6.0001
+Aruco3,93,5.9999
+Aruco3,94,6.0023
+Aruco3,95,5.9985
+Aruco3,96,6.0015
+Aruco3,97,5.9981
+Aruco3,98,5.9998
+Aruco3,99,5.9993
+Aruco3,100,6.0017
+Aruco3,101,5.9965
+Aruco3,102,6.0001
+Aruco3,103,6.0054
+Aruco3,104,6.0009
+Aruco3,105,7.9963
+Aruco3,106,5.9993
+Aruco3,107,6.9995
+Aruco3,108,6.0006
+Aruco3,109,6.0
+Aruco3,110,6.9982
+Aruco3,111,6.9999
+Aruco3,112,7.0005
+Aruco3,113,6.0026
+Aruco3,114,5.9982
+Aruco3,115,6.999
+Aruco3,116,6.0024
+Aruco3,117,6.999
+Aruco3,118,5.9996
+Aruco3,119,8.0009
+Aruco3,120,7.9984
+Aruco3,121,6.9994
+Aruco3,122,8.0018
+Aruco3,123,7.0018
+Aruco3,124,7.0018
+Aruco3,125,6.9946
+Aruco3,126,7.0033
+Aruco3,127,6.9974
+Aruco3,128,8.0013
+Aruco3,129,6.9989
+Aruco3,130,8.9991
+Aruco3,131,7.0012
+Aruco3,132,8.0061
+Aruco3,133,7.9966
+Aruco3,134,6.5087
+Aruco3,135,6.0081
+Aruco3,136,5.998
+Aruco3,137,6.9987
+Aruco3,138,4.0003
+Aruco3,139,2.9996
+Aruco3,140,3.0
+Aruco3,141,3.0003
+Aruco3,142,2.0017
+Aruco3,143,1.9995
+Aruco3,144,6.0001
+Aruco3,145,3.9991
+Aruco3,146,1.0011
+Aruco3,147,6.0001
+Aruco3,148,3.9982
+Aruco3,149,18.0458
+Aruco3,150,15.5064
+Aruco3,151,16.0016
+Aruco3,152,17.0083
+Aruco3,153,14.9956
+Aruco3,154,14.0213
+Aruco3,155,14.0023
+Aruco3,156,14.0468
+Aruco3,157,15.0025
+Aruco3,158,17.9766
+Aruco3,159,4.508
+Aruco3,160,9.0015
+Aruco3,161,13.0008
+Aruco3,162,7.9996
+Aruco3,163,32.1347
+Aruco3,164,8.997
+Aruco3,165,23.0046
+Aruco3,166,22.9973
+Aruco3,167,8.0007
+Aruco3,168,10.0003
+Aruco3,169,9.0027
+Aruco3,170,7.0006
+Aruco3,171,6.997
+Aruco3,172,4.9999
+Aruco3,173,7.9988
+Aruco3,174,6.0045
+Aruco3,175,5.9959
+Aruco3,176,5.9966
+Aruco3,177,6.0045
+Aruco3,178,4.9992
+Aruco3,179,6.0005
+Aruco3,180,5.999
+Aruco3,181,5.0005
+Aruco3,182,9.7843
+Aruco3,183,10.9211
+Aruco3,184,12.0019
+Aruco3,185,10.0006
+Aruco3,186,8.5401
+Aruco3,187,9.0044
+Aruco3,188,5.3852
+Aruco3,189,5.0078
+Aruco3,190,4.0003
+Aruco3,191,3.9997
+Aruco3,192,4.417
+Aruco3,193,5.0029
+Aruco3,194,4.9971
+Aruco3,195,6.0019
+Aruco3,196,5.0018
+Aruco3,197,3.9955
+Aruco3,198,4.0034
+Aruco3,199,4.0041
+Aruco3,200,4.9936
+Aruco3,201,4.0016
+Aruco3,202,3.9994
+Aruco3,203,3.9991
+Aruco3,204,5.0006
+Aruco3,205,4.0041
+Aruco3,206,3.9993
+Aruco3,207,5.0046
+Aruco3,208,3.997
+Aruco3,209,4.9986
+Aruco3,210,3.9992
+Aruco3,211,4.0074
+Aruco3,212,3.9926
+Aruco3,213,4.0017
+Aruco3,214,4.0008
+Aruco3,215,5.0023
+Aruco3,216,4.005
+Aruco3,217,3.9928
+Aruco3,218,6.9984
+Aruco3,219,6.0038
+Aruco3,220,5.9973
+Aruco3,221,6.0076
+Aruco3,222,4.9945
+Aruco3,223,4.9991
+Aruco3,224,5.0
+Aruco3,225,7.001
+Aruco3,226,4.0002
+Aruco3,227,3.9965
+Aruco3,228,6.0025
+Aruco3,229,3.9975
+Aruco3,230,5.0015
+Aruco3,231,5.0029
+Aruco3,232,3.9968
+Aruco3,233,4.998
+Aruco3,234,5.0011
+Aruco3,235,4.9989
+Aruco3,236,3.0055
+Aruco3,237,3.9974
+Aruco3,238,4.9972
+Aruco3,239,5.6815
+Aruco3,240,4.2665
+Aruco3,241,4.0086
+Aruco3,242,5.0008
+Aruco3,243,4.9974
+Aruco3,244,4.0012
+Aruco3,245,3.9958
+Aruco3,246,5.0037
+Aruco3,247,3.9966
+Aruco3,248,3.0053
+Aruco3,249,3.9969
+Aruco3,250,5.003
+Aruco3,251,3.9948
+Aruco3,252,4.001
+Aruco3,253,3.9988
+Aruco3,254,5.0076
+Aruco3,255,2.9936
+Aruco3,256,6.0014
+Aruco3,257,3.0001
+Aruco3,258,5.0031
+Aruco3,259,3.999
+Aruco3,260,3.9964
+Aruco3,261,4.0001
+Aruco3,262,5.0008
+Aruco3,263,3.0026
+Aruco3,264,3.999
+Aruco3,265,4.0039
+Aruco3,266,4.9971
+Aruco3,267,4.5063
+Aruco3,268,4.0088
+Aruco3,269,3.5171
+Aruco3,270,6.9994
+Aruco3,271,3.5119
+Aruco3,272,4.0004
+Aruco3,273,4.5078
+Aruco3,274,5.0028
+Aruco3,275,3.996
+Aruco3,276,3.516
+Aruco3,277,3.0003
+Aruco3,278,5.5223
+Aruco3,279,3.9948
+Aruco3,280,3.998
+Aruco3,281,3.5164
+Aruco3,282,4.9952
+Aruco3,283,3.5128
+Aruco3,284,3.0207
+Aruco3,285,5.0038
+Aruco3,286,2.9964
+Aruco3,287,4.4245
+Aruco3,288,2.997
+Aruco3,289,4.5162
+Aruco3,290,5.0044
+Aruco3,291,3.9953
+Aruco3,292,4.1504
+Aruco3,293,3.9994
+Aruco3,294,4.5211
+Aruco3,295,4.5164
+Aruco3,296,3.0003
+Aruco3,297,3.5159
+Aruco3,298,4.0018
+Aruco3,299,3.9974
+Aruco3,300,3.1797
+Aruco3,301,2.9991
+Aruco3,302,3.0015
+Aruco3,303,5.5284
+Aruco3,304,3.0021
+Aruco3,305,2.996
+Aruco3,306,5.5197
+Aruco3,307,4.0036
+Aruco3,308,3.5068
+Aruco3,309,3.0041
+Aruco3,310,4.9992
+Aruco3,311,4.5153
+Aruco3,312,2.9961
+Aruco3,313,3.0011
+Aruco3,314,3.5176
+Aruco3,315,2.9984
+Aruco3,316,4.0065
+Aruco3,317,3.517
+Aruco3,318,3.0015
+Aruco3,319,2.999
+Aruco3,320,2.5094
+Aruco3,321,3.012
+Aruco3,322,3.9986
+Aruco3,323,2.5168
+Aruco3,324,3.5144
+Aruco3,325,1.9998
+Aruco3,326,3.0047
+Aruco3,327,3.5036
+Aruco3,328,3.0144
+Aruco3,329,2.9998
+Aruco3,330,3.0
+Aruco3,331,3.5236
+Aruco3,332,4.0032
+Aruco3,333,1.9992
+Aruco3,334,3.5081
+Aruco3,335,2.0001
+Aruco3,336,3.0026
+Aruco3,337,1.9977
+Aruco3,338,2.0
+Aruco3,339,3.2421
+Aruco3,340,2.9954
+Aruco3,341,2.0026
+Aruco3,342,2.5044
+Aruco3,343,3.0138
+Aruco3,344,1.9992
+Aruco3,345,3.0027
+Aruco3,346,1.0001
+Aruco3,347,3.519
+Aruco3,348,2.0011
+Aruco3,349,1.9997
+Aruco3,350,1.9983
+Aruco3,351,2.5116
+Aruco3,352,3.019
+Aruco3,353,1.9979
+Aruco3,354,3.0019
+Aruco3,355,2.9992
+Aruco3,356,2.5314
+Aruco3,357,1.9994
+Aruco3,358,1.9971
+Aruco3,359,3.0043
+Aruco3,360,1.5034
+Aruco3,361,3.0094
+Aruco3,362,2.0023
+Aruco3,363,1.9999
+Aruco3,364,1.9991
+Aruco3,365,1.5035
+Aruco3,366,2.0047
+Aruco3,367,3.0017
+Aruco3,368,2.001
+Aruco3,369,0.9982
+Aruco3,370,3.1913
+Aruco3,371,1.0062
+Aruco3,372,3.0001
+Aruco3,373,2.0003
+Aruco3,374,1.9997
+Aruco3,375,2.5172
+Aruco3,376,1.0023
+Aruco3,377,2.0056
+Aruco3,378,2.003
+Aruco3,379,1.9966
+Aruco3,380,2.0003
+Aruco3,381,1.5035
+Aruco3,382,2.0043
+Aruco3,383,2.0041
+Aruco3,384,1.9971
+Aruco3,385,1.999
+Aruco3,386,2.5101
+Aruco3,387,1.0032
+Aruco3,388,1.0006
+Aruco3,389,2.0005
+Aruco3,390,2.0005
+Aruco3,391,1.9989
+Aruco3,392,1.5116
+Aruco3,393,2.0086
+Aruco3,394,1.0
+Aruco3,395,1.9989
+Aruco3,396,2.0035
+Aruco3,397,0.998
+Aruco3,398,1.0011
+Aruco3,399,2.5168
+Aruco3,400,0.9999
+Aruco3,401,1.0024
+Aruco3,402,2.0003
+Aruco3,403,1.9958
+Aruco3,404,1.0012
+Aruco3,405,1.0005
+Aruco3,406,2.5192
+Aruco3,407,2.0096
+Aruco3,408,0.9995
+Aruco3,409,1.9994
+Aruco3,410,1.0008
+Aruco3,411,1.9966
+Aruco3,412,2.5216
+Aruco3,413,2.0132
+Aruco3,414,1.0094
+Aruco3,415,2.5283
+Aruco3,416,1.9979
+Aruco3,417,2.006
+Aruco3,418,1.5172
+Aruco3,419,2.0081
+Aruco3,420,1.0061
+Aruco3,421,0.9951
+Aruco3,422,3.0022
+Aruco3,423,2.5049
+Aruco3,424,1.0131
+Aruco3,425,2.0098
+Aruco3,426,1.0027
+Aruco3,427,0.9973
+Aruco3,428,2.0015
+Aruco3,429,0.9983
+Aruco3,430,1.0006
+Aruco3,431,1.511
+Aruco3,432,2.019
+Aruco3,433,3.0079
+Aruco3,434,0.9948
+Aruco3,435,1.0059
+Aruco3,436,0.9974
+Aruco3,437,1.0028
+Aruco3,438,2.5466
+Aruco3,439,0.9994
+Aruco3,440,0.9981
+Aruco3,441,1.0037
+Aruco3,442,0.9976
+Aruco3,443,0.9989
+Aruco3,444,2.0032
+Aruco3,445,1.002
+Aruco3,446,1.5107
+Aruco3,447,2.0108
+Aruco3,448,0.9999
+Aruco3,449,0.9961
+Aruco3,450,1.0044
+Aruco3,451,0.999
+Aruco3,452,2.0019
+Aruco3,453,0.0
+Aruco3,454,0.9986
+Aruco3,455,0.9971
+Aruco3,456,1.5137
+Aruco3,457,1.0122
+Aruco3,458,0.998
+Aruco3,459,2.0006
+Aruco3,460,0.9999
+Aruco3,461,0.9982
+Aruco3,462,1.0079
+Aruco3,463,0.9978
+Aruco3,464,0.9986
+Aruco3,465,0.9963
+Aruco3,466,0.0
+Aruco3,467,1.0957
+Aruco3,468,1.0093
+Aruco3,469,0.9994
+Aruco3,470,0.9986
+Aruco3,471,0.0
+Aruco3,472,1.0025
+Aruco3,473,0.9988
+Aruco3,474,0.9993
+Aruco3,475,0.9979
+Aruco3,476,1.0037
+Aruco3,477,1.5095
+Aruco3,478,1.0117
+Aruco3,479,1.0124
+Aruco3,480,1.0029
+Aruco3,481,0.0
+Aruco3,482,0.9941
+Aruco3,483,1.0046
+Aruco3,484,0.9966
+Aruco3,485,1.0003
+Aruco3,486,1.0029
+Aruco3,487,0.0
+Aruco3,488,1.0018
+Aruco3,489,0.0
+Aruco3,490,1.5066
+Aruco3,491,0.0
+Aruco3,492,1.0082
+Aruco3,493,1.0079
+Aruco3,494,0.0
+Aruco3,495,2.0013
+Aruco3,496,0.9986
+Aruco3,497,1.0022
+Aruco3,498,0.9977
+Aruco3,499,0.0
+Aruco3,500,1.0003
+Aruco3,501,0.0
+Aruco3,502,1.5078
+Aruco3,503,0.0
+Aruco3,504,0.0
+Aruco3,505,1.5275
+Aruco3,506,1.014
+Aruco3,507,0.0
+Aruco3,508,0.9939
+Aruco3,509,0.0
+Aruco3,510,1.0009
+Aruco3,511,0.0
+Aruco3,512,1.0012
+Aruco3,513,0.0
+Aruco3,514,1.0033
+Aruco3,515,0.0
+Aruco3,516,0.0
+Aruco3,517,1.0017
+Aruco3,518,0.9972
+Aruco3,519,0.0
+Aruco3,520,0.9963
+Aruco3,521,1.0018
+Aruco3,522,0.0
+Aruco3,523,0.0
+Aruco3,524,1.5087
+Aruco3,525,1.0113
+Aruco3,526,1.0142
+Aruco3,527,0.9945
+Aruco3,528,0.0
+Aruco3,529,1.0018
+Aruco3,530,0.9986
+Aruco3,531,1.0003
+Aruco3,532,0.0
+Aruco3,533,0.9996
+Aruco3,534,0.0
+Aruco3,535,0.9988
+Aruco3,536,0.0
+Aruco3,537,0.9999
+Aruco3,538,0.0
+Aruco3,539,0.0
+Aruco3,540,1.5061
+Aruco3,541,1.0066
+Aruco3,542,0.0
+Aruco3,543,1.0098
+Aruco3,544,0.9967
+Aruco3,545,0.0
+Aruco3,546,1.0002
+Aruco3,547,0.0
+Aruco3,548,1.0038
+Aruco3,549,0.9971
+Aruco3,550,1.0013
+Aruco3,551,0.9987
+Aruco3,552,1.0011
+Aruco3,553,0.0
+Aruco3,554,1.0039
+Aruco3,555,0.9953
+Aruco3,556,0.0
+Aruco3,557,1.4168
+Aruco3,558,0.0
+Aruco3,559,1.0004
+Aruco3,560,0.0
+Aruco3,561,1.002
+Aruco3,562,0.0
+Aruco3,563,1.0032
+Aruco3,564,0.0
+Aruco3,565,1.0054
+Aruco3,566,0.0
+Aruco3,567,0.9979
+Aruco3,568,0.9936
+Aruco3,569,0.0
+Aruco3,570,0.0
+Aruco3,571,1.0084
+Aruco3,572,0.0
+Aruco3,573,1.0062
+Aruco3,574,0.0
+Aruco3,575,1.2009
+Aruco3,576,1.5192
+Aruco3,577,0.5117
+Aruco3,578,1.0105
+Aruco3,579,1.0118
+Aruco3,580,0.0
+Aruco3,581,1.0072
+Aruco3,582,0.0
+Aruco3,583,1.0024
+Aruco3,584,0.9968
+Aruco3,585,0.0
+Aruco3,586,1.0014
+Aruco3,587,0.0
+Aruco3,588,1.5073
+Aruco3,589,0.0
+Aruco3,590,1.0109
+Aruco3,591,1.0091
+Aruco3,592,1.0
+Aruco3,593,0.999
+Aruco3,594,0.9994
+Aruco3,595,0.0
+Aruco3,596,1.0009
+Aruco3,597,1.0006
+Aruco3,598,2.0032
+Aruco3,599,1.5098
+Aruco3,600,1.014
+Aruco3,601,0.9934
+Aruco3,602,1.0
+Aruco3,603,1.0003
+Aruco3,604,1.0001
+Aruco3,605,1.0006
+Aruco3,606,1.0009
+Aruco3,607,1.0024
+Aruco3,608,1.0006
+Aruco3,609,0.9958
+Aruco3,610,1.0009
+Aruco3,611,1.431
+Aruco3,612,0.9992
+Aruco3,613,2.0046
+Aruco3,614,0.996
+Aruco3,615,1.9984
+Aruco3,616,1.0034
+Aruco3,617,0.9974
+Aruco3,618,1.0005
+Aruco3,619,1.289
+Aruco3,620,1.9996
+Aruco3,621,0.9982
+Aruco3,622,1.0008
+Aruco3,623,1.0
+Aruco3,624,1.9983
+Aruco3,625,1.0068
+Aruco3,626,2.5279
+Aruco3,627,1.5151
+Aruco3,628,1.0114
+Aruco3,629,1.9973
+Aruco3,630,1.0034
+Aruco3,631,1.9996
+Aruco3,632,0.9979
+Aruco3,633,1.5041
+Aruco3,634,1.0076
+Aruco3,635,2.0039
+Aruco3,636,1.9993
+Aruco3,637,1.9968
+Aruco3,638,1.9988
+Aruco3,639,1.5124
+Aruco3,640,1.0028
+Aruco3,641,1.9953
+Aruco3,642,2.0033
+Aruco3,643,0.9967
+Aruco3,644,1.0014
+Aruco3,645,2.5242
+Aruco3,646,2.0127
+Aruco3,647,1.9944
+Aruco3,648,1.9995
+Aruco3,649,1.0002
+Aruco3,650,2.5079
+Aruco3,651,2.0155
+Aruco3,652,1.9984
+Aruco3,653,2.0023
+Aruco3,654,2.9995
+Aruco3,655,1.5066
+Aruco3,656,2.0092
+Aruco3,657,1.9993
+Aruco3,658,1.9984
+Aruco3,659,1.9995
+Aruco3,660,2.001
+Aruco3,661,3.0021
+Aruco3,662,1.9988
+Aruco3,663,1.9989
+Aruco3,664,1.999
+Aruco3,665,2.0001
+Aruco3,666,1.9993
+Aruco3,667,2.0005
+Aruco3,668,2.0003
+Aruco3,669,3.0033
+Aruco3,670,1.9965
+Aruco3,671,2.0047
+Aruco3,672,3.005
+Aruco3,673,2.0018
+Aruco3,674,1.9987
+Aruco3,675,3.001
+Aruco3,676,3.0033
+Aruco3,677,2.5049
+Aruco3,678,2.0053
+Aruco3,679,3.001
+Aruco3,680,1.9988
+Aruco3,681,2.9999
+Aruco3,682,3.0044
+Aruco3,683,1.9999
+Aruco3,684,2.9956
+Aruco3,685,2.0024
+Aruco3,686,2.9988
+Aruco3,687,2.0014
+Aruco3,688,1.9974
+Aruco3,689,4.0015
+Aruco3,690,1.9997
+Aruco3,691,2.9991
+Aruco3,692,2.9992
+Aruco3,693,3.002
+Aruco3,694,2.0028
+Aruco3,695,3.0003
+Aruco3,696,2.9965
+Aruco3,697,2.0
+Aruco3,698,3.0001
+Aruco3,699,3.9983
+Aruco3,700,3.0026
+Aruco3,701,2.9989
+Aruco3,702,1.9997
+Aruco3,703,2.9988
+Aruco3,704,3.0012
+Aruco3,705,2.9996
+Aruco3,706,3.003
+Aruco3,707,2.9992
+Aruco3,708,2.9988
+Aruco3,709,3.9997
+Aruco3,710,1.9994
+Aruco3,711,4.0029
+Aruco3,712,2.998
+Aruco3,713,2.9987
+Aruco3,714,3.0008
+Aruco3,715,3.0002
+Aruco3,716,2.0002
+Aruco3,717,4.0028
+Aruco3,718,2.999
+Aruco3,719,2.9994
+Aruco3,720,2.9973
+Aruco3,721,3.0015
+Aruco3,722,2.9995
+Aruco3,723,4.0006
+Aruco3,724,2.9999
+Aruco3,725,2.9986
+Aruco3,726,3.0005
+Aruco3,727,4.0015
+Aruco3,728,3.002
+Aruco3,729,2.9965
+Aruco3,730,4.001
+Aruco3,731,2.9986
+Aruco3,732,3.0014
+Aruco3,733,2.9993
+Aruco3,734,2.9992
+Aruco3,735,3.0
+Aruco3,736,3.001
+Aruco3,737,3.9999
+Aruco3,738,3.0026
+Aruco3,739,2.9976
+Aruco3,740,3.0033
+Aruco3,741,3.9981
+Aruco3,742,2.9978
+Aruco3,743,3.0018
+Aruco3,744,2.9982
+Aruco3,745,4.0004
+Aruco3,746,3.0027
+Aruco3,747,3.9977
+Aruco3,748,4.0044
+Aruco3,749,2.9998
+Aruco3,750,2.9944
+Aruco3,751,3.0005
+Aruco3,752,3.0058
+Aruco3,753,3.9954
+Aruco3,754,3.0024
+Aruco3,755,3.9981
+Aruco3,756,2.9984
+Aruco3,757,4.0002
+Aruco3,758,4.0018
+Aruco3,759,3.0008
+Aruco3,760,2.9984
+Aruco3,761,2.9988
+Aruco3,762,4.0007
+Aruco3,763,4.0006
+Aruco3,764,2.999
+Aruco3,765,3.0014
+Aruco3,766,4.0002
+Aruco3,767,5.0048
+Aruco3,768,2.9951
+Aruco3,769,2.9991
+Aruco3,770,4.0007
+Aruco3,771,3.9986
+Aruco3,772,4.0
+Aruco3,773,3.0016
+Aruco3,774,2.9995
+Aruco3,775,2.9989
+Aruco3,776,5.0035
+Aruco3,777,3.9959
+Aruco3,778,3.0045
+Aruco3,779,2.9967
+Aruco3,780,2.9988
+Aruco3,781,4.0089
+Aruco3,782,3.991
+Aruco3,783,3.0012
+Aruco3,784,4.0007
+Aruco3,785,4.0023
+Aruco3,786,3.9967
+Aruco3,787,4.9996
+Aruco3,788,2.9997
+Aruco3,789,4.0019
+Aruco3,790,3.0032
+Aruco3,791,2.9962
+Aruco3,792,3.9992
+Aruco3,793,3.003
+Aruco3,794,3.9981
+Aruco3,795,3.9999
+Aruco3,796,3.999
+Aruco3,797,3.0014
+Aruco3,798,3.9978
+Aruco3,799,3.0037
+Aruco3,800,3.9993
+Aruco3,801,2.9975
+Aruco3,802,3.0022
+Aruco3,803,3.9982
+Aruco3,804,4.002
+Aruco3,805,3.0005
+Aruco3,806,3.9981
+Aruco3,807,3.0052
+Aruco3,808,3.9949
+Aruco3,809,4.0031
+Aruco3,810,2.9999
+Aruco3,811,3.9968
+Aruco3,812,2.9989
+Aruco3,813,4.0074
+Aruco3,814,2.9937
+Aruco3,815,3.999
+Aruco3,816,4.002
+Aruco3,817,3.0009
+Aruco3,818,4.0002
+Aruco3,819,3.9984
+Aruco3,820,2.9984
+Aruco3,821,4.0005
+Aruco3,822,3.0024
+Aruco3,823,4.0033
+Aruco3,824,2.9987
+Aruco3,825,3.9994
+Aruco3,826,3.9994
+Aruco3,827,3.9975
+Aruco3,828,2.9998
+Aruco3,829,5.0035
+Aruco3,830,3.9962
+Aruco3,831,4.0027
+Aruco3,832,2.9935
+Aruco3,833,5.0011
+Aruco3,834,3.0007
+Aruco3,835,4.9999
+Cropped,0,4.9995
+Cropped,1,5.7303
+Cropped,2,7.178
+Cropped,3,5.9964
+Cropped,4,4.005
+Cropped,5,4.9984
+Cropped,6,4.0018
+Cropped,7,5.9979
+Cropped,8,4.9975
+Cropped,9,5.0007
+Cropped,10,5.9992
+Cropped,11,5.0022
+Cropped,12,5.0033
+Cropped,13,4.9964
+Cropped,14,4.9987
+Cropped,15,4.9987
+Cropped,16,4.0082
+Cropped,17,4.0016
+Cropped,18,4.9992
+Cropped,19,4.9917
+Cropped,20,3.9996
+Cropped,21,5.0006
+Cropped,22,5.0081
+Cropped,23,3.9954
+Cropped,24,3.9995
+Cropped,25,4.9972
+Cropped,26,5.0003
+Cropped,27,3.9999
+Cropped,28,6.0
+Cropped,29,5.0049
+Cropped,30,5.3696
+Cropped,31,4.0016
+Cropped,32,3.9968
+Cropped,33,5.0024
+Cropped,34,4.001
+Cropped,35,4.9971
+Cropped,36,4.0013
+Cropped,37,5.0026
+Cropped,38,3.9973
+Cropped,39,4.9996
+Cropped,40,5.0021
+Cropped,41,4.0016
+Cropped,42,4.996
+Cropped,43,4.9992
+Cropped,44,5.0047
+Cropped,45,4.9966
+Cropped,46,4.0042
+Cropped,47,5.9983
+Cropped,48,5.0003
+Cropped,49,4.9982
+Cropped,50,4.9996
+Cropped,51,4.0005
+Cropped,52,5.0002
+Cropped,53,3.9996
+Cropped,54,5.0008
+Cropped,55,5.9969
+Cropped,56,5.0015
+Cropped,57,5.0014
+Cropped,58,5.0018
+Cropped,59,4.9964
+Cropped,60,4.9999
+Cropped,61,4.004
+Cropped,62,4.0027
+Cropped,63,4.9965
+Cropped,64,4.0008
+Cropped,65,5.9994
+Cropped,66,5.0008
+Cropped,67,4.0022
+Cropped,68,5.9984
+Cropped,69,3.998
+Cropped,70,5.0001
+Cropped,71,4.0035
+Cropped,72,5.9995
+Cropped,73,4.9992
+Cropped,74,3.9994
+Cropped,75,4.9995
+Cropped,76,6.0002
+Cropped,77,4.0014
+Cropped,78,5.997
+Cropped,79,5.0042
+Cropped,80,4.9971
+Cropped,81,5.0006
+Cropped,82,5.0003
+Cropped,83,5.0024
+Cropped,84,5.0045
+Cropped,85,4.9915
+Cropped,86,4.9994
+Cropped,87,6.001
+Cropped,88,5.0007
+Cropped,89,4.9991
+Cropped,90,5.0013
+Cropped,91,6.0005
+Cropped,92,6.9982
+Cropped,93,5.0
+Cropped,94,6.001
+Cropped,95,4.9985
+Cropped,96,7.0012
+Cropped,97,4.9988
+Cropped,98,6.0005
+Cropped,99,6.0027
+Cropped,100,5.9986
+Cropped,101,6.999
+Cropped,102,5.9997
+Cropped,103,6.0009
+Cropped,104,6.0007
+Cropped,105,5.999
+Cropped,106,6.0016
+Cropped,107,5.0059
+Cropped,108,5.9947
+Cropped,109,6.9971
+Cropped,110,6.004
+Cropped,111,5.9964
+Cropped,112,7.0064
+Cropped,113,6.994
+Cropped,114,5.9998
+Cropped,115,7.0001
+Cropped,116,5.9993
+Cropped,117,5.9999
+Cropped,118,6.9995
+Cropped,119,6.0251
+Cropped,120,7.9936
+Cropped,121,6.0039
+Cropped,122,6.9793
+Cropped,123,6.9992
+Cropped,124,6.0003
+Cropped,125,7.0004
+Cropped,126,6.9999
+Cropped,127,5.9986
+Cropped,128,8.0052
+Cropped,129,6.9988
+Cropped,130,7.0003
+Cropped,131,5.9967
+Cropped,132,5.9997
+Cropped,133,7.0011
+Cropped,134,5.9982
+Cropped,135,7.0002
+Cropped,136,6.0005
+Cropped,137,5.999
+Cropped,138,5.9998
+Cropped,139,6.001
+Cropped,140,6.0013
+Cropped,141,6.0004
+Cropped,142,2.0002
+Cropped,143,1.9989
+Cropped,144,12.005
+Cropped,145,8.998
+Cropped,146,2.0035
+Cropped,147,7.9924
+Cropped,148,8.0011
+Cropped,149,15.0013
+Cropped,150,13.9996
+Cropped,151,15.0015
+Cropped,152,14.0029
+Cropped,153,16.9962
+Cropped,154,12.9987
+Cropped,155,12.0051
+Cropped,156,12.9946
+Cropped,157,14.0022
+Cropped,158,12.999
+Cropped,159,14.9979
+Cropped,160,16.0004
+Cropped,161,13.9996
+Cropped,162,16.2602
+Cropped,163,12.5317
+Cropped,164,15.0002
+Cropped,165,16.0068
+Cropped,166,11.9929
+Cropped,167,13.0018
+Cropped,168,14.0003
+Cropped,169,11.998
+Cropped,170,13.0002
+Cropped,171,15.0
+Cropped,172,12.003
+Cropped,173,12.0033
+Cropped,174,11.9942
+Cropped,175,13.0018
+Cropped,176,12.0024
+Cropped,177,11.9958
+Cropped,178,12.0011
+Cropped,179,12.9991
+Cropped,180,10.9993
+Cropped,181,12.0021
+Cropped,182,12.0032
+Cropped,183,11.9965
+Cropped,184,10.9996
+Cropped,185,10.9983
+Cropped,186,10.0014
+Cropped,187,10.9993
+Cropped,188,10.9995
+Cropped,189,11.0047
+Cropped,190,10.9974
+Cropped,191,11.9985
+Cropped,192,11.7354
+Cropped,193,9.9939
+Cropped,194,11.0043
+Cropped,195,10.9964
+Cropped,196,12.0033
+Cropped,197,10.0
+Cropped,198,11.0007
+Cropped,199,10.0085
+Cropped,200,9.9987
+Cropped,201,9.9906
+Cropped,202,10.0025
+Cropped,203,10.0018
+Cropped,204,10.0004
+Cropped,205,10.0055
+Cropped,206,10.0025
+Cropped,207,9.9877
+Cropped,208,11.0259
+Cropped,209,9.9731
+Cropped,210,12.0039
+Cropped,211,8.9965
+Cropped,212,9.9996
+Cropped,213,10.0103
+Cropped,214,20.9912
+Cropped,215,14.0009
+Cropped,216,10.003
+Cropped,217,11.0001
+Cropped,218,10.9967
+Cropped,219,11.0007
+Cropped,220,10.9985
+Cropped,221,11.001
+Cropped,222,13.0036
+Cropped,223,25.9971
+Cropped,224,16.9976
+Cropped,225,14.0014
+Cropped,226,16.0019
+Cropped,227,14.0005
+Cropped,228,20.0031
+Cropped,229,11.9971
+Cropped,230,12.9983
+Cropped,231,11.0011
+Cropped,232,9.9955
+Cropped,233,9.9994
+Cropped,234,9.9999
+Cropped,235,10.0018
+Cropped,236,10.9988
+Cropped,237,9.9994
+Cropped,238,10.0025
+Cropped,239,11.0014
+Cropped,240,11.001
+Cropped,241,12.0067
+Cropped,242,10.9899
+Cropped,243,11.0
+Cropped,244,9.0099
+Cropped,245,10.9895
+Cropped,246,9.0096
+Cropped,247,9.9907
+Cropped,248,11.0001
+Cropped,249,10.0005
+Cropped,250,8.9994
+Cropped,251,10.0023
+Cropped,252,10.0008
+Cropped,253,9.9977
+Cropped,254,8.9985
+Cropped,255,11.0216
+Cropped,256,8.9802
+Cropped,257,10.0018
+Cropped,258,8.9975
+Cropped,259,10.0039
+Cropped,260,10.0011
+Cropped,261,9.3302
+Cropped,262,11.9905
+Cropped,263,7.0028
+Cropped,264,7.9947
+Cropped,265,9.0036
+Cropped,266,7.9979
+Cropped,267,7.9988
+Cropped,268,10.0108
+Cropped,269,8.9907
+Cropped,270,9.0046
+Cropped,271,10.9981
+Cropped,272,9.0014
+Cropped,273,8.9985
+Cropped,274,8.0089
+Cropped,275,10.9916
+Cropped,276,9.9989
+Cropped,277,8.9996
+Cropped,278,8.9976
+Cropped,279,9.0008
+Cropped,280,9.9992
+Cropped,281,9.003
+Cropped,282,8.9967
+Cropped,283,9.0006
+Cropped,284,9.0016
+Cropped,285,11.0054
+Cropped,286,10.9927
+Cropped,287,11.0102
+Cropped,288,10.9935
+Cropped,289,9.0003
+Cropped,290,9.9989
+Cropped,291,9.0001
+Cropped,292,8.9995
+Cropped,293,9.0008
+Cropped,294,8.9977
+Cropped,295,7.0171
+Cropped,296,7.9821
+Cropped,297,8.0033
+Cropped,298,8.0005
+Cropped,299,8.9994
+Cropped,300,9.9967
+Cropped,301,9.0021
+Cropped,302,10.0012
+Cropped,303,8.9989
+Cropped,304,10.0034
+Cropped,305,10.0003
+Cropped,306,9.9963
+Cropped,307,11.9991
+Cropped,308,9.0019
+Cropped,309,9.9962
+Cropped,310,10.0042
+Cropped,311,9.0
+Cropped,312,10.999
+Cropped,313,13.002
+Cropped,314,9.9963
+Cropped,315,11.0033
+Cropped,316,9.9993
+Cropped,317,10.0039
+Cropped,318,9.9925
+Cropped,319,8.9997
+Cropped,320,10.0021
+Cropped,321,9.0
+Cropped,322,8.2961
+Cropped,323,8.5441
+Cropped,324,8.9964
+Cropped,325,8.9989
+Cropped,326,9.0003
+Cropped,327,8.001
+Cropped,328,8.0013
+Cropped,329,10.0022
+Cropped,330,7.9953
+Cropped,331,9.0007
+Cropped,332,7.9994
+Cropped,333,9.0008
+Cropped,334,7.0032
+Cropped,335,8.9968
+Cropped,336,6.0004
+Cropped,337,7.0048
+Cropped,338,6.997
+Cropped,339,6.9979
+Cropped,340,9.001
+Cropped,341,7.9995
+Cropped,342,7.9991
+Cropped,343,8.0031
+Cropped,344,8.9972
+Cropped,345,8.9994
+Cropped,346,8.0024
+Cropped,347,8.0005
+Cropped,348,7.9977
+Cropped,349,9.0018
+Cropped,350,7.9982
+Cropped,351,8.003
+Cropped,352,7.9999
+Cropped,353,7.9996
+Cropped,354,8.9984
+Cropped,355,6.9983
+Cropped,356,8.0003
+Cropped,357,7.0001
+Cropped,358,8.0015
+Cropped,359,6.999
+Cropped,360,7.9993
+Cropped,361,7.001
+Cropped,362,7.005
+Cropped,363,6.9949
+Cropped,364,7.0018
+Cropped,365,7.9968
+Cropped,366,8.0001
+Cropped,367,7.0011
+Cropped,368,6.999
+Cropped,369,7.0027
+Cropped,370,7.0005
+Cropped,371,7.9981
+Cropped,372,5.9993
+Cropped,373,7.0011
+Cropped,374,6.9992
+Cropped,375,6.9999
+Cropped,376,9.0028
+Cropped,377,6.9968
+Cropped,378,7.0001
+Cropped,379,7.0003
+Cropped,380,7.0017
+Cropped,381,7.0005
+Cropped,382,7.0024
+Cropped,383,7.0006
+Cropped,384,5.9944
+Cropped,385,5.9994
+Cropped,386,7.0007
+Cropped,387,7.005
+Cropped,388,7.0129
+Cropped,389,6.9855
+Cropped,390,7.9995
+Cropped,391,7.0017
+Cropped,392,7.0061
+Cropped,393,6.9929
+Cropped,394,5.9967
+Cropped,395,7.0056
+Cropped,396,5.9951
+Cropped,397,8.0006
+Cropped,398,7.0087
+Cropped,399,6.0115
+Cropped,400,6.9814
+Cropped,401,6.0234
+Cropped,402,6.9845
+Cropped,403,6.9909
+Cropped,404,7.011
+Cropped,405,7.9878
+Cropped,406,7.0021
+Cropped,407,6.0113
+Cropped,408,8.9883
+Cropped,409,7.998
+Cropped,410,9.0098
+Cropped,411,6.993
+Cropped,412,8.0025
+Cropped,413,6.9963
+Cropped,414,7.0082
+Cropped,415,6.9949
+Cropped,416,6.997
+Cropped,417,8.0082
+Cropped,418,6.9895
+Cropped,419,7.0006
+Cropped,420,6.0031
+Cropped,421,5.9982
+Cropped,422,5.9998
+Cropped,423,6.0013
+Cropped,424,7.0006
+Cropped,425,7.0019
+Cropped,426,8.0026
+Cropped,427,5.9929
+Cropped,428,8.0234
+Cropped,429,6.9806
+Cropped,430,7.0052
+Cropped,431,6.0156
+Cropped,432,6.9774
+Cropped,433,7.0019
+Cropped,434,5.9963
+Cropped,435,7.0014
+Cropped,436,5.9991
+Cropped,437,6.0135
+Cropped,438,7.9878
+Cropped,439,6.0002
+Cropped,440,5.9961
+Cropped,441,6.0011
+Cropped,442,5.9996
+Cropped,443,6.0245
+Cropped,444,5.9971
+Cropped,445,7.009
+Cropped,446,5.974
+Cropped,447,5.9997
+Cropped,448,6.9983
+Cropped,449,5.0083
+Cropped,450,5.0044
+Cropped,451,5.9859
+Cropped,452,6.0019
+Cropped,453,5.0003
+Cropped,454,4.9997
+Cropped,455,5.0082
+Cropped,456,3.9882
+Cropped,457,5.0124
+Cropped,458,4.9912
+Cropped,459,5.0085
+Cropped,460,4.9924
+Cropped,461,4.0177
+Cropped,462,4.9853
+Cropped,463,3.9919
+Cropped,464,5.0174
+Cropped,465,5.9883
+Cropped,466,5.0106
+Cropped,467,5.9962
+Cropped,468,4.9884
+Cropped,469,5.0014
+Cropped,470,4.0132
+Cropped,471,4.99
+Cropped,472,2.9973
+Cropped,473,5.0131
+Cropped,474,4.9896
+Cropped,475,2.9993
+Cropped,476,4.0112
+Cropped,477,3.9852
+Cropped,478,4.0141
+Cropped,479,3.9874
+Cropped,480,4.0133
+Cropped,481,4.9879
+Cropped,482,3.9967
+Cropped,483,5.0037
+Cropped,484,3.9972
+Cropped,485,4.0134
+Cropped,486,4.0029
+Cropped,487,4.9836
+Cropped,488,5.0003
+Cropped,489,4.9996
+Cropped,490,5.0002
+Cropped,491,6.0029
+Cropped,492,4.009
+Cropped,493,4.0092
+Cropped,494,3.9906
+Cropped,495,4.0038
+Cropped,496,4.9847
+Cropped,497,5.0048
+Cropped,498,4.9956
+Cropped,499,5.0017
+Cropped,500,4.0006
+Cropped,501,3.0146
+Cropped,502,5.9856
+Cropped,503,4.0099
+Cropped,504,4.0035
+Cropped,505,4.0001
+Cropped,506,4.0044
+Cropped,507,3.9925
+Cropped,508,4.9868
+Cropped,509,4.0005
+Cropped,510,6.0023
+Cropped,511,6.0004
+Cropped,512,5.9992
+Cropped,513,4.9985
+Cropped,514,4.0091
+Cropped,515,4.0042
+Cropped,516,5.9853
+Cropped,517,4.0023
+Cropped,518,4.0106
+Cropped,519,3.988
+Cropped,520,5.0093
+Cropped,521,4.9951
+Cropped,522,3.9968
+Cropped,523,4.0104
+Cropped,524,4.9877
+Cropped,525,5.0212
+Cropped,526,4.979
+Cropped,527,5.0042
+Cropped,528,4.012
+Cropped,529,4.0047
+Cropped,530,4.9793
+Cropped,531,3.0197
+Cropped,532,4.9904
+Cropped,533,4.9898
+Cropped,534,4.0018
+Cropped,535,3.9986
+Cropped,536,6.0043
+Cropped,537,4.0062
+Cropped,538,4.0034
+Cropped,539,4.9877
+Cropped,540,5.0026
+Cropped,541,4.0102
+Cropped,542,3.9993
+Cropped,543,4.9847
+Cropped,544,4.7072
+Cropped,545,4.0332
+Cropped,546,4.0186
+Cropped,547,4.0149
+Cropped,548,4.9905
+Cropped,549,4.008
+Cropped,550,4.0028
+Cropped,551,5.0044
+Cropped,552,3.9783
+Cropped,553,4.0149
+Cropped,554,4.002
+Cropped,555,3.9991
+Cropped,556,5.3176
+Cropped,557,4.0204
+Cropped,558,4.9896
+Cropped,559,4.0011
+Cropped,560,4.003
+Cropped,561,3.9963
+Cropped,562,4.9949
+Cropped,563,3.0091
+Cropped,564,4.0015
+Cropped,565,3.9998
+Cropped,566,3.9844
+Cropped,567,4.0008
+Cropped,568,6.0034
+Cropped,569,4.0097
+Cropped,570,3.9865
+Cropped,571,4.0118
+Cropped,572,4.997
+Cropped,573,4.003
+Cropped,574,3.9978
+Cropped,575,4.0042
+Cropped,576,3.9896
+Cropped,577,3.9985
+Cropped,578,2.9964
+Cropped,579,5.0026
+Cropped,580,3.0081
+Cropped,581,3.9944
+Cropped,582,3.9981
+Cropped,583,4.0004
+Cropped,584,4.0132
+Cropped,585,3.9838
+Cropped,586,4.013
+Cropped,587,3.991
+Cropped,588,4.007
+Cropped,589,2.988
+Cropped,590,5.0222
+Cropped,591,5.0
+Cropped,592,4.9797
+Cropped,593,4.0001
+Cropped,594,4.0201
+Cropped,595,4.9778
+Cropped,596,4.0006
+Cropped,597,5.493
+Cropped,598,5.0738
+Cropped,599,5.018
+Cropped,600,5.9975
+Cropped,601,8.0112
+Cropped,602,5.9913
+Cropped,603,5.0015
+Cropped,604,5.0031
+Cropped,605,4.9953
+Cropped,606,5.9983
+Cropped,607,6.002
+Cropped,608,4.9995
+Cropped,609,6.0019
+Cropped,610,5.0109
+Cropped,611,5.9856
+Cropped,612,7.0038
+Cropped,613,4.9966
+Cropped,614,5.0036
+Cropped,615,4.9978
+Cropped,616,5.0013
+Cropped,617,5.0206
+Cropped,618,5.9785
+Cropped,619,4.9994
+Cropped,620,5.9996
+Cropped,621,5.0051
+Cropped,622,5.0071
+Cropped,623,5.99
+Cropped,624,5.0127
+Cropped,625,8.9879
+Cropped,626,5.0013
+Cropped,627,5.9982
+Cropped,628,4.9971
+Cropped,629,7.0044
+Cropped,630,5.9974
+Cropped,631,6.0197
+Cropped,632,5.9999
+Cropped,633,5.9924
+Cropped,634,6.9896
+Cropped,635,5.9963
+Cropped,636,6.0058
+Cropped,637,5.9978
+Cropped,638,6.9998
+Cropped,639,6.0157
+Cropped,640,5.9984
+Cropped,641,6.7623
+Cropped,642,6.9925
+Cropped,643,5.9971
+Cropped,644,7.003
+Cropped,645,5.9976
+Cropped,646,7.0207
+Cropped,647,6.9828
+Cropped,648,7.0032
+Cropped,649,5.9938
+Cropped,650,6.9998
+Cropped,651,8.0056
+Cropped,652,8.9964
+Cropped,653,7.0004
+Cropped,654,6.0133
+Cropped,655,7.9893
+Cropped,656,6.9951
+Cropped,657,7.0025
+Cropped,658,6.9983
+Cropped,659,8.9982
+Cropped,660,7.9993
+Cropped,661,7.0007
+Cropped,662,8.0002
+Cropped,663,7.0014
+Cropped,664,8.0015
+Cropped,665,7.9966
+Cropped,666,8.0124
+Cropped,667,7.9915
+Cropped,668,8.0014
+Cropped,669,6.9957
+Cropped,670,7.0002
+Cropped,671,8.0201
+Cropped,672,6.9818
+Cropped,673,7.9976
+Cropped,674,7.9998
+Cropped,675,8.999
+Cropped,676,7.0028
+Cropped,677,8.0021
+Cropped,678,7.9954
+Cropped,679,9.0002
+Cropped,680,8.0003
+Cropped,681,8.0145
+Cropped,682,7.986
+Cropped,683,9.0033
+Cropped,684,7.9958
+Cropped,685,7.9999
+Cropped,686,8.0008
+Cropped,687,7.9989
+Cropped,688,8.002
+Cropped,689,7.9992
+Cropped,690,8.0008
+Cropped,691,9.9985
+Cropped,692,8.9991
+Cropped,693,9.0002
+Cropped,694,11.0044
+Cropped,695,10.9966
+Cropped,696,8.0015
+Cropped,697,8.9974
+Cropped,698,10.0004
+Cropped,699,9.0007
+Cropped,700,10.0043
+Cropped,701,8.9955
+Cropped,702,8.9992
+Cropped,703,9.001
+Cropped,704,10.0
+Cropped,705,10.9996
+Cropped,706,9.9996
+Cropped,707,10.0036
+Cropped,708,10.0025
+Cropped,709,8.9948
+Cropped,710,8.9991
+Cropped,711,7.9995
+Cropped,712,11.0012
+Cropped,713,8.9991
+Cropped,714,9.0004
+Cropped,715,9.0009
+Cropped,716,8.9991
+Cropped,717,10.0018
+Cropped,718,10.0013
+Cropped,719,8.9974
+Cropped,720,8.0005
+Cropped,721,10.0002
+Cropped,722,8.0001
+Cropped,723,8.9993
+Cropped,724,8.9991
+Cropped,725,9.0034
+Cropped,726,8.9968
+Cropped,727,8.0034
+Cropped,728,9.9978
+Cropped,729,9.9989
+Cropped,730,8.9992
+Cropped,731,9.0015
+Cropped,732,7.9996
+Cropped,733,10.9993
+Cropped,734,9.0
+Cropped,735,10.0015
+Cropped,736,8.9982
+Cropped,737,9.0096
+Cropped,738,9.9911
+Cropped,739,10.9994
+Cropped,740,8.0001
+Cropped,741,9.0003
+Cropped,742,8.9998
+Cropped,743,10.0009
+Cropped,744,10.0003
+Cropped,745,8.7174
+Cropped,746,10.0001
+Cropped,747,9.0008
+Cropped,748,9.0024
+Cropped,749,8.9981
+Cropped,750,8.9987
+Cropped,751,8.0146
+Cropped,752,9.9862
+Cropped,753,9.0099
+Cropped,754,7.9903
+Cropped,755,10.0005
+Cropped,756,8.9977
+Cropped,757,10.0013
+Cropped,758,10.002
+Cropped,759,8.9972
+Cropped,760,11.0001
+Cropped,761,7.9995
+Cropped,762,9.0026
+Cropped,763,8.9993
+Cropped,764,9.0002
+Cropped,765,9.0002
+Cropped,766,9.0006
+Cropped,767,7.9973
+Cropped,768,9.0031
+Cropped,769,7.9969
+Cropped,770,10.002
+Cropped,771,7.9979
+Cropped,772,9.0005
+Cropped,773,7.9994
+Cropped,774,9.0
+Cropped,775,7.0014
+Cropped,776,8.0027
+Cropped,777,7.9982
+Cropped,778,8.0
+Cropped,779,7.9987
+Cropped,780,9.9997
+Cropped,781,8.0044
+Cropped,782,9.999
+Cropped,783,7.9968
+Cropped,784,8.0006
+Cropped,785,9.0362
+Cropped,786,8.0174
+Cropped,787,8.0001
+Cropped,788,8.9843
+Cropped,789,7.9957
+Cropped,790,9.0007
+Cropped,791,7.9991
+Cropped,792,7.999
+Cropped,793,9.0041
+Cropped,794,8.0174
+Cropped,795,8.9901
+Cropped,796,7.9986
+Cropped,797,7.9951
+Cropped,798,7.0159
+Cropped,799,7.9812
+Cropped,800,9.0024
+Cropped,801,8.9998
+Cropped,802,6.997
+Cropped,803,8.9987
+Cropped,804,10.0044
+Cropped,805,7.9966
+Cropped,806,9.3774
+Cropped,807,7.6211
+Cropped,808,9.0013
+Cropped,809,8.009
+Cropped,810,9.9923
+Cropped,811,8.0006
+Cropped,812,7.9998
+Cropped,813,7.0014
+Cropped,814,10.017
+Cropped,815,7.9831
+Cropped,816,7.9981
+Cropped,817,7.0219
+Cropped,818,9.9797
+Cropped,819,7.9996
+Cropped,820,9.0026
+Cropped,821,7.9983
+Cropped,822,8.9949
+Cropped,823,8.0112
+Cropped,824,8.0107
+Cropped,825,0.0
+Cropped,826,10.2177
+Cropped,827,10.201
+Cropped,828,10.2237
+Cropped,829,10.3568
+Cropped,830,7.3616
+Cropped,831,2.8116
+Cropped,832,16.501
+Cropped,833,7.8073
+Cropped,834,11.7063
+Cropped,835,8.8698
+ROI,0,6.4284
+ROI,1,6.4425
+ROI,2,2.0067
+ROI,3,8.3839
+ROI,4,6.1629
+ROI,5,3.9918
+ROI,6,10.3832
+ROI,7,0.0
+ROI,8,10.3356
+ROI,9,6.0905
+ROI,10,3.9759
+ROI,11,10.062
+ROI,12,4.5041
+ROI,13,6.0174
+ROI,14,0.0
+ROI,15,10.3312
+ROI,16,6.8408
+ROI,17,5.2936
+ROI,18,6.2162
+ROI,19,4.0191
+ROI,20,10.1095
+ROI,21,4.3143
+ROI,22,3.9043
+ROI,23,10.0785
+ROI,24,0.0
+ROI,25,10.161
+ROI,26,4.7382
+ROI,27,5.6606
+ROI,28,0.0
+ROI,29,12.5217
+ROI,30,4.2395
+ROI,31,7.9427
+ROI,32,4.1795
+ROI,33,4.5089
+ROI,34,7.7458
+ROI,35,0.0
+ROI,36,10.0222
+ROI,37,5.4693
+ROI,38,4.9513
+ROI,39,4.4063
+ROI,40,5.6896
+ROI,41,0.0
+ROI,42,10.0426
+ROI,43,10.0462
+ROI,44,0.0
+ROI,45,10.4872
+ROI,46,6.8331
+ROI,47,4.759
+ROI,48,6.0353
+ROI,49,4.0275
+ROI,50,0.0
+ROI,51,8.1337
+ROI,52,0.0
+ROI,53,12.0674
+ROI,54,4.4817
+ROI,55,3.615
+ROI,56,10.0988
+ROI,57,4.628
+ROI,58,5.6557
+ROI,59,0.0
+ROI,60,10.1328
+ROI,61,0.0
+ROI,62,10.2616
+ROI,63,0.0
+ROI,64,14.3726
+ROI,65,4.1082
+ROI,66,4.6056
+ROI,67,3.4661
+ROI,68,6.5551
+ROI,69,5.5403
+ROI,70,3.0615
+ROI,71,5.1547
+ROI,72,6.2572
+ROI,73,6.0377
+ROI,74,5.0396
+ROI,75,5.0227
+ROI,76,5.099
+ROI,77,3.0418
+ROI,78,10.4718
+ROI,79,2.0193
+ROI,80,7.9133
+ROI,81,0.0
+ROI,82,10.5066
+ROI,83,8.0859
+ROI,84,4.0248
+ROI,85,8.3639
+ROI,86,6.4191
+ROI,87,5.9093
+ROI,88,4.1792
+ROI,89,4.0227
+ROI,90,10.2846
+ROI,91,4.6019
+ROI,92,5.4736
+ROI,93,10.206
+ROI,94,6.9972
+ROI,95,3.6796
+ROI,96,8.1532
+ROI,97,6.7134
+ROI,98,9.3412
+ROI,99,6.6875
+ROI,100,0.0
+ROI,101,13.0864
+ROI,102,2.9676
+ROI,103,11.281
+ROI,104,4.7334
+ROI,105,10.769
+ROI,106,7.3251
+ROI,107,6.0212
+ROI,108,8.1008
+ROI,109,8.1011
+ROI,110,7.2142
+ROI,111,0.3228
+ROI,112,13.8182
+ROI,113,4.0199
+ROI,114,12.3463
+ROI,115,8.1564
+ROI,116,7.9931
+ROI,117,1.0151
+ROI,118,11.3085
+ROI,119,8.3617
+ROI,120,12.8334
+ROI,121,5.7824
+ROI,122,10.4189
+ROI,123,8.0945
+ROI,124,6.0265
+ROI,125,3.0206
+ROI,126,10.064
+ROI,127,10.3566
+ROI,128,0.0
+ROI,129,14.8692
+ROI,130,8.8295
+ROI,131,5.843
+ROI,132,10.1353
+ROI,133,10.3998
+ROI,134,0.0
+ROI,135,12.8125
+ROI,136,10.2263
+ROI,137,6.5338
 ROI,138,0.0
-ROI,139,5.9293
+ROI,139,10.126
 ROI,140,0.0
-ROI,141,7.3989
-ROI,142,3.1808
-ROI,143,2.3368
-ROI,144,6.0246
-ROI,145,0.98
-ROI,146,1.9997
-ROI,147,7.004
-ROI,148,9.2221
-ROI,149,18.2555
-ROI,150,11.6508
-ROI,151,22.3343
-ROI,152,18.4102
-ROI,153,14.7244
-ROI,154,14.1476
-ROI,155,17.1041
-ROI,156,14.8982
-ROI,157,14.1798
+ROI,141,6.0631
+ROI,142,3.9585
+ROI,143,3.9442
+ROI,144,6.1258
+ROI,145,2.5338
+ROI,146,2.3468
+ROI,147,5.5227
+ROI,148,0.0
+ROI,149,19.5945
+ROI,150,10.1543
+ROI,151,20.3508
+ROI,152,26.1347
+ROI,153,16.285
+ROI,154,7.2825
+ROI,155,19.677
+ROI,156,10.3868
+ROI,157,20.4836
 ROI,158,0.0
 ROI,159,0.0
 ROI,160,0.0
 ROI,161,0.0
 ROI,162,0.0
-ROI,163,0.0
+ROI,163,19.4978
 ROI,164,0.0
-ROI,165,19.4674
-ROI,166,16.4779
-ROI,167,0.9978
+ROI,165,0.0
+ROI,166,0.0
+ROI,167,12.1892
 ROI,168,0.0
 ROI,169,0.0
-ROI,170,1.0016
+ROI,170,0.0
 ROI,171,0.0
 ROI,172,0.0
-ROI,173,0.9992
+ROI,173,0.0
 ROI,174,0.0
 ROI,175,0.0
-ROI,176,1.0017
+ROI,176,8.049
 ROI,177,0.0
 ROI,178,0.0
-ROI,179,0.9985
+ROI,179,0.0
 ROI,180,0.0
-ROI,181,0.0
-ROI,182,0.0
-ROI,183,0.9995
+ROI,181,1.9469
+ROI,182,0.8679
+ROI,183,0.0
 ROI,184,0.0
 ROI,185,0.0
-ROI,186,1.001
+ROI,186,0.0
 ROI,187,0.0
 ROI,188,0.0
-ROI,189,0.9996
-ROI,190,0.0
+ROI,189,0.0
+ROI,190,2.2329
 ROI,191,0.0
 ROI,192,0.0
-ROI,193,1.0011
+ROI,193,0.0
 ROI,194,0.0
 ROI,195,0.0
 ROI,196,0.0
@@ -207,7 +2715,7 @@ ROI,204,0.0
 ROI,205,0.0
 ROI,206,0.0
 ROI,207,0.0
-ROI,208,0.0
+ROI,208,5.4003
 ROI,209,0.0
 ROI,210,0.0
 ROI,211,0.0
@@ -227,7 +2735,7 @@ ROI,224,0.0
 ROI,225,0.0
 ROI,226,0.0
 ROI,227,0.0
-ROI,228,10.0451
+ROI,228,0.0
 ROI,229,0.0
 ROI,230,0.0
 ROI,231,0.0
@@ -240,7 +2748,7 @@ ROI,237,0.0
 ROI,238,0.0
 ROI,239,0.0
 ROI,240,0.0
-ROI,241,0.0
+ROI,241,8.608
 ROI,242,0.0
 ROI,243,0.0
 ROI,244,0.0
@@ -265,58 +2773,58 @@ ROI,262,0.0
 ROI,263,0.0
 ROI,264,0.0
 ROI,265,0.0
-ROI,266,10.4999
+ROI,266,0.0
 ROI,267,0.0
 ROI,268,0.0
-ROI,269,1.0014
+ROI,269,0.0
 ROI,270,0.0
 ROI,271,0.0
 ROI,272,0.0
-ROI,273,0.9972
+ROI,273,0.0
 ROI,274,0.0
 ROI,275,0.0
 ROI,276,0.0
-ROI,277,0.9995
+ROI,277,0.0
 ROI,278,0.0
 ROI,279,0.0
-ROI,280,1.0003
+ROI,280,0.0
 ROI,281,0.0
-ROI,282,0.0
-ROI,283,1.001
+ROI,282,10.2402
+ROI,283,0.0
 ROI,284,0.0
 ROI,285,0.0
 ROI,286,0.0
 ROI,287,0.0
-ROI,288,0.9992
+ROI,288,0.0
 ROI,289,0.0
 ROI,290,0.0
-ROI,291,1.0008
+ROI,291,0.0
 ROI,292,0.0
 ROI,293,0.0
 ROI,294,0.0
-ROI,295,0.9993
+ROI,295,0.0
 ROI,296,0.0
 ROI,297,0.0
 ROI,298,0.0
 ROI,299,0.0
-ROI,300,0.9996
-ROI,301,0.0
+ROI,300,0.0
+ROI,301,5.8995
 ROI,302,0.0
 ROI,303,0.0
 ROI,304,0.0
-ROI,305,1.0009
+ROI,305,0.0
 ROI,306,0.0
 ROI,307,0.0
 ROI,308,0.0
-ROI,309,0.9993
+ROI,309,0.0
 ROI,310,0.0
 ROI,311,0.0
 ROI,312,0.0
-ROI,313,0.9998
+ROI,313,0.0
 ROI,314,0.0
-ROI,315,0.473
-ROI,316,0.312
-ROI,317,0.4346
+ROI,315,0.0
+ROI,316,4.1888
+ROI,317,0.0
 ROI,318,0.0
 ROI,319,0.0
 ROI,320,0.0
@@ -351,13 +2859,13 @@ ROI,348,0.0
 ROI,349,0.0
 ROI,350,0.0
 ROI,351,0.0
-ROI,352,0.0
+ROI,352,10.1437
 ROI,353,0.0
 ROI,354,0.0
 ROI,355,0.0
 ROI,356,0.0
-ROI,357,10.0381
-ROI,358,0.0
+ROI,357,0.0
+ROI,358,2.2502
 ROI,359,0.0
 ROI,360,0.0
 ROI,361,0.0
@@ -379,219 +2887,219 @@ ROI,376,0.0
 ROI,377,0.0
 ROI,378,0.0
 ROI,379,0.0
-ROI,380,5.8915
-ROI,381,1.008
-ROI,382,0.0
+ROI,380,0.0
+ROI,381,0.0
+ROI,382,7.92
 ROI,383,0.0
 ROI,384,0.0
 ROI,385,0.0
-ROI,386,0.9944
+ROI,386,0.0
 ROI,387,0.0
 ROI,388,0.0
 ROI,389,0.0
-ROI,390,0.9997
+ROI,390,0.0
 ROI,391,0.0
 ROI,392,0.0
 ROI,393,0.0
-ROI,394,1.0008
+ROI,394,0.0
 ROI,395,0.0
 ROI,396,0.0
 ROI,397,0.0
-ROI,398,1.0012
+ROI,398,0.0
 ROI,399,0.0
 ROI,400,0.0
-ROI,401,0.9991
+ROI,401,0.0
 ROI,402,0.0
 ROI,403,0.0
 ROI,404,0.0
-ROI,405,0.9985
+ROI,405,0.0
 ROI,406,0.0
 ROI,407,0.0
-ROI,408,0.0
-ROI,409,1.0005
+ROI,408,9.0355
+ROI,409,0.0
 ROI,410,0.0
 ROI,411,0.0
 ROI,412,0.0
-ROI,413,1.0012
+ROI,413,0.0
 ROI,414,0.0
 ROI,415,0.0
-ROI,416,0.9998
+ROI,416,0.0
 ROI,417,0.0
 ROI,418,0.0
 ROI,419,0.0
-ROI,420,0.9996
+ROI,420,0.0
 ROI,421,0.0
 ROI,422,0.0
 ROI,423,0.0
-ROI,424,1.0003
+ROI,424,0.0
 ROI,425,0.0
-ROI,426,9.0005
+ROI,426,0.0
 ROI,427,0.0
-ROI,428,0.9992
+ROI,428,0.0
 ROI,429,0.0
 ROI,430,0.0
 ROI,431,0.0
-ROI,432,1.0004
+ROI,432,0.0
 ROI,433,0.0
 ROI,434,0.0
 ROI,435,0.0
-ROI,436,1.0001
+ROI,436,0.0
 ROI,437,0.0
-ROI,438,0.0
+ROI,438,10.3461
 ROI,439,0.0
-ROI,440,1.0001
+ROI,440,0.0
 ROI,441,0.0
 ROI,442,0.0
-ROI,443,7.648
+ROI,443,0.0
 ROI,444,0.0
-ROI,445,1.1086
-ROI,446,6.0018
-ROI,447,0.9984
+ROI,445,0.0
+ROI,446,0.0
+ROI,447,0.0
 ROI,448,0.0
-ROI,449,0.9988
+ROI,449,0.0
 ROI,450,0.0
-ROI,451,6.0008
+ROI,451,0.0
 ROI,452,0.0
-ROI,453,1.0002
+ROI,453,0.0
 ROI,454,0.0
-ROI,455,1.0024
+ROI,455,0.0
 ROI,456,0.0
-ROI,457,0.0
+ROI,457,6.3365
 ROI,458,0.0
 ROI,459,0.0
 ROI,460,0.0
 ROI,461,0.0
 ROI,462,0.0
-ROI,463,6.1472
+ROI,463,0.0
 ROI,464,0.0
 ROI,465,0.0
-ROI,466,6.0425
+ROI,466,0.0
 ROI,467,0.0
 ROI,468,0.0
-ROI,469,6.0039
+ROI,469,4.1117
 ROI,470,0.0
 ROI,471,0.0
-ROI,472,2.0079
+ROI,472,0.0
 ROI,473,0.0
 ROI,474,0.0
-ROI,475,10.0288
+ROI,475,0.0
 ROI,476,0.0
 ROI,477,0.0
 ROI,478,0.0
 ROI,479,0.0
-ROI,480,1.9245
+ROI,480,0.0
 ROI,481,0.0
 ROI,482,0.0
-ROI,483,4.9988
+ROI,483,0.0
 ROI,484,0.0
-ROI,485,4.1817
+ROI,485,0.0
 ROI,486,0.0
-ROI,487,8.4228
-ROI,488,1.0867
-ROI,489,4.0001
-ROI,490,1.0011
-ROI,491,4.9967
-ROI,492,1.0001
-ROI,493,4.8345
+ROI,487,0.0
+ROI,488,0.0
+ROI,489,0.0
+ROI,490,0.0
+ROI,491,0.0
+ROI,492,0.0
+ROI,493,0.0
 ROI,494,0.0
-ROI,495,4.8989
-ROI,496,0.0
-ROI,497,4.6317
+ROI,495,0.0
+ROI,496,10.1145
+ROI,497,0.0
 ROI,498,0.0
-ROI,499,7.3656
+ROI,499,2.239
 ROI,500,0.0
-ROI,501,4.9982
+ROI,501,0.0
 ROI,502,0.0
-ROI,503,5.0
+ROI,503,0.0
 ROI,504,0.0
-ROI,505,5.0003
-ROI,506,0.8835
-ROI,507,5.0637
+ROI,505,0.0
+ROI,506,0.0
+ROI,507,0.0
 ROI,508,0.0
-ROI,509,5.0035
+ROI,509,0.0
 ROI,510,0.0
-ROI,511,4.9988
-ROI,512,0.9987
-ROI,513,1.0055
+ROI,511,0.0
+ROI,512,0.0
+ROI,513,0.0
 ROI,514,0.0
 ROI,515,0.0
 ROI,516,0.0
-ROI,517,12.3702
+ROI,517,0.0
 ROI,518,0.0
-ROI,519,5.3238
+ROI,519,0.0
 ROI,520,0.0
-ROI,521,3.9572
-ROI,522,0.0
+ROI,521,0.0
+ROI,522,7.8708
 ROI,523,0.0
-ROI,524,7.2825
+ROI,524,0.0
 ROI,525,0.0
-ROI,526,5.6481
+ROI,526,0.0
 ROI,527,0.0
 ROI,528,0.0
-ROI,529,5.0005
-ROI,530,1.0015
-ROI,531,4.9989
+ROI,529,0.0
+ROI,530,0.0
+ROI,531,0.0
 ROI,532,0.0
 ROI,533,0.0
-ROI,534,0.9995
-ROI,535,4.4786
-ROI,536,5.0002
-ROI,537,0.9969
-ROI,538,5.0015
+ROI,534,0.0
+ROI,535,0.0
+ROI,536,0.0
+ROI,537,0.0
+ROI,538,0.0
 ROI,539,0.0
-ROI,540,4.0002
+ROI,540,0.0
 ROI,541,0.0
-ROI,542,5.8299
+ROI,542,0.0
 ROI,543,0.0
-ROI,544,5.2717
-ROI,545,0.9986
-ROI,546,4.875
+ROI,544,0.0
+ROI,545,0.0
+ROI,546,0.0
 ROI,547,0.0
-ROI,548,0.0
+ROI,548,8.7153
 ROI,549,0.0
-ROI,550,9.9514
-ROI,551,6.9767
-ROI,552,1.1357
-ROI,553,3.9999
-ROI,554,1.0007
-ROI,555,4.9975
+ROI,550,0.0
+ROI,551,0.0
+ROI,552,0.0
+ROI,553,0.0
+ROI,554,0.0
+ROI,555,0.0
 ROI,556,0.0
-ROI,557,5.3599
-ROI,558,1.0462
+ROI,557,0.0
+ROI,558,0.0
 ROI,559,0.0
 ROI,560,0.0
-ROI,561,5.0045
+ROI,561,0.0
 ROI,562,0.0
-ROI,563,5.0015
+ROI,563,0.0
 ROI,564,0.0
-ROI,565,5.7609
-ROI,566,0.739
-ROI,567,5.6209
+ROI,565,0.0
+ROI,566,0.0
+ROI,567,0.0
 ROI,568,0.0
-ROI,569,6.4579
+ROI,569,0.0
 ROI,570,0.0
-ROI,571,6.9876
-ROI,572,0.9989
-ROI,573,5.0013
-ROI,574,0.999
-ROI,575,4.0012
-ROI,576,4.9596
-ROI,577,0.0
-ROI,578,4.0021
+ROI,571,0.0
+ROI,572,0.0
+ROI,573,0.0
+ROI,574,0.0
+ROI,575,0.0
+ROI,576,0.0
+ROI,577,10.3856
+ROI,578,0.0
 ROI,579,0.0
-ROI,580,4.9979
+ROI,580,0.0
 ROI,581,0.0
-ROI,582,5.0001
+ROI,582,0.0
 ROI,583,0.0
 ROI,584,0.0
 ROI,585,0.0
-ROI,586,10.8295
-ROI,587,3.9987
-ROI,588,0.9996
+ROI,586,0.0
+ROI,587,0.0
+ROI,588,0.0
 ROI,589,0.0
 ROI,590,0.0
 ROI,591,0.0
-ROI,592,0.0
+ROI,592,6.3076
 ROI,593,0.0
 ROI,594,0.0
 ROI,595,0.0
@@ -603,9 +3111,9 @@ ROI,600,0.0
 ROI,601,0.0
 ROI,602,0.0
 ROI,603,0.0
-ROI,604,0.0
+ROI,604,3.9086
 ROI,605,0.0
-ROI,606,9.5679
+ROI,606,0.0
 ROI,607,0.0
 ROI,608,0.0
 ROI,609,0.0
@@ -627,38 +3135,38 @@ ROI,624,0.0
 ROI,625,0.0
 ROI,626,0.0
 ROI,627,0.0
-ROI,628,6.8145
+ROI,628,10.0803
 ROI,629,0.0
-ROI,630,1.0081
+ROI,630,0.0
 ROI,631,0.0
 ROI,632,0.0
 ROI,633,0.0
-ROI,634,0.9993
+ROI,634,0.0
 ROI,635,0.0
-ROI,636,0.0
+ROI,636,2.6364
 ROI,637,0.0
-ROI,638,0.9997
+ROI,638,0.0
 ROI,639,0.0
 ROI,640,0.0
-ROI,641,0.9999
+ROI,641,0.0
 ROI,642,0.0
 ROI,643,0.0
 ROI,644,0.0
-ROI,645,0.9998
+ROI,645,0.0
 ROI,646,0.0
 ROI,647,0.0
 ROI,648,0.0
-ROI,649,1.0005
+ROI,649,0.0
 ROI,650,0.0
 ROI,651,0.0
 ROI,652,0.0
-ROI,653,0.9989
+ROI,653,0.0
 ROI,654,0.0
 ROI,655,0.0
 ROI,656,0.0
-ROI,657,1.0003
-ROI,658,0.0
-ROI,659,1.0031
+ROI,657,0.0
+ROI,658,7.8442
+ROI,659,0.0
 ROI,660,0.0
 ROI,661,0.0
 ROI,662,0.0
@@ -686,134 +3194,134 @@ ROI,683,0.0
 ROI,684,0.0
 ROI,685,0.0
 ROI,686,0.0
-ROI,687,7.6149
-ROI,688,0.0
+ROI,687,8.7896
+ROI,688,0.4119
 ROI,689,0.0
 ROI,690,0.0
 ROI,691,0.0
-ROI,692,1.2165
+ROI,692,0.0
 ROI,693,0.0
 ROI,694,0.0
 ROI,695,0.0
-ROI,696,0.9981
+ROI,696,0.0
 ROI,697,0.0
 ROI,698,0.0
 ROI,699,0.0
 ROI,700,0.0
-ROI,701,0.9997
+ROI,701,0.0
 ROI,702,0.0
 ROI,703,0.0
-ROI,704,1.0001
+ROI,704,0.0
 ROI,705,0.0
-ROI,706,1.0006
+ROI,706,0.0
 ROI,707,0.0
 ROI,708,0.0
-ROI,709,0.0
+ROI,709,7.8053
 ROI,710,0.0
-ROI,711,1.0009
+ROI,711,0.0
 ROI,712,0.0
-ROI,713,0.9989
+ROI,713,0.0
 ROI,714,0.0
 ROI,715,0.0
 ROI,716,0.0
-ROI,717,1.0007
+ROI,717,0.0
 ROI,718,0.0
 ROI,719,0.0
 ROI,720,0.0
-ROI,721,0.9993
+ROI,721,0.0
 ROI,722,0.0
 ROI,723,0.0
-ROI,724,0.9993
+ROI,724,0.0
 ROI,725,0.0
-ROI,726,1.0011
+ROI,726,0.0
 ROI,727,0.0
 ROI,728,0.0
 ROI,729,0.0
 ROI,730,0.0
 ROI,731,0.0
-ROI,732,0.9993
+ROI,732,0.0
 ROI,733,0.0
 ROI,734,0.0
-ROI,735,1.0011
-ROI,736,0.0
-ROI,737,0.0
+ROI,735,0.0
+ROI,736,8.0813
+ROI,737,0.4246
 ROI,738,0.0
 ROI,739,0.0
-ROI,740,0.9992
+ROI,740,0.0
 ROI,741,0.0
 ROI,742,0.0
 ROI,743,0.0
 ROI,744,0.0
-ROI,745,1.0008
+ROI,745,0.0
 ROI,746,0.0
 ROI,747,0.0
 ROI,748,0.0
 ROI,749,0.0
-ROI,750,1.0
+ROI,750,0.0
 ROI,751,0.0
-ROI,752,0.6775
+ROI,752,0.0
 ROI,753,0.0
 ROI,754,0.0
 ROI,755,0.0
-ROI,756,1.0511
+ROI,756,0.0
 ROI,757,0.0
 ROI,758,0.0
 ROI,759,0.0
-ROI,760,0.9998
+ROI,760,0.0
 ROI,761,0.0
 ROI,762,0.0
 ROI,763,0.0
 ROI,764,0.0
-ROI,765,0.998
+ROI,765,0.0
 ROI,766,0.0
 ROI,767,0.0
 ROI,768,0.0
 ROI,769,0.0
-ROI,770,0.9999
+ROI,770,0.0
 ROI,771,0.0
-ROI,772,0.9999
+ROI,772,0.0
 ROI,773,0.0
-ROI,774,0.9999
+ROI,774,0.0
 ROI,775,0.0
 ROI,776,0.0
-ROI,777,0.0
+ROI,777,9.9148
 ROI,778,0.0
-ROI,779,1.0007
+ROI,779,0.0
 ROI,780,0.0
 ROI,781,0.0
 ROI,782,0.0
-ROI,783,1.0004
+ROI,783,0.0
 ROI,784,0.0
 ROI,785,0.0
-ROI,786,1.0007
+ROI,786,0.0
 ROI,787,0.0
 ROI,788,0.0
-ROI,789,0.9988
+ROI,789,0.0
 ROI,790,0.0
 ROI,791,0.0
 ROI,792,0.0
-ROI,793,1.0007
+ROI,793,0.0
 ROI,794,0.0
 ROI,795,0.0
 ROI,796,0.0
-ROI,797,0.0
+ROI,797,6.6547
 ROI,798,0.0
-ROI,799,0.9993
+ROI,799,0.0
 ROI,800,0.0
-ROI,801,1.0005
+ROI,801,0.0
 ROI,802,0.0
 ROI,803,0.0
 ROI,804,0.0
-ROI,805,1.0006
+ROI,805,0.0
 ROI,806,0.0
 ROI,807,0.0
-ROI,808,0.9998
+ROI,808,0.0
 ROI,809,0.0
 ROI,810,0.0
-ROI,811,0.9986
+ROI,811,0.0
 ROI,812,0.0
-ROI,813,1.004
-ROI,814,0.0
+ROI,813,0.0
+ROI,814,3.784
 ROI,815,0.0
 ROI,816,0.0
 ROI,817,0.0
@@ -835,839 +3343,1675 @@ ROI,832,0.0
 ROI,833,0.0
 ROI,834,0.0
 ROI,835,0.0
-ROI No Resize,0,12.3737
-ROI No Resize,1,5.5305
-ROI No Resize,2,7.5848
-ROI No Resize,3,4.874
-ROI No Resize,4,5.8386
-ROI No Resize,5,7.6673
-ROI No Resize,6,6.5618
-ROI No Resize,7,4.9975
-ROI No Resize,8,5.9999
-ROI No Resize,9,5.0053
-ROI No Resize,10,4.9958
-ROI No Resize,11,5.9977
-ROI No Resize,12,5.0064
-ROI No Resize,13,5.1788
-ROI No Resize,14,6.2645
-ROI No Resize,15,8.4757
-ROI No Resize,16,7.0004
-ROI No Resize,17,7.0185
-ROI No Resize,18,5.9981
-ROI No Resize,19,5.0012
-ROI No Resize,20,5.001
-ROI No Resize,21,4.8089
-ROI No Resize,22,5.3836
-ROI No Resize,23,0.0
-ROI No Resize,24,10.9783
-ROI No Resize,25,3.0445
-ROI No Resize,26,8.2257
-ROI No Resize,27,6.1181
-ROI No Resize,28,4.9997
-ROI No Resize,29,4.9997
-ROI No Resize,30,4.9979
-ROI No Resize,31,5.0023
-ROI No Resize,32,4.9982
-ROI No Resize,33,5.0025
-ROI No Resize,34,4.9992
-ROI No Resize,35,4.9989
-ROI No Resize,36,5.0116
-ROI No Resize,37,5.9922
-ROI No Resize,38,5.0006
-ROI No Resize,39,6.9999
-ROI No Resize,40,5.0182
-ROI No Resize,41,5.9883
-ROI No Resize,42,4.9914
-ROI No Resize,43,5.0144
-ROI No Resize,44,5.9872
-ROI No Resize,45,6.0181
-ROI No Resize,46,5.9822
-ROI No Resize,47,5.9961
-ROI No Resize,48,5.0148
-ROI No Resize,49,5.9894
-ROI No Resize,50,5.0173
-ROI No Resize,51,4.9885
-ROI No Resize,52,5.9922
-ROI No Resize,53,5.0197
-ROI No Resize,54,5.9808
-ROI No Resize,55,4.9985
-ROI No Resize,56,6.0032
-ROI No Resize,57,6.0006
-ROI No Resize,58,5.9983
-ROI No Resize,59,5.9998
-ROI No Resize,60,5.9971
-ROI No Resize,61,5.0116
-ROI No Resize,62,4.9939
-ROI No Resize,63,4.9949
-ROI No Resize,64,6.0051
-ROI No Resize,65,4.995
-ROI No Resize,66,6.9983
-ROI No Resize,67,5.421
-ROI No Resize,68,6.0042
-ROI No Resize,69,4.9983
-ROI No Resize,70,4.9954
-ROI No Resize,71,5.0027
-ROI No Resize,72,5.0005
-ROI No Resize,73,4.9962
-ROI No Resize,74,5.0087
-ROI No Resize,75,4.9936
-ROI No Resize,76,5.0005
-ROI No Resize,77,5.9967
-ROI No Resize,78,6.0006
-ROI No Resize,79,6.0039
-ROI No Resize,80,4.9953
-ROI No Resize,81,5.9982
-ROI No Resize,82,6.0022
-ROI No Resize,83,4.9972
-ROI No Resize,84,7.0071
-ROI No Resize,85,4.9949
-ROI No Resize,86,4.9982
-ROI No Resize,87,7.0008
-ROI No Resize,88,5.9999
-ROI No Resize,89,4.9999
-ROI No Resize,90,7.0005
-ROI No Resize,91,5.0023
-ROI No Resize,92,6.0002
-ROI No Resize,93,5.9986
-ROI No Resize,94,6.0022
-ROI No Resize,95,6.0002
-ROI No Resize,96,5.9975
-ROI No Resize,97,6.9991
-ROI No Resize,98,6.9989
-ROI No Resize,99,6.9998
-ROI No Resize,100,6.0021
-ROI No Resize,101,5.9983
-ROI No Resize,102,7.0028
-ROI No Resize,103,6.9982
-ROI No Resize,104,6.9991
-ROI No Resize,105,8.0
-ROI No Resize,106,6.0018
-ROI No Resize,107,6.0039
-ROI No Resize,108,7.004
-ROI No Resize,109,6.9905
-ROI No Resize,110,8.0015
-ROI No Resize,111,6.0001
-ROI No Resize,112,7.0006
-ROI No Resize,113,6.9986
-ROI No Resize,114,6.0001
-ROI No Resize,115,7.0001
-ROI No Resize,116,7.0068
-ROI No Resize,117,6.9985
-ROI No Resize,118,6.9947
-ROI No Resize,119,7.9976
-ROI No Resize,120,8.0039
-ROI No Resize,121,7.9988
-ROI No Resize,122,7.0039
-ROI No Resize,123,6.9952
-ROI No Resize,124,8.0022
-ROI No Resize,125,8.0023
-ROI No Resize,126,6.9996
-ROI No Resize,127,7.9977
-ROI No Resize,128,7.004
-ROI No Resize,129,6.9938
-ROI No Resize,130,6.9994
-ROI No Resize,131,7.0003
-ROI No Resize,132,6.9991
-ROI No Resize,133,8.0016
-ROI No Resize,134,7.0015
-ROI No Resize,135,6.9992
-ROI No Resize,136,8.0005
-ROI No Resize,137,7.001
-ROI No Resize,138,1.0086
-ROI No Resize,139,6.9883
+ROI No Resize,0,13.3439
+ROI No Resize,1,5.4738
+ROI No Resize,2,4.7177
+ROI No Resize,3,6.3369
+ROI No Resize,4,5.6102
+ROI No Resize,5,6.3811
+ROI No Resize,6,8.3948
+ROI No Resize,7,4.5604
+ROI No Resize,8,8.6051
+ROI No Resize,9,3.7534
+ROI No Resize,10,5.7295
+ROI No Resize,11,7.0286
+ROI No Resize,12,3.1776
+ROI No Resize,13,7.1107
+ROI No Resize,14,6.7857
+ROI No Resize,15,5.3894
+ROI No Resize,16,4.6821
+ROI No Resize,17,5.6907
+ROI No Resize,18,0.0
+ROI No Resize,19,8.2078
+ROI No Resize,20,9.0057
+ROI No Resize,21,5.6809
+ROI No Resize,22,4.4089
+ROI No Resize,23,8.4098
+ROI No Resize,24,1.7587
+ROI No Resize,25,6.9975
+ROI No Resize,26,5.5864
+ROI No Resize,27,5.5119
+ROI No Resize,28,4.377
+ROI No Resize,29,7.0833
+ROI No Resize,30,4.861
+ROI No Resize,31,5.1135
+ROI No Resize,32,6.6285
+ROI No Resize,33,3.7527
+ROI No Resize,34,0.0
+ROI No Resize,35,12.5351
+ROI No Resize,36,3.9856
+ROI No Resize,37,6.7257
+ROI No Resize,38,6.4778
+ROI No Resize,39,4.5268
+ROI No Resize,40,5.1094
+ROI No Resize,41,6.9471
+ROI No Resize,42,3.1437
+ROI No Resize,43,9.5761
+ROI No Resize,44,3.4163
+ROI No Resize,45,8.7868
+ROI No Resize,46,4.9455
+ROI No Resize,47,3.318
+ROI No Resize,48,6.9296
+ROI No Resize,49,6.8276
+ROI No Resize,50,3.335
+ROI No Resize,51,4.7892
+ROI No Resize,52,8.2694
+ROI No Resize,53,3.5723
+ROI No Resize,54,6.4086
+ROI No Resize,55,4.3534
+ROI No Resize,56,5.5096
+ROI No Resize,57,7.1292
+ROI No Resize,58,5.7858
+ROI No Resize,59,3.6821
+ROI No Resize,60,6.4338
+ROI No Resize,61,5.1663
+ROI No Resize,62,5.2447
+ROI No Resize,63,6.8113
+ROI No Resize,64,4.7922
+ROI No Resize,65,5.0004
+ROI No Resize,66,7.5429
+ROI No Resize,67,4.602
+ROI No Resize,68,7.0473
+ROI No Resize,69,3.0149
+ROI No Resize,70,8.3746
+ROI No Resize,71,2.8259
+ROI No Resize,72,7.4055
+ROI No Resize,73,0.0
+ROI No Resize,74,9.0994
+ROI No Resize,75,4.417
+ROI No Resize,76,4.8754
+ROI No Resize,77,7.0134
+ROI No Resize,78,3.4027
+ROI No Resize,79,10.4261
+ROI No Resize,80,6.3269
+ROI No Resize,81,3.763
+ROI No Resize,82,7.3091
+ROI No Resize,83,4.9041
+ROI No Resize,84,7.1452
+ROI No Resize,85,7.2196
+ROI No Resize,86,1.2708
+ROI No Resize,87,8.2655
+ROI No Resize,88,7.6033
+ROI No Resize,89,4.676
+ROI No Resize,90,8.1468
+ROI No Resize,91,4.9712
+ROI No Resize,92,7.08
+ROI No Resize,93,7.4479
+ROI No Resize,94,0.0
+ROI No Resize,95,12.5037
+ROI No Resize,96,10.4167
+ROI No Resize,97,2.7441
+ROI No Resize,98,8.0122
+ROI No Resize,99,10.1974
+ROI No Resize,100,6.4143
+ROI No Resize,101,3.6557
+ROI No Resize,102,13.0855
+ROI No Resize,103,0.0
+ROI No Resize,104,13.4018
+ROI No Resize,105,3.3554
+ROI No Resize,106,10.177
+ROI No Resize,107,5.9149
+ROI No Resize,108,8.5128
+ROI No Resize,109,8.0436
+ROI No Resize,110,8.5136
+ROI No Resize,111,4.018
+ROI No Resize,112,4.3653
+ROI No Resize,113,13.4028
+ROI No Resize,114,16.1722
+ROI No Resize,115,13.6514
+ROI No Resize,116,10.9076
+ROI No Resize,117,7.5632
+ROI No Resize,118,6.9789
+ROI No Resize,119,9.6201
+ROI No Resize,120,8.1631
+ROI No Resize,121,8.1513
+ROI No Resize,122,10.3693
+ROI No Resize,123,5.3691
+ROI No Resize,124,10.7368
+ROI No Resize,125,6.2329
+ROI No Resize,126,11.8636
+ROI No Resize,127,12.6981
+ROI No Resize,128,5.7873
+ROI No Resize,129,8.7343
+ROI No Resize,130,9.6968
+ROI No Resize,131,9.1551
+ROI No Resize,132,0.0
+ROI No Resize,133,16.433
+ROI No Resize,134,3.8196
+ROI No Resize,135,12.9148
+ROI No Resize,136,7.5632
+ROI No Resize,137,7.2869
+ROI No Resize,138,0.0
+ROI No Resize,139,2.8229
 ROI No Resize,140,0.0
-ROI No Resize,141,7.0007
-ROI No Resize,142,3.0038
-ROI No Resize,143,1.9999
-ROI No Resize,144,6.9956
-ROI No Resize,145,1.014
-ROI No Resize,146,1.9956
-ROI No Resize,147,7.0011
-ROI No Resize,148,8.9938
-ROI No Resize,149,16.9962
-ROI No Resize,150,15.9995
-ROI No Resize,151,17.0045
-ROI No Resize,152,15.9963
-ROI No Resize,153,16.9996
-ROI No Resize,154,14.0019
-ROI No Resize,155,13.9995
-ROI No Resize,156,15.0065
-ROI No Resize,157,13.9943
-ROI No Resize,158,0.9966
+ROI No Resize,141,13.7266
+ROI No Resize,142,2.2235
+ROI No Resize,143,3.3857
+ROI No Resize,144,1.0111
+ROI No Resize,145,0.0
+ROI No Resize,146,10.4393
+ROI No Resize,147,6.2868
+ROI No Resize,148,0.0
+ROI No Resize,149,14.1871
+ROI No Resize,150,24.1606
+ROI No Resize,151,16.5133
+ROI No Resize,152,16.0941
+ROI No Resize,153,22.2692
+ROI No Resize,154,22.7733
+ROI No Resize,155,21.2549
+ROI No Resize,156,29.8482
+ROI No Resize,157,24.7423
+ROI No Resize,158,1.1974
 ROI No Resize,159,0.0
-ROI No Resize,160,0.0
-ROI No Resize,161,1.0008
+ROI No Resize,160,2.0066
+ROI No Resize,161,0.0
 ROI No Resize,162,0.0
-ROI No Resize,163,1.0012
+ROI No Resize,163,2.2921
 ROI No Resize,164,0.0
-ROI No Resize,165,0.0
-ROI No Resize,166,1.0002
-ROI No Resize,167,0.0
-ROI No Resize,168,0.9999
+ROI No Resize,165,2.0078
+ROI No Resize,166,0.0
+ROI No Resize,167,2.008
+ROI No Resize,168,0.0
 ROI No Resize,169,0.0
-ROI No Resize,170,0.9999
+ROI No Resize,170,0.0
 ROI No Resize,171,0.0
 ROI No Resize,172,0.0
-ROI No Resize,173,1.0002
+ROI No Resize,173,0.0
 ROI No Resize,174,0.0
-ROI No Resize,175,0.9988
-ROI No Resize,176,0.0
-ROI No Resize,177,0.9997
-ROI No Resize,178,0.0
-ROI No Resize,179,0.9999
+ROI No Resize,175,0.0
+ROI No Resize,176,6.6566
+ROI No Resize,177,0.0
+ROI No Resize,178,1.6912
+ROI No Resize,179,0.0
 ROI No Resize,180,0.0
-ROI No Resize,181,0.0
-ROI No Resize,182,0.9998
-ROI No Resize,183,0.0
-ROI No Resize,184,0.9997
-ROI No Resize,185,0.0
+ROI No Resize,181,2.0082
+ROI No Resize,182,0.0
+ROI No Resize,183,2.0131
+ROI No Resize,184,0.0
+ROI No Resize,185,2.0114
 ROI No Resize,186,0.0
-ROI No Resize,187,1.0005
+ROI No Resize,187,0.0
 ROI No Resize,188,0.0
-ROI No Resize,189,0.0
-ROI No Resize,190,1.0006
+ROI No Resize,189,2.9858
+ROI No Resize,190,1.0095
 ROI No Resize,191,0.0
 ROI No Resize,192,0.0
-ROI No Resize,193,1.001
+ROI No Resize,193,2.1725
 ROI No Resize,194,0.0
-ROI No Resize,195,0.0
+ROI No Resize,195,2.0109
 ROI No Resize,196,0.0
-ROI No Resize,197,1.0002
+ROI No Resize,197,2.0902
 ROI No Resize,198,0.0
-ROI No Resize,199,0.9975
+ROI No Resize,199,0.0
 ROI No Resize,200,0.0
 ROI No Resize,201,0.0
 ROI No Resize,202,0.0
-ROI No Resize,203,1.0001
+ROI No Resize,203,4.1799
 ROI No Resize,204,0.0
 ROI No Resize,205,0.0
-ROI No Resize,206,1.0003
+ROI No Resize,206,0.0
 ROI No Resize,207,0.0
 ROI No Resize,208,0.0
 ROI No Resize,209,0.0
-ROI No Resize,210,0.9998
+ROI No Resize,210,0.0
 ROI No Resize,211,0.0
 ROI No Resize,212,0.0
-ROI No Resize,213,1.0112
+ROI No Resize,213,0.0
 ROI No Resize,214,0.0
 ROI No Resize,215,0.0
-ROI No Resize,216,1.0007
+ROI No Resize,216,0.0
 ROI No Resize,217,0.0
 ROI No Resize,218,0.0
-ROI No Resize,219,0.0
-ROI No Resize,220,0.988
+ROI No Resize,219,10.0849
+ROI No Resize,220,0.0
 ROI No Resize,221,0.0
-ROI No Resize,222,0.0
-ROI No Resize,223,1.0037
+ROI No Resize,222,2.484
+ROI No Resize,223,0.0
 ROI No Resize,224,0.0
-ROI No Resize,225,1.0004
+ROI No Resize,225,0.0
 ROI No Resize,226,0.0
 ROI No Resize,227,0.0
-ROI No Resize,228,1.0
+ROI No Resize,228,0.0
 ROI No Resize,229,0.0
 ROI No Resize,230,0.0
-ROI No Resize,231,0.996
+ROI No Resize,231,0.0
 ROI No Resize,232,0.0
-ROI No Resize,233,0.0
-ROI No Resize,234,0.9998
+ROI No Resize,233,7.6567
+ROI No Resize,234,0.0
 ROI No Resize,235,0.0
 ROI No Resize,236,0.0
-ROI No Resize,237,1.0014
+ROI No Resize,237,0.0
 ROI No Resize,238,0.0
-ROI No Resize,239,0.9984
+ROI No Resize,239,0.0
 ROI No Resize,240,0.0
 ROI No Resize,241,0.0
-ROI No Resize,242,1.0004
+ROI No Resize,242,0.0
 ROI No Resize,243,0.0
 ROI No Resize,244,0.0
-ROI No Resize,245,1.0033
+ROI No Resize,245,0.0
 ROI No Resize,246,0.0
-ROI No Resize,247,0.9975
+ROI No Resize,247,8.9477
 ROI No Resize,248,0.0
 ROI No Resize,249,0.0
-ROI No Resize,250,0.9994
+ROI No Resize,250,0.0
 ROI No Resize,251,0.0
 ROI No Resize,252,0.0
-ROI No Resize,253,1.0009
+ROI No Resize,253,0.0
 ROI No Resize,254,0.0
 ROI No Resize,255,0.0
-ROI No Resize,256,0.9989
+ROI No Resize,256,0.0
 ROI No Resize,257,0.0
 ROI No Resize,258,0.0
-ROI No Resize,259,1.0014
+ROI No Resize,259,0.0
 ROI No Resize,260,0.0
 ROI No Resize,261,0.0
-ROI No Resize,262,1.0007
+ROI No Resize,262,0.0
 ROI No Resize,263,0.0
-ROI No Resize,264,0.0
-ROI No Resize,265,0.9985
+ROI No Resize,264,10.1618
+ROI No Resize,265,0.0
 ROI No Resize,266,0.0
 ROI No Resize,267,0.0
-ROI No Resize,268,0.9997
+ROI No Resize,268,0.0
 ROI No Resize,269,0.0
 ROI No Resize,270,0.0
-ROI No Resize,271,0.9997
+ROI No Resize,271,0.0
 ROI No Resize,272,0.0
-ROI No Resize,273,0.0
-ROI No Resize,274,1.001
+ROI No Resize,273,7.9237
+ROI No Resize,274,0.0
 ROI No Resize,275,0.0
-ROI No Resize,276,0.9988
+ROI No Resize,276,0.0
 ROI No Resize,277,0.0
-ROI No Resize,278,1.0009
+ROI No Resize,278,0.0
 ROI No Resize,279,0.0
-ROI No Resize,280,1.0018
+ROI No Resize,280,0.0
 ROI No Resize,281,0.0
-ROI No Resize,282,0.9989
-ROI No Resize,283,0.9982
+ROI No Resize,282,0.0
+ROI No Resize,283,0.0
 ROI No Resize,284,0.0
 ROI No Resize,285,0.0
-ROI No Resize,286,1.0007
-ROI No Resize,287,1.0055
+ROI No Resize,286,0.0
+ROI No Resize,287,0.0
 ROI No Resize,288,0.0
-ROI No Resize,289,0.9965
+ROI No Resize,289,0.0
 ROI No Resize,290,0.0
-ROI No Resize,291,0.9982
+ROI No Resize,291,0.0
 ROI No Resize,292,0.0
-ROI No Resize,293,1.0003
+ROI No Resize,293,0.0
 ROI No Resize,294,0.0
-ROI No Resize,295,0.9987
+ROI No Resize,295,0.0
 ROI No Resize,296,0.0
-ROI No Resize,297,1.0005
+ROI No Resize,297,5.1687
 ROI No Resize,298,0.0
 ROI No Resize,299,0.0
-ROI No Resize,300,1.0088
-ROI No Resize,301,0.9919
-ROI No Resize,302,0.0
-ROI No Resize,303,1.0002
-ROI No Resize,304,0.9999
+ROI No Resize,300,0.0
+ROI No Resize,301,0.0
+ROI No Resize,302,4.9394
+ROI No Resize,303,0.0
+ROI No Resize,304,0.0
 ROI No Resize,305,0.0
-ROI No Resize,306,0.9993
+ROI No Resize,306,0.0
 ROI No Resize,307,0.0
-ROI No Resize,308,1.0004
+ROI No Resize,308,0.0
 ROI No Resize,309,0.0
-ROI No Resize,310,0.9995
+ROI No Resize,310,0.0
 ROI No Resize,311,0.0
-ROI No Resize,312,1.001
-ROI No Resize,313,0.9995
+ROI No Resize,312,0.0
+ROI No Resize,313,0.0
 ROI No Resize,314,0.0
-ROI No Resize,315,1.0
+ROI No Resize,315,0.0
 ROI No Resize,316,0.0
-ROI No Resize,317,1.0023
-ROI No Resize,318,0.9999
-ROI No Resize,319,0.9971
+ROI No Resize,317,10.282
+ROI No Resize,318,0.0
+ROI No Resize,319,1.3144
 ROI No Resize,320,0.0
-ROI No Resize,321,1.0006
+ROI No Resize,321,0.0
 ROI No Resize,322,0.0
-ROI No Resize,323,0.9998
-ROI No Resize,324,1.0013
-ROI No Resize,325,1.004
-ROI No Resize,326,0.9952
-ROI No Resize,327,1.0005
+ROI No Resize,323,0.0
+ROI No Resize,324,0.0
+ROI No Resize,325,0.0
+ROI No Resize,326,0.0
+ROI No Resize,327,0.0
 ROI No Resize,328,0.0
-ROI No Resize,329,0.9995
-ROI No Resize,330,0.0
-ROI No Resize,331,0.9992
-ROI No Resize,332,1.0006
-ROI No Resize,333,2.0035
+ROI No Resize,329,0.0
+ROI No Resize,330,8.7973
+ROI No Resize,331,0.0
+ROI No Resize,332,0.0
+ROI No Resize,333,0.0
 ROI No Resize,334,0.0
-ROI No Resize,335,2.0
+ROI No Resize,335,0.0
 ROI No Resize,336,0.0
-ROI No Resize,337,0.9968
-ROI No Resize,338,1.0021
-ROI No Resize,339,1.0024
-ROI No Resize,340,0.9952
-ROI No Resize,341,1.0
+ROI No Resize,337,0.0
+ROI No Resize,338,7.869
+ROI No Resize,339,0.0
+ROI No Resize,340,0.0
+ROI No Resize,341,0.0
 ROI No Resize,342,0.0
-ROI No Resize,343,1.0004
-ROI No Resize,344,1.001
-ROI No Resize,345,0.9982
+ROI No Resize,343,0.0
+ROI No Resize,344,0.0
+ROI No Resize,345,0.0
 ROI No Resize,346,0.0
-ROI No Resize,347,1.0006
-ROI No Resize,348,0.9998
-ROI No Resize,349,0.9996
-ROI No Resize,350,1.0016
+ROI No Resize,347,0.0
+ROI No Resize,348,0.0
+ROI No Resize,349,10.158
+ROI No Resize,350,0.0
 ROI No Resize,351,0.0
-ROI No Resize,352,0.9985
-ROI No Resize,353,1.0003
-ROI No Resize,354,1.0004
-ROI No Resize,355,1.0002
-ROI No Resize,356,1.0018
-ROI No Resize,357,0.9987
-ROI No Resize,358,1.0062
-ROI No Resize,359,0.9949
-ROI No Resize,360,0.9978
-ROI No Resize,361,1.0018
-ROI No Resize,362,0.9998
-ROI No Resize,363,0.9988
-ROI No Resize,364,1.0003
-ROI No Resize,365,1.0002
-ROI No Resize,366,0.9999
-ROI No Resize,367,0.9991
-ROI No Resize,368,0.9997
-ROI No Resize,369,0.9998
-ROI No Resize,370,0.9998
-ROI No Resize,371,1.0009
-ROI No Resize,372,0.9993
-ROI No Resize,373,1.0011
-ROI No Resize,374,1.0026
-ROI No Resize,375,0.9985
+ROI No Resize,352,0.0
+ROI No Resize,353,0.0
+ROI No Resize,354,0.0
+ROI No Resize,355,8.1512
+ROI No Resize,356,0.0
+ROI No Resize,357,0.0
+ROI No Resize,358,0.0
+ROI No Resize,359,0.0
+ROI No Resize,360,0.0
+ROI No Resize,361,0.0
+ROI No Resize,362,0.0
+ROI No Resize,363,10.0458
+ROI No Resize,364,0.0
+ROI No Resize,365,0.0
+ROI No Resize,366,4.2271
+ROI No Resize,367,0.7934
+ROI No Resize,368,0.0
+ROI No Resize,369,0.0
+ROI No Resize,370,5.4083
+ROI No Resize,371,0.0
+ROI No Resize,372,0.0
+ROI No Resize,373,0.0
+ROI No Resize,374,0.0
+ROI No Resize,375,0.0
 ROI No Resize,376,0.0
-ROI No Resize,377,0.9997
-ROI No Resize,378,0.9989
-ROI No Resize,379,1.0041
-ROI No Resize,380,0.9955
-ROI No Resize,381,0.9999
-ROI No Resize,382,1.0019
-ROI No Resize,383,0.9995
-ROI No Resize,384,1.9986
-ROI No Resize,385,0.9997
-ROI No Resize,386,1.0024
-ROI No Resize,387,0.9978
-ROI No Resize,388,1.0022
-ROI No Resize,389,0.9971
-ROI No Resize,390,1.0012
-ROI No Resize,391,1.0071
-ROI No Resize,392,0.9939
-ROI No Resize,393,1.0046
-ROI No Resize,394,1.9959
-ROI No Resize,395,0.9982
-ROI No Resize,396,1.0121
-ROI No Resize,397,1.011
-ROI No Resize,398,0.9996
-ROI No Resize,399,0.9885
-ROI No Resize,400,1.0124
-ROI No Resize,401,1.9806
-ROI No Resize,402,1.0068
-ROI No Resize,403,1.0006
-ROI No Resize,404,1.0109
-ROI No Resize,405,1.9924
-ROI No Resize,406,0.9979
-ROI No Resize,407,0.9985
-ROI No Resize,408,0.9994
-ROI No Resize,409,2.0119
-ROI No Resize,410,0.9883
-ROI No Resize,411,1.0
-ROI No Resize,412,1.0001
-ROI No Resize,413,0.9999
-ROI No Resize,414,1.9907
-ROI No Resize,415,1.0092
-ROI No Resize,416,1.0001
-ROI No Resize,417,1.0
-ROI No Resize,418,1.9927
-ROI No Resize,419,0.9996
-ROI No Resize,420,1.0082
-ROI No Resize,421,1.9995
-ROI No Resize,422,1.0
-ROI No Resize,423,1.993
-ROI No Resize,424,1.007
-ROI No Resize,425,1.0002
-ROI No Resize,426,1.0
-ROI No Resize,427,2.0115
-ROI No Resize,428,1.0002
-ROI No Resize,429,0.9881
-ROI No Resize,430,2.0131
-ROI No Resize,431,1.9884
-ROI No Resize,432,1.9984
-ROI No Resize,433,1.0117
-ROI No Resize,434,2.0
-ROI No Resize,435,1.0002
-ROI No Resize,436,1.9774
-ROI No Resize,437,1.0228
-ROI No Resize,438,1.9882
-ROI No Resize,439,1.0114
-ROI No Resize,440,1.9883
-ROI No Resize,441,1.9929
-ROI No Resize,442,1.0075
-ROI No Resize,443,1.9997
-ROI No Resize,444,1.0116
-ROI No Resize,445,2.0
-ROI No Resize,446,1.0
-ROI No Resize,447,2.0
-ROI No Resize,448,0.9883
-ROI No Resize,449,2.0117
-ROI No Resize,450,1.0002
-ROI No Resize,451,1.9998
-ROI No Resize,452,0.9886
-ROI No Resize,453,2.0149
-ROI No Resize,454,1.9849
-ROI No Resize,455,2.0115
-ROI No Resize,456,0.9884
-ROI No Resize,457,2.0115
-ROI No Resize,458,1.0003
-ROI No Resize,459,1.9882
-ROI No Resize,460,1.0117
-ROI No Resize,461,1.99
-ROI No Resize,462,0.9988
-ROI No Resize,463,1.9933
-ROI No Resize,464,1.0084
-ROI No Resize,465,1.9979
-ROI No Resize,466,1.9999
-ROI No Resize,467,1.0118
-ROI No Resize,468,1.9882
-ROI No Resize,469,1.0118
-ROI No Resize,470,0.9885
-ROI No Resize,471,2.0115
-ROI No Resize,472,1.0018
-ROI No Resize,473,2.0
-ROI No Resize,474,1.9866
-ROI No Resize,475,1.9999
-ROI No Resize,476,1.0114
-ROI No Resize,477,0.9888
-ROI No Resize,478,1.9998
-ROI No Resize,479,1.0118
-ROI No Resize,480,1.9884
-ROI No Resize,481,1.0118
-ROI No Resize,482,1.9882
-ROI No Resize,483,1.0118
-ROI No Resize,484,1.9813
-ROI No Resize,485,1.0078
-ROI No Resize,486,2.0106
-ROI No Resize,487,0.9887
-ROI No Resize,488,2.0112
-ROI No Resize,489,1.0001
-ROI No Resize,490,1.9775
-ROI No Resize,491,1.0112
-ROI No Resize,492,1.9887
-ROI No Resize,493,2.0125
-ROI No Resize,494,0.9989
-ROI No Resize,495,2.0031
-ROI No Resize,496,1.9967
-ROI No Resize,497,0.9905
-ROI No Resize,498,1.9983
-ROI No Resize,499,2.0111
-ROI No Resize,500,0.9929
-ROI No Resize,501,2.0071
-ROI No Resize,502,2.0004
-ROI No Resize,503,0.9905
-ROI No Resize,504,2.0096
-ROI No Resize,505,0.9893
-ROI No Resize,506,2.0004
-ROI No Resize,507,2.0114
-ROI No Resize,508,0.9988
-ROI No Resize,509,1.9884
-ROI No Resize,510,2.0119
-ROI No Resize,511,0.9901
-ROI No Resize,512,3.0088
-ROI No Resize,513,1.9887
-ROI No Resize,514,1.002
-ROI No Resize,515,3.0095
-ROI No Resize,516,1.9999
-ROI No Resize,517,2.0003
-ROI No Resize,518,2.0007
-ROI No Resize,519,1.9922
-ROI No Resize,520,2.0122
-ROI No Resize,521,0.9851
-ROI No Resize,522,2.0096
-ROI No Resize,523,3.0038
-ROI No Resize,524,1.9964
-ROI No Resize,525,0.9931
-ROI No Resize,526,2.0069
-ROI No Resize,527,0.9903
-ROI No Resize,528,3.0096
-ROI No Resize,529,1.9998
-ROI No Resize,530,2.0013
-ROI No Resize,531,0.9894
-ROI No Resize,532,2.0139
-ROI No Resize,533,0.9881
-ROI No Resize,534,2.0094
-ROI No Resize,535,1.9986
-ROI No Resize,536,2.0023
-ROI No Resize,537,0.9869
-ROI No Resize,538,2.0114
-ROI No Resize,539,1.999
-ROI No Resize,540,1.9886
-ROI No Resize,541,1.0026
-ROI No Resize,542,1.9994
-ROI No Resize,543,2.0117
-ROI No Resize,544,1.9994
-ROI No Resize,545,1.3505
-ROI No Resize,546,2.0155
-ROI No Resize,547,2.9986
-ROI No Resize,548,2.0002
-ROI No Resize,549,0.9992
-ROI No Resize,550,2.0027
-ROI No Resize,551,1.9984
-ROI No Resize,552,2.0007
-ROI No Resize,553,2.0018
-ROI No Resize,554,1.9983
-ROI No Resize,555,0.9988
-ROI No Resize,556,1.9996
-ROI No Resize,557,2.0009
-ROI No Resize,558,2.0006
-ROI No Resize,559,0.9989
-ROI No Resize,560,2.003
-ROI No Resize,561,2.9986
-ROI No Resize,562,0.999
-ROI No Resize,563,1.9991
-ROI No Resize,564,2.0001
-ROI No Resize,565,2.0014
-ROI No Resize,566,0.9994
-ROI No Resize,567,2.9986
-ROI No Resize,568,2.0016
-ROI No Resize,569,0.9992
-ROI No Resize,570,1.9995
-ROI No Resize,571,2.0006
-ROI No Resize,572,2.0
-ROI No Resize,573,0.9996
-ROI No Resize,574,2.0001
-ROI No Resize,575,2.001
-ROI No Resize,576,0.9993
-ROI No Resize,577,2.0017
-ROI No Resize,578,0.9983
-ROI No Resize,579,2.0007
-ROI No Resize,580,2.003
-ROI No Resize,581,0.9995
-ROI No Resize,582,1.9971
-ROI No Resize,583,2.0002
-ROI No Resize,584,0.999
-ROI No Resize,585,2.0009
-ROI No Resize,586,0.9995
-ROI No Resize,587,1.9989
-ROI No Resize,588,2.0039
-ROI No Resize,589,2.0009
-ROI No Resize,590,0.9981
-ROI No Resize,591,0.9981
-ROI No Resize,592,2.0021
-ROI No Resize,593,0.9977
-ROI No Resize,594,1.9997
-ROI No Resize,595,1.0023
-ROI No Resize,596,0.9981
-ROI No Resize,597,0.9995
-ROI No Resize,598,2.0004
-ROI No Resize,599,1.0003
-ROI No Resize,600,2.0035
-ROI No Resize,601,1.9977
-ROI No Resize,602,1.9994
-ROI No Resize,603,0.9997
-ROI No Resize,604,1.9988
-ROI No Resize,605,1.0004
-ROI No Resize,606,1.0001
-ROI No Resize,607,2.0001
-ROI No Resize,608,1.0003
-ROI No Resize,609,2.0015
-ROI No Resize,610,0.9989
-ROI No Resize,611,1.002
-ROI No Resize,612,1.998
-ROI No Resize,613,1.0005
-ROI No Resize,614,0.9984
-ROI No Resize,615,1.0002
-ROI No Resize,616,1.0002
-ROI No Resize,617,1.0002
-ROI No Resize,618,1.0001
-ROI No Resize,619,2.0004
-ROI No Resize,620,0.999
-ROI No Resize,621,1.0001
-ROI No Resize,622,1.0004
-ROI No Resize,623,0.9998
-ROI No Resize,624,0.9993
-ROI No Resize,625,2.0056
-ROI No Resize,626,0.9954
-ROI No Resize,627,2.0024
-ROI No Resize,628,0.9988
-ROI No Resize,629,1.0003
-ROI No Resize,630,0.9998
-ROI No Resize,631,2.0001
-ROI No Resize,632,1.0034
-ROI No Resize,633,0.9968
-ROI No Resize,634,0.9981
-ROI No Resize,635,1.0006
-ROI No Resize,636,1.9986
-ROI No Resize,637,1.0012
-ROI No Resize,638,2.0034
-ROI No Resize,639,0.9975
-ROI No Resize,640,1.999
-ROI No Resize,641,1.0022
-ROI No Resize,642,0.9999
-ROI No Resize,643,0.9988
-ROI No Resize,644,0.9989
-ROI No Resize,645,1.0001
-ROI No Resize,646,1.0016
-ROI No Resize,647,1.0214
-ROI No Resize,648,1.9773
-ROI No Resize,649,1.0157
-ROI No Resize,650,0.9858
-ROI No Resize,651,2.0018
-ROI No Resize,652,1.014
-ROI No Resize,653,0.9946
-ROI No Resize,654,0.9999
-ROI No Resize,655,0.9988
-ROI No Resize,656,1.0011
-ROI No Resize,657,1.989
-ROI No Resize,658,1.0112
-ROI No Resize,659,1.0116
-ROI No Resize,660,0.9875
-ROI No Resize,661,1.0002
-ROI No Resize,662,0.9998
-ROI No Resize,663,1.001
-ROI No Resize,664,0.9888
-ROI No Resize,665,1.0106
-ROI No Resize,666,0.9901
-ROI No Resize,667,1.9979
-ROI No Resize,668,1.0008
-ROI No Resize,669,0.9995
-ROI No Resize,670,1.0005
-ROI No Resize,671,0.9995
-ROI No Resize,672,1.0002
-ROI No Resize,673,0.999
-ROI No Resize,674,1.0012
-ROI No Resize,675,0.9997
+ROI No Resize,377,0.0
+ROI No Resize,378,11.2928
+ROI No Resize,379,0.0
+ROI No Resize,380,2.2468
+ROI No Resize,381,0.0
+ROI No Resize,382,0.0
+ROI No Resize,383,0.0
+ROI No Resize,384,0.0
+ROI No Resize,385,7.0976
+ROI No Resize,386,0.0
+ROI No Resize,387,0.0
+ROI No Resize,388,0.0
+ROI No Resize,389,0.0
+ROI No Resize,390,6.6287
+ROI No Resize,391,0.5852
+ROI No Resize,392,0.0
+ROI No Resize,393,3.1122
+ROI No Resize,394,0.0
+ROI No Resize,395,0.0
+ROI No Resize,396,0.0
+ROI No Resize,397,0.0
+ROI No Resize,398,0.0
+ROI No Resize,399,10.1635
+ROI No Resize,400,0.0
+ROI No Resize,401,5.0793
+ROI No Resize,402,0.0
+ROI No Resize,403,0.0
+ROI No Resize,404,5.0319
+ROI No Resize,405,0.0
+ROI No Resize,406,0.0
+ROI No Resize,407,0.0
+ROI No Resize,408,0.0
+ROI No Resize,409,0.0
+ROI No Resize,410,10.0008
+ROI No Resize,411,0.0
+ROI No Resize,412,0.0
+ROI No Resize,413,0.0
+ROI No Resize,414,0.0
+ROI No Resize,415,0.0
+ROI No Resize,416,10.4777
+ROI No Resize,417,0.0
+ROI No Resize,418,0.0
+ROI No Resize,419,0.0
+ROI No Resize,420,6.7271
+ROI No Resize,421,0.0
+ROI No Resize,422,3.7228
+ROI No Resize,423,0.0
+ROI No Resize,424,0.0
+ROI No Resize,425,0.0
+ROI No Resize,426,0.0
+ROI No Resize,427,0.0
+ROI No Resize,428,10.2311
+ROI No Resize,429,2.4376
+ROI No Resize,430,0.0
+ROI No Resize,431,0.0
+ROI No Resize,432,0.0
+ROI No Resize,433,0.0
+ROI No Resize,434,7.6156
+ROI No Resize,435,3.9034
+ROI No Resize,436,0.0
+ROI No Resize,437,0.0
+ROI No Resize,438,4.7278
+ROI No Resize,439,0.0
+ROI No Resize,440,0.0
+ROI No Resize,441,0.0
+ROI No Resize,442,0.0
+ROI No Resize,443,10.1819
+ROI No Resize,444,4.9153
+ROI No Resize,445,2.1252
+ROI No Resize,446,2.3116
+ROI No Resize,447,1.0046
+ROI No Resize,448,0.0
+ROI No Resize,449,0.0
+ROI No Resize,450,7.3208
+ROI No Resize,451,2.0153
+ROI No Resize,452,1.0051
+ROI No Resize,453,2.9947
+ROI No Resize,454,3.0106
+ROI No Resize,455,2.183
+ROI No Resize,456,2.0085
+ROI No Resize,457,0.0
+ROI No Resize,458,0.0
+ROI No Resize,459,0.0
+ROI No Resize,460,0.0
+ROI No Resize,461,10.6844
+ROI No Resize,462,0.0
+ROI No Resize,463,0.0
+ROI No Resize,464,6.247
+ROI No Resize,465,0.0
+ROI No Resize,466,3.7237
+ROI No Resize,467,3.4629
+ROI No Resize,468,1.4911
+ROI No Resize,469,3.853
+ROI No Resize,470,1.5095
+ROI No Resize,471,2.6546
+ROI No Resize,472,2.0101
+ROI No Resize,473,0.0
+ROI No Resize,474,5.5726
+ROI No Resize,475,0.9958
+ROI No Resize,476,0.0
+ROI No Resize,477,0.0
+ROI No Resize,478,0.0
+ROI No Resize,479,9.0811
+ROI No Resize,480,2.01
+ROI No Resize,481,0.0
+ROI No Resize,482,7.8238
+ROI No Resize,483,2.0092
+ROI No Resize,484,4.0289
+ROI No Resize,485,1.751
+ROI No Resize,486,0.0
+ROI No Resize,487,7.1564
+ROI No Resize,488,3.0185
+ROI No Resize,489,0.0
+ROI No Resize,490,4.4447
+ROI No Resize,491,1.7404
+ROI No Resize,492,0.0
+ROI No Resize,493,6.7579
+ROI No Resize,494,0.4544
+ROI No Resize,495,5.2066
+ROI No Resize,496,2.0107
+ROI No Resize,497,0.0
+ROI No Resize,498,8.1038
+ROI No Resize,499,3.2471
+ROI No Resize,500,2.7399
+ROI No Resize,501,2.0083
+ROI No Resize,502,3.6716
+ROI No Resize,503,2.2421
+ROI No Resize,504,4.1739
+ROI No Resize,505,2.704
+ROI No Resize,506,2.4035
+ROI No Resize,507,0.0
+ROI No Resize,508,5.2434
+ROI No Resize,509,0.0
+ROI No Resize,510,7.3409
+ROI No Resize,511,2.3479
+ROI No Resize,512,2.0953
+ROI No Resize,513,3.6282
+ROI No Resize,514,2.5787
+ROI No Resize,515,1.7377
+ROI No Resize,516,3.3806
+ROI No Resize,517,4.0166
+ROI No Resize,518,0.0
+ROI No Resize,519,3.0808
+ROI No Resize,520,0.0
+ROI No Resize,521,0.0
+ROI No Resize,522,0.0
+ROI No Resize,523,9.3241
+ROI No Resize,524,0.0
+ROI No Resize,525,6.3522
+ROI No Resize,526,0.0
+ROI No Resize,527,3.7215
+ROI No Resize,528,0.0
+ROI No Resize,529,6.2788
+ROI No Resize,530,3.8155
+ROI No Resize,531,2.0127
+ROI No Resize,532,2.0092
+ROI No Resize,533,0.0
+ROI No Resize,534,6.2084
+ROI No Resize,535,2.5091
+ROI No Resize,536,2.8053
+ROI No Resize,537,0.0
+ROI No Resize,538,4.7192
+ROI No Resize,539,0.0
+ROI No Resize,540,4.1567
+ROI No Resize,541,0.0
+ROI No Resize,542,7.2826
+ROI No Resize,543,0.0
+ROI No Resize,544,5.7822
+ROI No Resize,545,2.0091
+ROI No Resize,546,0.0
+ROI No Resize,547,6.6633
+ROI No Resize,548,3.7583
+ROI No Resize,549,0.0
+ROI No Resize,550,0.0
+ROI No Resize,551,0.0
+ROI No Resize,552,10.473
+ROI No Resize,553,2.751
+ROI No Resize,554,2.0979
+ROI No Resize,555,0.0
+ROI No Resize,556,5.4176
+ROI No Resize,557,0.0
+ROI No Resize,558,0.0
+ROI No Resize,559,8.803
+ROI No Resize,560,0.0
+ROI No Resize,561,0.0
+ROI No Resize,562,7.235
+ROI No Resize,563,3.0255
+ROI No Resize,564,4.0318
+ROI No Resize,565,4.0301
+ROI No Resize,566,3.5497
+ROI No Resize,567,2.7301
+ROI No Resize,568,0.0
+ROI No Resize,569,5.8179
+ROI No Resize,570,3.1723
+ROI No Resize,571,3.0814
+ROI No Resize,572,2.0389
+ROI No Resize,573,2.881
+ROI No Resize,574,2.5252
+ROI No Resize,575,2.7556
+ROI No Resize,576,0.0
+ROI No Resize,577,3.498
+ROI No Resize,578,3.5093
+ROI No Resize,579,1.0084
+ROI No Resize,580,0.0
+ROI No Resize,581,5.8915
+ROI No Resize,582,2.3152
+ROI No Resize,583,0.0
+ROI No Resize,584,3.7643
+ROI No Resize,585,0.0
+ROI No Resize,586,0.0
+ROI No Resize,587,6.5084
+ROI No Resize,588,0.0
+ROI No Resize,589,0.0
+ROI No Resize,590,0.0
+ROI No Resize,591,0.0
+ROI No Resize,592,9.7992
+ROI No Resize,593,0.3313
+ROI No Resize,594,0.0
+ROI No Resize,595,0.0
+ROI No Resize,596,0.0
+ROI No Resize,597,0.0
+ROI No Resize,598,9.7415
+ROI No Resize,599,0.0
+ROI No Resize,600,5.2679
+ROI No Resize,601,1.6699
+ROI No Resize,602,0.0
+ROI No Resize,603,3.2568
+ROI No Resize,604,0.0
+ROI No Resize,605,0.0
+ROI No Resize,606,0.0
+ROI No Resize,607,0.0
+ROI No Resize,608,0.0
+ROI No Resize,609,10.2121
+ROI No Resize,610,0.0
+ROI No Resize,611,2.8802
+ROI No Resize,612,0.0
+ROI No Resize,613,0.0
+ROI No Resize,614,0.0
+ROI No Resize,615,0.0
+ROI No Resize,616,7.3386
+ROI No Resize,617,0.0
+ROI No Resize,618,0.0
+ROI No Resize,619,0.0
+ROI No Resize,620,0.0
+ROI No Resize,621,0.0
+ROI No Resize,622,9.6674
+ROI No Resize,623,0.0
+ROI No Resize,624,0.0
+ROI No Resize,625,0.0
+ROI No Resize,626,0.0
+ROI No Resize,627,0.0
+ROI No Resize,628,10.0263
+ROI No Resize,629,0.0
+ROI No Resize,630,0.0
+ROI No Resize,631,0.0
+ROI No Resize,632,6.3718
+ROI No Resize,633,2.8027
+ROI No Resize,634,1.0056
+ROI No Resize,635,0.0
+ROI No Resize,636,0.0
+ROI No Resize,637,0.0
+ROI No Resize,638,0.0
+ROI No Resize,639,0.0
+ROI No Resize,640,10.138
+ROI No Resize,641,0.0
+ROI No Resize,642,2.5499
+ROI No Resize,643,0.0
+ROI No Resize,644,0.0
+ROI No Resize,645,0.0
+ROI No Resize,646,0.0
+ROI No Resize,647,7.8224
+ROI No Resize,648,0.0
+ROI No Resize,649,0.0
+ROI No Resize,650,0.0
+ROI No Resize,651,0.0
+ROI No Resize,652,0.0
+ROI No Resize,653,0.0
+ROI No Resize,654,10.1823
+ROI No Resize,655,0.9415
+ROI No Resize,656,0.0
+ROI No Resize,657,0.0
+ROI No Resize,658,0.0
+ROI No Resize,659,0.0
+ROI No Resize,660,0.0
+ROI No Resize,661,0.0
+ROI No Resize,662,9.1291
+ROI No Resize,663,0.0
+ROI No Resize,664,0.0
+ROI No Resize,665,0.0
+ROI No Resize,666,5.209
+ROI No Resize,667,2.6662
+ROI No Resize,668,0.0
+ROI No Resize,669,2.615
+ROI No Resize,670,0.0
+ROI No Resize,671,0.0
+ROI No Resize,672,0.0
+ROI No Resize,673,0.0
+ROI No Resize,674,0.0
+ROI No Resize,675,0.0
 ROI No Resize,676,0.0
-ROI No Resize,677,1.0003
-ROI No Resize,678,0.9998
-ROI No Resize,679,1.0003
-ROI No Resize,680,1.004
-ROI No Resize,681,0.9955
-ROI No Resize,682,1.0006
-ROI No Resize,683,1.0003
-ROI No Resize,684,1.0043
-ROI No Resize,685,0.9972
-ROI No Resize,686,0.998
-ROI No Resize,687,0.999
-ROI No Resize,688,0.9999
-ROI No Resize,689,0.9997
-ROI No Resize,690,1.0017
+ROI No Resize,677,10.0426
+ROI No Resize,678,0.0
+ROI No Resize,679,2.5513
+ROI No Resize,680,0.0
+ROI No Resize,681,0.0
+ROI No Resize,682,0.0
+ROI No Resize,683,0.0
+ROI No Resize,684,0.0
+ROI No Resize,685,0.0
+ROI No Resize,686,7.6318
+ROI No Resize,687,0.0
+ROI No Resize,688,0.0
+ROI No Resize,689,0.0
+ROI No Resize,690,0.0
 ROI No Resize,691,0.0
-ROI No Resize,692,0.9993
-ROI No Resize,693,1.0008
-ROI No Resize,694,0.9993
-ROI No Resize,695,0.9993
-ROI No Resize,696,1.0017
+ROI No Resize,692,0.0
+ROI No Resize,693,7.7495
+ROI No Resize,694,0.0
+ROI No Resize,695,0.0
+ROI No Resize,696,0.0
 ROI No Resize,697,0.0
-ROI No Resize,698,1.0002
-ROI No Resize,699,0.9989
-ROI No Resize,700,1.0004
+ROI No Resize,698,0.0
+ROI No Resize,699,0.0
+ROI No Resize,700,0.0
 ROI No Resize,701,0.0
-ROI No Resize,702,0.9997
-ROI No Resize,703,1.0021
-ROI No Resize,704,1.0
-ROI No Resize,705,0.9991
-ROI No Resize,706,1.0002
-ROI No Resize,707,0.9993
+ROI No Resize,702,0.0
+ROI No Resize,703,0.0
+ROI No Resize,704,10.8124
+ROI No Resize,705,1.0061
+ROI No Resize,706,1.0286
+ROI No Resize,707,1.0263
 ROI No Resize,708,0.0
-ROI No Resize,709,0.9988
-ROI No Resize,710,1.0014
-ROI No Resize,711,0.998
-ROI No Resize,712,0.0
-ROI No Resize,713,1.0008
-ROI No Resize,714,1.0
+ROI No Resize,709,1.0263
+ROI No Resize,710,1.0355
+ROI No Resize,711,1.0405
+ROI No Resize,712,1.0377
+ROI No Resize,713,0.6257
+ROI No Resize,714,0.0
 ROI No Resize,715,0.0
-ROI No Resize,716,1.0001
-ROI No Resize,717,1.0
+ROI No Resize,716,0.0
+ROI No Resize,717,0.0
 ROI No Resize,718,0.0
-ROI No Resize,719,1.0035
-ROI No Resize,720,0.9959
+ROI No Resize,719,0.0
+ROI No Resize,720,0.0
 ROI No Resize,721,0.0
-ROI No Resize,722,1.0001
+ROI No Resize,722,0.0
 ROI No Resize,723,0.0
-ROI No Resize,724,1.0011
-ROI No Resize,725,0.9991
-ROI No Resize,726,1.0062
+ROI No Resize,724,0.0
+ROI No Resize,725,10.298
+ROI No Resize,726,0.0
 ROI No Resize,727,0.0
-ROI No Resize,728,0.9966
-ROI No Resize,729,0.998
+ROI No Resize,728,0.0
+ROI No Resize,729,0.0
 ROI No Resize,730,0.0
-ROI No Resize,731,0.9998
-ROI No Resize,732,0.0
-ROI No Resize,733,0.9999
-ROI No Resize,734,0.999
+ROI No Resize,731,4.8873
+ROI No Resize,732,1.0737
+ROI No Resize,733,0.0
+ROI No Resize,734,0.0
 ROI No Resize,735,0.0
-ROI No Resize,736,1.0026
+ROI No Resize,736,0.0
 ROI No Resize,737,0.0
-ROI No Resize,738,0.9974
-ROI No Resize,739,1.0
+ROI No Resize,738,4.1334
+ROI No Resize,739,0.0
 ROI No Resize,740,0.0
-ROI No Resize,741,1.0012
-ROI No Resize,742,0.9998
+ROI No Resize,741,0.0
+ROI No Resize,742,0.0
 ROI No Resize,743,0.0
-ROI No Resize,744,1.0062
-ROI No Resize,745,0.9928
+ROI No Resize,744,0.0
+ROI No Resize,745,0.0
 ROI No Resize,746,0.0
-ROI No Resize,747,1.0012
+ROI No Resize,747,0.0
 ROI No Resize,748,0.0
-ROI No Resize,749,0.9994
-ROI No Resize,750,1.0003
-ROI No Resize,751,0.0
-ROI No Resize,752,1.0009
-ROI No Resize,753,0.0
-ROI No Resize,754,1.0038
+ROI No Resize,749,0.0
+ROI No Resize,750,0.0
+ROI No Resize,751,10.0176
+ROI No Resize,752,0.9632
+ROI No Resize,753,0.69
+ROI No Resize,754,0.0
 ROI No Resize,755,0.0
-ROI No Resize,756,0.9959
+ROI No Resize,756,0.0
 ROI No Resize,757,0.0
-ROI No Resize,758,0.9995
+ROI No Resize,758,0.0
 ROI No Resize,759,0.0
-ROI No Resize,760,1.0
+ROI No Resize,760,0.0
 ROI No Resize,761,0.0
-ROI No Resize,762,0.9988
+ROI No Resize,762,0.0
 ROI No Resize,763,0.0
-ROI No Resize,764,1.0001
-ROI No Resize,765,0.0
+ROI No Resize,764,0.0
+ROI No Resize,765,8.5734
 ROI No Resize,766,0.0
-ROI No Resize,767,1.0012
+ROI No Resize,767,0.0
 ROI No Resize,768,0.0
-ROI No Resize,769,1.0001
+ROI No Resize,769,0.0
 ROI No Resize,770,0.0
-ROI No Resize,771,0.9999
+ROI No Resize,771,0.0
 ROI No Resize,772,0.0
-ROI No Resize,773,1.0002
-ROI No Resize,774,1.0052
+ROI No Resize,773,0.0
+ROI No Resize,774,0.0
 ROI No Resize,775,0.0
-ROI No Resize,776,0.9981
-ROI No Resize,777,0.0
-ROI No Resize,778,0.9959
+ROI No Resize,776,0.0
+ROI No Resize,777,7.2941
+ROI No Resize,778,0.7493
 ROI No Resize,779,0.0
-ROI No Resize,780,1.0007
+ROI No Resize,780,0.0
 ROI No Resize,781,0.0
-ROI No Resize,782,0.9998
+ROI No Resize,782,0.0
 ROI No Resize,783,0.0
-ROI No Resize,784,0.9991
+ROI No Resize,784,0.0
 ROI No Resize,785,0.0
-ROI No Resize,786,1.0062
+ROI No Resize,786,0.0
 ROI No Resize,787,0.0
 ROI No Resize,788,0.0
-ROI No Resize,789,0.9945
+ROI No Resize,789,0.0
 ROI No Resize,790,0.0
-ROI No Resize,791,1.0001
+ROI No Resize,791,0.0
 ROI No Resize,792,0.0
-ROI No Resize,793,0.9989
-ROI No Resize,794,0.0
+ROI No Resize,793,0.0
+ROI No Resize,794,9.7321
 ROI No Resize,795,0.0
-ROI No Resize,796,1.0013
+ROI No Resize,796,0.0
 ROI No Resize,797,0.0
 ROI No Resize,798,0.0
-ROI No Resize,799,0.9991
+ROI No Resize,799,0.0
 ROI No Resize,800,0.0
 ROI No Resize,801,0.0
-ROI No Resize,802,1.0014
+ROI No Resize,802,0.0
 ROI No Resize,803,0.0
-ROI No Resize,804,0.9986
-ROI No Resize,805,0.0
+ROI No Resize,804,0.0
+ROI No Resize,805,6.9589
 ROI No Resize,806,0.0
-ROI No Resize,807,1.0003
+ROI No Resize,807,0.0
 ROI No Resize,808,0.0
-ROI No Resize,809,1.0011
+ROI No Resize,809,0.0
 ROI No Resize,810,0.0
-ROI No Resize,811,1.0017
+ROI No Resize,811,3.4896
 ROI No Resize,812,0.0
 ROI No Resize,813,0.0
-ROI No Resize,814,0.9979
+ROI No Resize,814,0.0
 ROI No Resize,815,0.0
 ROI No Resize,816,0.0
-ROI No Resize,817,0.9997
+ROI No Resize,817,0.0
 ROI No Resize,818,0.0
 ROI No Resize,819,0.0
-ROI No Resize,820,1.0006
+ROI No Resize,820,0.0
 ROI No Resize,821,0.0
 ROI No Resize,822,0.0
-ROI No Resize,823,0.9995
+ROI No Resize,823,0.0
 ROI No Resize,824,0.0
 ROI No Resize,825,0.0
-ROI No Resize,826,1.0007
+ROI No Resize,826,0.0
 ROI No Resize,827,0.0
 ROI No Resize,828,0.0
-ROI No Resize,829,1.0
-ROI No Resize,830,1.0035
+ROI No Resize,829,0.0
+ROI No Resize,830,10.358
 ROI No Resize,831,0.0
-ROI No Resize,832,0.9951
+ROI No Resize,832,0.0
 ROI No Resize,833,0.0
 ROI No Resize,834,0.0
-ROI No Resize,835,1.0018
+ROI No Resize,835,3.6309
+April tag 2x Decimation,0,15.488
+April tag 2x Decimation,1,6.4176
+April tag 2x Decimation,2,20.3598
+April tag 2x Decimation,3,10.9727
+April tag 2x Decimation,4,20.9322
+April tag 2x Decimation,5,7.5058
+April tag 2x Decimation,6,20.97
+April tag 2x Decimation,7,12.2151
+April tag 2x Decimation,8,16.7258
+April tag 2x Decimation,9,16.9263
+April tag 2x Decimation,10,15.9738
+April tag 2x Decimation,11,8.2699
+April tag 2x Decimation,12,16.1693
+April tag 2x Decimation,13,18.5584
+April tag 2x Decimation,14,10.0805
+April tag 2x Decimation,15,20.2724
+April tag 2x Decimation,16,10.4595
+April tag 2x Decimation,17,20.7188
+April tag 2x Decimation,18,15.7447
+April tag 2x Decimation,19,14.3793
+April tag 2x Decimation,20,19.0269
+April tag 2x Decimation,21,16.8507
+April tag 2x Decimation,22,12.6771
+April tag 2x Decimation,23,17.8751
+April tag 2x Decimation,24,8.8547
+April tag 2x Decimation,25,16.7471
+April tag 2x Decimation,26,13.5194
+April tag 2x Decimation,27,15.324
+April tag 2x Decimation,28,16.9204
+April tag 2x Decimation,29,18.8828
+April tag 2x Decimation,30,19.0495
+April tag 2x Decimation,31,17.1642
+April tag 2x Decimation,32,17.7193
+April tag 2x Decimation,33,12.1064
+April tag 2x Decimation,34,16.9414
+April tag 2x Decimation,35,20.5886
+April tag 2x Decimation,36,15.9801
+April tag 2x Decimation,37,19.7694
+April tag 2x Decimation,38,16.3332
+April tag 2x Decimation,39,13.0165
+April tag 2x Decimation,40,17.8824
+April tag 2x Decimation,41,17.9926
+April tag 2x Decimation,42,15.0631
+April tag 2x Decimation,43,18.0522
+April tag 2x Decimation,44,8.0995
+April tag 2x Decimation,45,20.5301
+April tag 2x Decimation,46,19.7422
+April tag 2x Decimation,47,17.4783
+April tag 2x Decimation,48,14.9788
+April tag 2x Decimation,49,18.4504
+April tag 2x Decimation,50,19.3729
+April tag 2x Decimation,51,31.222
+April tag 2x Decimation,52,22.0423
+April tag 2x Decimation,53,17.6007
+April tag 2x Decimation,54,11.2914
+April tag 2x Decimation,55,20.6818
+April tag 2x Decimation,56,20.4583
+April tag 2x Decimation,57,18.064
+April tag 2x Decimation,58,23.0159
+April tag 2x Decimation,59,22.1113
+April tag 2x Decimation,60,20.0974
+April tag 2x Decimation,61,20.0792
+April tag 2x Decimation,62,18.0845
+April tag 2x Decimation,63,18.0574
+April tag 2x Decimation,64,18.0512
+April tag 2x Decimation,65,20.0807
+April tag 2x Decimation,66,20.3068
+April tag 2x Decimation,67,26.8889
+April tag 2x Decimation,68,16.7134
+April tag 2x Decimation,69,24.1912
+April tag 2x Decimation,70,18.0791
+April tag 2x Decimation,71,20.3305
+April tag 2x Decimation,72,20.3033
+April tag 2x Decimation,73,18.1161
+April tag 2x Decimation,74,22.3219
+April tag 2x Decimation,75,18.366
+April tag 2x Decimation,76,10.2124
+April tag 2x Decimation,77,20.4207
+April tag 2x Decimation,78,30.6112
+April tag 2x Decimation,79,20.5521
+April tag 2x Decimation,80,20.5714
+April tag 2x Decimation,81,26.3173
+April tag 2x Decimation,82,14.0671
+April tag 2x Decimation,83,20.4064
+April tag 2x Decimation,84,20.7319
+April tag 2x Decimation,85,20.4382
+April tag 2x Decimation,86,22.8875
+April tag 2x Decimation,87,18.4768
+April tag 2x Decimation,88,20.6287
+April tag 2x Decimation,89,10.5438
+April tag 2x Decimation,90,20.2183
+April tag 2x Decimation,91,20.4537
+April tag 2x Decimation,92,20.4466
+April tag 2x Decimation,93,21.1945
+April tag 2x Decimation,94,10.1285
+April tag 2x Decimation,95,20.1983
+April tag 2x Decimation,96,20.2296
+April tag 2x Decimation,97,20.3006
+April tag 2x Decimation,98,20.5757
+April tag 2x Decimation,99,18.7195
+April tag 2x Decimation,100,11.367
+April tag 2x Decimation,101,20.4128
+April tag 2x Decimation,102,20.2186
+April tag 2x Decimation,103,20.2948
+April tag 2x Decimation,104,20.1663
+April tag 2x Decimation,105,26.8513
+April tag 2x Decimation,106,13.9449
+April tag 2x Decimation,107,20.3805
+April tag 2x Decimation,108,10.0557
+April tag 2x Decimation,109,27.1497
+April tag 2x Decimation,110,14.2585
+April tag 2x Decimation,111,20.5928
+April tag 2x Decimation,112,19.8062
+April tag 2x Decimation,113,20.8717
+April tag 2x Decimation,114,30.3018
+April tag 2x Decimation,115,23.6006
+April tag 2x Decimation,116,22.1227
+April tag 2x Decimation,117,22.1197
+April tag 2x Decimation,118,21.4739
+April tag 2x Decimation,119,21.1447
+April tag 2x Decimation,120,20.1571
+April tag 2x Decimation,121,13.1252
+April tag 2x Decimation,122,17.5946
+April tag 2x Decimation,123,20.7475
+April tag 2x Decimation,124,10.3884
+April tag 2x Decimation,125,29.3104
+April tag 2x Decimation,126,23.8576
+April tag 2x Decimation,127,20.1179
+April tag 2x Decimation,128,22.1231
+April tag 2x Decimation,129,20.1211
+April tag 2x Decimation,130,22.1543
+April tag 2x Decimation,131,20.1093
+April tag 2x Decimation,132,14.063
+April tag 2x Decimation,133,20.723
+April tag 2x Decimation,134,25.452
+April tag 2x Decimation,135,25.5315
+April tag 2x Decimation,136,19.9066
+April tag 2x Decimation,137,19.0163
+April tag 2x Decimation,138,19.9836
+April tag 2x Decimation,139,19.994
+April tag 2x Decimation,140,19.001
+April tag 2x Decimation,141,22.0005
+April tag 2x Decimation,142,5.0023
+April tag 2x Decimation,143,6.0193
+April tag 2x Decimation,144,19.9805
+April tag 2x Decimation,145,20.0269
+April tag 2x Decimation,146,5.9737
+April tag 2x Decimation,147,19.0001
+April tag 2x Decimation,148,21.0169
+April tag 2x Decimation,149,21.9818
+April tag 2x Decimation,150,23.0018
+April tag 2x Decimation,151,23.9967
+April tag 2x Decimation,152,22.9869
+April tag 2x Decimation,153,20.0184
+April tag 2x Decimation,154,35.9805
+April tag 2x Decimation,155,21.9976
+April tag 2x Decimation,156,25.0046
+April tag 2x Decimation,157,111.6236
+April tag 2x Decimation,158,31.9933
+April tag 2x Decimation,159,33.0218
+April tag 2x Decimation,160,31.608
+April tag 2x Decimation,161,31.9989
+April tag 2x Decimation,162,25.9897
+April tag 2x Decimation,163,23.0039
+April tag 2x Decimation,164,23.9998
+April tag 2x Decimation,165,23.9954
+April tag 2x Decimation,166,26.0022
+April tag 2x Decimation,167,23.0028
+April tag 2x Decimation,168,23.0012
+April tag 2x Decimation,169,25.9962
+April tag 2x Decimation,170,22.9982
+April tag 2x Decimation,171,26.0037
+April tag 2x Decimation,172,22.6265
+April tag 2x Decimation,173,25.0006
+April tag 2x Decimation,174,25.0029
+April tag 2x Decimation,175,23.9945
+April tag 2x Decimation,176,25.0
+April tag 2x Decimation,177,24.0064
+April tag 2x Decimation,178,54.999
+April tag 2x Decimation,179,27.9988
+April tag 2x Decimation,180,24.9997
+April tag 2x Decimation,181,24.9986
+April tag 2x Decimation,182,23.0012
+April tag 2x Decimation,183,28.9984
+April tag 2x Decimation,184,22.9983
+April tag 2x Decimation,185,24.0045
+April tag 2x Decimation,186,23.996
+April tag 2x Decimation,187,25.0004
+April tag 2x Decimation,188,23.754
+April tag 2x Decimation,189,22.0372
+April tag 2x Decimation,190,22.9985
+April tag 2x Decimation,191,23.9993
+April tag 2x Decimation,192,23.006
+April tag 2x Decimation,193,22.9953
+April tag 2x Decimation,194,23.998
+April tag 2x Decimation,195,24.0034
+April tag 2x Decimation,196,21.9986
+April tag 2x Decimation,197,22.9981
+April tag 2x Decimation,198,22.9996
+April tag 2x Decimation,199,22.9995
+April tag 2x Decimation,200,21.9413
+April tag 2x Decimation,201,23.0061
+April tag 2x Decimation,202,22.0017
+April tag 2x Decimation,203,20.9966
+April tag 2x Decimation,204,30.9986
+April tag 2x Decimation,205,27.0102
+April tag 2x Decimation,206,60.9956
+April tag 2x Decimation,207,31.9969
+April tag 2x Decimation,208,34.0002
+April tag 2x Decimation,209,42.9996
+April tag 2x Decimation,210,26.8284
+April tag 2x Decimation,211,24.0016
+April tag 2x Decimation,212,25.4108
+April tag 2x Decimation,213,24.2507
+April tag 2x Decimation,214,26.4184
+April tag 2x Decimation,215,22.3052
+April tag 2x Decimation,216,16.99
+April tag 2x Decimation,217,24.3415
+April tag 2x Decimation,218,25.1918
+April tag 2x Decimation,219,24.5158
+April tag 2x Decimation,220,16.7112
+April tag 2x Decimation,221,25.9142
+April tag 2x Decimation,222,23.491
+April tag 2x Decimation,223,24.9124
+April tag 2x Decimation,224,24.3107
+April tag 2x Decimation,225,18.6607
+April tag 2x Decimation,226,22.9816
+April tag 2x Decimation,227,24.962
+April tag 2x Decimation,228,24.8546
+April tag 2x Decimation,229,16.502
+April tag 2x Decimation,230,24.7558
+April tag 2x Decimation,231,24.6437
+April tag 2x Decimation,232,26.0466
+April tag 2x Decimation,233,16.717
+April tag 2x Decimation,234,23.6884
+April tag 2x Decimation,235,25.017
+April tag 2x Decimation,236,58.8075
+April tag 2x Decimation,237,24.6658
+April tag 2x Decimation,238,69.8794
+April tag 2x Decimation,239,79.6969
+April tag 2x Decimation,240,74.3241
+April tag 2x Decimation,241,58.6793
+April tag 2x Decimation,242,36.1317
+April tag 2x Decimation,243,36.2391
+April tag 2x Decimation,244,58.8658
+April tag 2x Decimation,245,66.3192
+April tag 2x Decimation,246,28.6185
+April tag 2x Decimation,247,30.1984
+April tag 2x Decimation,248,29.509
+April tag 2x Decimation,249,27.5221
+April tag 2x Decimation,250,26.4897
+April tag 2x Decimation,251,25.3315
+April tag 2x Decimation,252,20.1377
+April tag 2x Decimation,253,26.2188
+April tag 2x Decimation,254,22.6584
+April tag 2x Decimation,255,22.1918
+April tag 2x Decimation,256,16.2021
+April tag 2x Decimation,257,24.1751
+April tag 2x Decimation,258,26.3999
+April tag 2x Decimation,259,22.3851
+April tag 2x Decimation,260,23.0284
+April tag 2x Decimation,261,17.7983
+April tag 2x Decimation,262,24.3725
+April tag 2x Decimation,263,24.9338
+April tag 2x Decimation,264,24.3484
+April tag 2x Decimation,265,16.3891
+April tag 2x Decimation,266,25.188
+April tag 2x Decimation,267,17.0413
+April tag 2x Decimation,268,27.7643
+April tag 2x Decimation,269,24.1835
+April tag 2x Decimation,270,20.8076
+April tag 2x Decimation,271,22.6283
+April tag 2x Decimation,272,20.1096
+April tag 2x Decimation,273,22.5039
+April tag 2x Decimation,274,16.7032
+April tag 2x Decimation,275,27.1379
+April tag 2x Decimation,276,22.0552
+April tag 2x Decimation,277,16.5665
+April tag 2x Decimation,278,24.3203
+April tag 2x Decimation,279,25.1634
+April tag 2x Decimation,280,19.0557
+April tag 2x Decimation,281,28.7907
+April tag 2x Decimation,282,24.8123
+April tag 2x Decimation,283,16.1808
+April tag 2x Decimation,284,24.7925
+April tag 2x Decimation,285,28.4669
+April tag 2x Decimation,286,22.9979
+April tag 2x Decimation,287,21.9982
+April tag 2x Decimation,288,22.0068
+April tag 2x Decimation,289,22.9932
+April tag 2x Decimation,290,23.0011
+April tag 2x Decimation,291,25.0051
+April tag 2x Decimation,292,21.0052
+April tag 2x Decimation,293,20.992
+April tag 2x Decimation,294,22.0038
+April tag 2x Decimation,295,23.5143
+April tag 2x Decimation,296,20.9999
+April tag 2x Decimation,297,21.0052
+April tag 2x Decimation,298,22.9867
+April tag 2x Decimation,299,22.0024
+April tag 2x Decimation,300,21.9999
+April tag 2x Decimation,301,21.9976
+April tag 2x Decimation,302,24.0042
+April tag 2x Decimation,303,23.0053
+April tag 2x Decimation,304,21.0121
+April tag 2x Decimation,305,21.9827
+April tag 2x Decimation,306,23.0064
+April tag 2x Decimation,307,24.0026
+April tag 2x Decimation,308,21.9924
+April tag 2x Decimation,309,22.9979
+April tag 2x Decimation,310,22.0003
+April tag 2x Decimation,311,21.0014
+April tag 2x Decimation,312,22.0011
+April tag 2x Decimation,313,22.0003
+April tag 2x Decimation,314,21.9932
+April tag 2x Decimation,315,20.0086
+April tag 2x Decimation,316,22.8382
+April tag 2x Decimation,317,23.1209
+April tag 2x Decimation,318,21.9994
+April tag 2x Decimation,319,33.0017
+April tag 2x Decimation,320,47.9988
+April tag 2x Decimation,321,22.0004
+April tag 2x Decimation,322,28.0066
+April tag 2x Decimation,323,91.9967
+April tag 2x Decimation,324,182.9989
+April tag 2x Decimation,325,171.0018
+April tag 2x Decimation,326,64.9964
+April tag 2x Decimation,327,427.5217
+April tag 2x Decimation,328,50.0063
+April tag 2x Decimation,329,184.2648
+April tag 2x Decimation,330,154.0041
+April tag 2x Decimation,331,82.9974
+April tag 2x Decimation,332,30.004
+April tag 2x Decimation,333,28.991
+April tag 2x Decimation,334,117.0039
+April tag 2x Decimation,335,97.0011
+April tag 2x Decimation,336,45.999
+April tag 2x Decimation,337,29.0005
+April tag 2x Decimation,338,65.1475
+April tag 2x Decimation,339,26.9924
+April tag 2x Decimation,340,114.0003
+April tag 2x Decimation,341,44.9984
+April tag 2x Decimation,342,26.0019
+April tag 2x Decimation,343,28.0021
+April tag 2x Decimation,344,29.9954
+April tag 2x Decimation,345,42.0021
+April tag 2x Decimation,346,55.9104
+April tag 2x Decimation,347,54.1075
+April tag 2x Decimation,348,67.0048
+April tag 2x Decimation,349,75.9972
+April tag 2x Decimation,350,114.0025
+April tag 2x Decimation,351,99.9991
+April tag 2x Decimation,352,139.0006
+April tag 2x Decimation,353,58.0002
+April tag 2x Decimation,354,30.0002
+April tag 2x Decimation,355,98.0036
+April tag 2x Decimation,356,65.9919
+April tag 2x Decimation,357,31.0038
+April tag 2x Decimation,358,63.0044
+April tag 2x Decimation,359,65.4696
+April tag 2x Decimation,360,64.5094
+April tag 2x Decimation,361,70.5928
+April tag 2x Decimation,362,47.8945
+April tag 2x Decimation,363,64.5326
+April tag 2x Decimation,364,83.1099
+April tag 2x Decimation,365,82.6139
+April tag 2x Decimation,366,34.2564
+April tag 2x Decimation,367,34.2638
+April tag 2x Decimation,368,32.2371
+April tag 2x Decimation,369,66.7043
+April tag 2x Decimation,370,84.4653
+April tag 2x Decimation,371,32.1745
+April tag 2x Decimation,372,54.3196
+April tag 2x Decimation,373,30.163
+April tag 2x Decimation,374,26.1481
+April tag 2x Decimation,375,34.1945
+April tag 2x Decimation,376,30.1563
+April tag 2x Decimation,377,28.1582
+April tag 2x Decimation,378,32.1796
+April tag 2x Decimation,379,34.2132
+April tag 2x Decimation,380,68.3861
+April tag 2x Decimation,381,59.0357
+April tag 2x Decimation,382,118.6413
+April tag 2x Decimation,383,34.3072
+April tag 2x Decimation,384,42.3253
+April tag 2x Decimation,385,30.2198
+April tag 2x Decimation,386,33.924
+April tag 2x Decimation,387,70.8801
+April tag 2x Decimation,388,69.2248
+April tag 2x Decimation,389,44.2556
+April tag 2x Decimation,390,28.1713
+April tag 2x Decimation,391,47.7749
+April tag 2x Decimation,392,29.0859
+April tag 2x Decimation,393,106.6277
+April tag 2x Decimation,394,778.5832
+April tag 2x Decimation,395,199.0045
+April tag 2x Decimation,396,34.9995
+April tag 2x Decimation,397,135.0016
+April tag 2x Decimation,398,102.0008
+April tag 2x Decimation,399,73.9963
+April tag 2x Decimation,400,204.9997
+April tag 2x Decimation,401,31.0048
+April tag 2x Decimation,402,26.9947
+April tag 2x Decimation,403,148.0017
+April tag 2x Decimation,404,54.9969
+April tag 2x Decimation,405,81.0045
+April tag 2x Decimation,406,34.9977
+April tag 2x Decimation,407,62.9986
+April tag 2x Decimation,408,34.0
+April tag 2x Decimation,409,235.3861
+April tag 2x Decimation,410,97.1177
+April tag 2x Decimation,411,44.2794
+April tag 2x Decimation,412,54.2983
+April tag 2x Decimation,413,56.2568
+April tag 2x Decimation,414,66.4108
+April tag 2x Decimation,415,104.8578
+April tag 2x Decimation,416,187.6601
+April tag 2x Decimation,417,157.1919
+April tag 2x Decimation,418,38.2167
+April tag 2x Decimation,419,69.184
+April tag 2x Decimation,420,101.8332
+April tag 2x Decimation,421,170.2924
+April tag 2x Decimation,422,40.2337
+April tag 2x Decimation,423,176.7721
+April tag 2x Decimation,424,90.0973
+April tag 2x Decimation,425,187.9571
+April tag 2x Decimation,426,153.6408
+April tag 2x Decimation,427,95.6719
+April tag 2x Decimation,428,64.1828
+April tag 2x Decimation,429,118.47
+April tag 2x Decimation,430,34.995
+April tag 2x Decimation,431,54.0013
+April tag 2x Decimation,432,83.0019
+April tag 2x Decimation,433,72.0029
+April tag 2x Decimation,434,134.9926
+April tag 2x Decimation,435,110.9993
+April tag 2x Decimation,436,185.0073
+April tag 2x Decimation,437,87.0011
+April tag 2x Decimation,438,110.9969
+April tag 2x Decimation,439,195.9958
+April tag 2x Decimation,440,45.9991
+April tag 2x Decimation,441,60.005
+April tag 2x Decimation,442,85.0015
+April tag 2x Decimation,443,128.9982
+April tag 2x Decimation,444,97.9975
+April tag 2x Decimation,445,89.006
+April tag 2x Decimation,446,91.9969
+April tag 2x Decimation,447,73.0004
+April tag 2x Decimation,448,164.0552
+April tag 2x Decimation,449,62.4233
+April tag 2x Decimation,450,32.2408
+April tag 2x Decimation,451,64.246
+April tag 2x Decimation,452,70.7557
+April tag 2x Decimation,453,99.7456
+April tag 2x Decimation,454,235.8452
+April tag 2x Decimation,455,150.3149
+April tag 2x Decimation,456,193.843
+April tag 2x Decimation,457,39.8955
+April tag 2x Decimation,458,23.6957
+April tag 2x Decimation,459,42.9037
+April tag 2x Decimation,460,36.2234
+April tag 2x Decimation,461,63.0966
+April tag 2x Decimation,462,78.8551
+April tag 2x Decimation,463,222.1915
+April tag 2x Decimation,464,26.6022
+April tag 2x Decimation,465,28.0902
+April tag 2x Decimation,466,28.2981
+April tag 2x Decimation,467,24.7451
+April tag 2x Decimation,468,16.5147
+April tag 2x Decimation,469,35.0925
+April tag 2x Decimation,470,26.043
+April tag 2x Decimation,471,24.887
+April tag 2x Decimation,472,16.9917
+April tag 2x Decimation,473,27.8954
+April tag 2x Decimation,474,20.2059
+April tag 2x Decimation,475,31.3444
+April tag 2x Decimation,476,20.0839
+April tag 2x Decimation,477,24.307
+April tag 2x Decimation,478,20.2835
+April tag 2x Decimation,479,24.6291
+April tag 2x Decimation,480,40.2393
+April tag 2x Decimation,481,16.9094
+April tag 2x Decimation,482,32.0619
+April tag 2x Decimation,483,22.602
+April tag 2x Decimation,484,27.1986
+April tag 2x Decimation,485,16.325
+April tag 2x Decimation,486,29.5819
+April tag 2x Decimation,487,24.0105
+April tag 2x Decimation,488,24.0187
+April tag 2x Decimation,489,23.9765
+April tag 2x Decimation,490,23.9965
+April tag 2x Decimation,491,23.9992
+April tag 2x Decimation,492,24.0039
+April tag 2x Decimation,493,23.9984
+April tag 2x Decimation,494,23.0022
+April tag 2x Decimation,495,22.9952
+April tag 2x Decimation,496,22.0047
+April tag 2x Decimation,497,21.9996
+April tag 2x Decimation,498,23.0039
+April tag 2x Decimation,499,23.0003
+April tag 2x Decimation,500,21.9958
+April tag 2x Decimation,501,23.0036
+April tag 2x Decimation,502,23.515
+April tag 2x Decimation,503,24.0296
+April tag 2x Decimation,504,23.9763
+April tag 2x Decimation,505,25.0028
+April tag 2x Decimation,506,24.9931
+April tag 2x Decimation,507,25.9971
+April tag 2x Decimation,508,23.0003
+April tag 2x Decimation,509,21.0019
+April tag 2x Decimation,510,23.0197
+April tag 2x Decimation,511,23.987
+April tag 2x Decimation,512,25.0217
+April tag 2x Decimation,513,24.9795
+April tag 2x Decimation,514,23.997
+April tag 2x Decimation,515,22.0199
+April tag 2x Decimation,516,24.9732
+April tag 2x Decimation,517,25.0326
+April tag 2x Decimation,518,21.9783
+April tag 2x Decimation,519,22.0228
+April tag 2x Decimation,520,21.9743
+April tag 2x Decimation,521,22.008
+April tag 2x Decimation,522,22.0094
+April tag 2x Decimation,523,22.0059
+April tag 2x Decimation,524,23.343
+April tag 2x Decimation,525,24.0029
+April tag 2x Decimation,526,21.9858
+April tag 2x Decimation,527,21.998
+April tag 2x Decimation,528,22.9905
+April tag 2x Decimation,529,22.023
+April tag 2x Decimation,530,23.0134
+April tag 2x Decimation,531,22.9686
+April tag 2x Decimation,532,26.0133
+April tag 2x Decimation,533,61.9894
+April tag 2x Decimation,534,25.9944
+April tag 2x Decimation,535,24.9973
+April tag 2x Decimation,536,24.0047
+April tag 2x Decimation,537,23.9965
+April tag 2x Decimation,538,23.0037
+April tag 2x Decimation,539,21.9962
+April tag 2x Decimation,540,21.9985
+April tag 2x Decimation,541,23.0027
+April tag 2x Decimation,542,23.0285
+April tag 2x Decimation,543,22.9714
+April tag 2x Decimation,544,22.0069
+April tag 2x Decimation,545,25.9948
+April tag 2x Decimation,546,22.031
+April tag 2x Decimation,547,21.9742
+April tag 2x Decimation,548,24.0216
+April tag 2x Decimation,549,24.9705
+April tag 2x Decimation,550,22.0202
+April tag 2x Decimation,551,22.749
+April tag 2x Decimation,552,23.9931
+April tag 2x Decimation,553,24.0226
+April tag 2x Decimation,554,23.0
+April tag 2x Decimation,555,22.003
+April tag 2x Decimation,556,21.9979
+April tag 2x Decimation,557,25.0169
+April tag 2x Decimation,558,22.9933
+April tag 2x Decimation,559,21.9989
+April tag 2x Decimation,560,22.9989
+April tag 2x Decimation,561,23.0021
+April tag 2x Decimation,562,21.9887
+April tag 2x Decimation,563,23.0001
+April tag 2x Decimation,564,27.0072
+April tag 2x Decimation,565,21.0057
+April tag 2x Decimation,566,22.9982
+April tag 2x Decimation,567,22.0
+April tag 2x Decimation,568,22.9714
+April tag 2x Decimation,569,22.0244
+April tag 2x Decimation,570,22.2445
+April tag 2x Decimation,571,23.0019
+April tag 2x Decimation,572,23.9617
+April tag 2x Decimation,573,23.8514
+April tag 2x Decimation,574,22.9986
+April tag 2x Decimation,575,23.0334
+April tag 2x Decimation,576,23.9698
+April tag 2x Decimation,577,22.0009
+April tag 2x Decimation,578,23.0121
+April tag 2x Decimation,579,22.0117
+April tag 2x Decimation,580,22.9777
+April tag 2x Decimation,581,19.996
+April tag 2x Decimation,582,21.9974
+April tag 2x Decimation,583,22.0057
+April tag 2x Decimation,584,22.0246
+April tag 2x Decimation,585,21.9933
+April tag 2x Decimation,586,19.9874
+April tag 2x Decimation,587,22.9937
+April tag 2x Decimation,588,22.9977
+April tag 2x Decimation,589,22.0176
+April tag 2x Decimation,590,22.0829
+April tag 2x Decimation,591,23.9767
+April tag 2x Decimation,592,23.0264
+April tag 2x Decimation,593,22.0029
+April tag 2x Decimation,594,21.9737
+April tag 2x Decimation,595,23.019
+April tag 2x Decimation,596,22.0024
+April tag 2x Decimation,597,21.9773
+April tag 2x Decimation,598,23.0257
+April tag 2x Decimation,599,24.0017
+April tag 2x Decimation,600,23.9928
+April tag 2x Decimation,601,22.9798
+April tag 2x Decimation,602,24.0029
+April tag 2x Decimation,603,24.0274
+April tag 2x Decimation,604,23.9716
+April tag 2x Decimation,605,24.0072
+April tag 2x Decimation,606,23.9892
+April tag 2x Decimation,607,22.1607
+April tag 2x Decimation,608,20.0064
+April tag 2x Decimation,609,21.0206
+April tag 2x Decimation,610,21.9745
+April tag 2x Decimation,611,23.0064
+April tag 2x Decimation,612,21.9876
+April tag 2x Decimation,613,23.0071
+April tag 2x Decimation,614,24.0244
+April tag 2x Decimation,615,21.9999
+April tag 2x Decimation,616,22.9738
+April tag 2x Decimation,617,20.9973
+April tag 2x Decimation,618,21.9975
+April tag 2x Decimation,619,22.0239
+April tag 2x Decimation,620,22.0066
+April tag 2x Decimation,621,20.0009
+April tag 2x Decimation,622,22.2278
+April tag 2x Decimation,623,22.317
+April tag 2x Decimation,624,23.9944
+April tag 2x Decimation,625,24.007
+April tag 2x Decimation,626,22.9987
+April tag 2x Decimation,627,25.0015
+April tag 2x Decimation,628,22.9943
+April tag 2x Decimation,629,22.978
+April tag 2x Decimation,630,23.0029
+April tag 2x Decimation,631,24.0018
+April tag 2x Decimation,632,21.9951
+April tag 2x Decimation,633,24.027
+April tag 2x Decimation,634,23.9912
+April tag 2x Decimation,635,27.9785
+April tag 2x Decimation,636,23.9994
+April tag 2x Decimation,637,25.9998
+April tag 2x Decimation,638,24.0085
+April tag 2x Decimation,639,24.9913
+April tag 2x Decimation,640,23.031
+April tag 2x Decimation,641,21.9729
+April tag 2x Decimation,642,22.2238
+April tag 2x Decimation,643,21.0012
+April tag 2x Decimation,644,21.0009
+April tag 2x Decimation,645,20.9994
+April tag 2x Decimation,646,21.0026
+April tag 2x Decimation,647,23.996
+April tag 2x Decimation,648,22.0044
+April tag 2x Decimation,649,21.994
+April tag 2x Decimation,650,20.0021
+April tag 2x Decimation,651,23.0037
+April tag 2x Decimation,652,21.9934
+April tag 2x Decimation,653,24.0026
+April tag 2x Decimation,654,23.9979
+April tag 2x Decimation,655,20.999
+April tag 2x Decimation,656,19.0055
+April tag 2x Decimation,657,20.0005
+April tag 2x Decimation,658,18.0026
+April tag 2x Decimation,659,25.0642
+April tag 2x Decimation,660,18.6288
+April tag 2x Decimation,661,20.247
+April tag 2x Decimation,662,30.324
+April tag 2x Decimation,663,20.7852
+April tag 2x Decimation,664,15.74
+April tag 2x Decimation,665,24.9423
+April tag 2x Decimation,666,20.206
+April tag 2x Decimation,667,20.2012
+April tag 2x Decimation,668,20.2126
+April tag 2x Decimation,669,20.9393
+April tag 2x Decimation,670,27.4201
+April tag 2x Decimation,671,25.6775
+April tag 2x Decimation,672,18.9218
+April tag 2x Decimation,673,20.7623
+April tag 2x Decimation,674,20.3947
+April tag 2x Decimation,675,28.5267
+April tag 2x Decimation,676,19.0231
+April tag 2x Decimation,677,24.3142
+April tag 2x Decimation,678,24.3192
+April tag 2x Decimation,679,18.3184
+April tag 2x Decimation,680,20.2494
+April tag 2x Decimation,681,28.9193
+April tag 2x Decimation,682,17.4954
+April tag 2x Decimation,683,23.4758
+April tag 2x Decimation,684,20.283
+April tag 2x Decimation,685,20.5013
+April tag 2x Decimation,686,20.209
+April tag 2x Decimation,687,20.7475
+April tag 2x Decimation,688,27.6677
+April tag 2x Decimation,689,15.2162
+April tag 2x Decimation,690,28.414
+April tag 2x Decimation,691,20.2227
+April tag 2x Decimation,692,20.8721
+April tag 2x Decimation,693,15.4341
+April tag 2x Decimation,694,27.0365
+April tag 2x Decimation,695,24.6864
+April tag 2x Decimation,696,20.2637
+April tag 2x Decimation,697,20.2315
+April tag 2x Decimation,698,20.2279
+April tag 2x Decimation,699,28.6259
+April tag 2x Decimation,700,16.6308
+April tag 2x Decimation,701,24.6135
+April tag 2x Decimation,702,17.1561
+April tag 2x Decimation,703,23.8137
+April tag 2x Decimation,704,20.2996
+April tag 2x Decimation,705,29.041
+April tag 2x Decimation,706,17.7859
+April tag 2x Decimation,707,24.6033
+April tag 2x Decimation,708,18.1573
+April tag 2x Decimation,709,20.2843
+April tag 2x Decimation,710,20.2039
+April tag 2x Decimation,711,28.5913
+April tag 2x Decimation,712,18.2874
+April tag 2x Decimation,713,24.3444
+April tag 2x Decimation,714,18.2827
+April tag 2x Decimation,715,20.2127
+April tag 2x Decimation,716,20.194
+April tag 2x Decimation,717,20.9505
+April tag 2x Decimation,718,24.7125
+April tag 2x Decimation,719,16.8427
+April tag 2x Decimation,720,24.4083
+April tag 2x Decimation,721,20.2415
+April tag 2x Decimation,722,20.1911
+April tag 2x Decimation,723,26.4337
+April tag 2x Decimation,724,16.17
+April tag 2x Decimation,725,27.3607
+April tag 2x Decimation,726,26.071
+April tag 2x Decimation,727,16.7504
+April tag 2x Decimation,728,29.4812
+April tag 2x Decimation,729,17.7166
+April tag 2x Decimation,730,25.3401
+April tag 2x Decimation,731,16.2786
+April tag 2x Decimation,732,26.748
+April tag 2x Decimation,733,14.14
+April tag 2x Decimation,734,20.1521
+April tag 2x Decimation,735,29.315
+April tag 2x Decimation,736,16.4538
+April tag 2x Decimation,737,26.8664
+April tag 2x Decimation,738,20.5828
+April tag 2x Decimation,739,20.6992
+April tag 2x Decimation,740,20.4556
+April tag 2x Decimation,741,20.7484
+April tag 2x Decimation,742,24.7351
+April tag 2x Decimation,743,16.7706
+April tag 2x Decimation,744,29.0395
+April tag 2x Decimation,745,20.1977
+April tag 2x Decimation,746,20.5296
+April tag 2x Decimation,747,21.8889
+April tag 2x Decimation,748,16.6021
+April tag 2x Decimation,749,28.4959
+April tag 2x Decimation,750,18.5268
+April tag 2x Decimation,751,27.4881
+April tag 2x Decimation,752,16.1119
+April tag 2x Decimation,753,24.2934
+April tag 2x Decimation,754,26.7714
+April tag 2x Decimation,755,16.2903
+April tag 2x Decimation,756,26.6605
+April tag 2x Decimation,757,20.1996
+April tag 2x Decimation,758,21.0614
+April tag 2x Decimation,759,17.4858
+April tag 2x Decimation,760,24.5657
+April tag 2x Decimation,761,16.5244
+April tag 2x Decimation,762,20.1783
+April tag 2x Decimation,763,30.2622
+April tag 2x Decimation,764,20.9598
+April tag 2x Decimation,765,18.1209
+April tag 2x Decimation,766,25.9296
+April tag 2x Decimation,767,16.0714
+April tag 2x Decimation,768,28.3501
+April tag 2x Decimation,769,20.226
+April tag 2x Decimation,770,20.8214
+April tag 2x Decimation,771,18.2059
+April tag 2x Decimation,772,24.5574
+April tag 2x Decimation,773,22.4509
+April tag 2x Decimation,774,24.2238
+April tag 2x Decimation,775,16.4489
+April tag 2x Decimation,776,27.432
+April tag 2x Decimation,777,17.654
+April tag 2x Decimation,778,26.4999
+April tag 2x Decimation,779,16.598
+April tag 2x Decimation,780,18.2597
+April tag 2x Decimation,781,20.1782
+April tag 2x Decimation,782,30.491
+April tag 2x Decimation,783,20.6309
+April tag 2x Decimation,784,18.3017
+April tag 2x Decimation,785,24.46
+April tag 2x Decimation,786,18.5683
+April tag 2x Decimation,787,20.1981
+April tag 2x Decimation,788,21.0542
+April tag 2x Decimation,789,27.586
+April tag 2x Decimation,790,16.9342
+April tag 2x Decimation,791,24.1566
+April tag 2x Decimation,792,20.2323
+April tag 2x Decimation,793,20.2235
+April tag 2x Decimation,794,20.8605
+April tag 2x Decimation,795,27.9185
+April tag 2x Decimation,796,19.7184
+April tag 2x Decimation,797,20.8275
+April tag 2x Decimation,798,18.3419
+April tag 2x Decimation,799,16.4905
+April tag 2x Decimation,800,25.0019
+April tag 2x Decimation,801,18.3901
+April tag 2x Decimation,802,25.3283
+April tag 2x Decimation,803,16.5983
+April tag 2x Decimation,804,20.8183
+April tag 2x Decimation,805,20.7601
+April tag 2x Decimation,806,20.76
+April tag 2x Decimation,807,20.9313
+April tag 2x Decimation,808,25.0068
+April tag 2x Decimation,809,17.0643
+April tag 2x Decimation,810,24.3585
+April tag 2x Decimation,811,20.4332
+April tag 2x Decimation,812,20.2095
+April tag 2x Decimation,813,20.8094
+April tag 2x Decimation,814,17.7202
+April tag 2x Decimation,815,26.2758
+April tag 2x Decimation,816,16.4008
+April tag 2x Decimation,817,18.3169
+April tag 2x Decimation,818,20.4174
+April tag 2x Decimation,819,28.5538
+April tag 2x Decimation,820,19.5642
+April tag 2x Decimation,821,24.5977
+April tag 2x Decimation,822,18.6388
+April tag 2x Decimation,823,20.2105
+April tag 2x Decimation,824,19.7576
+April tag 2x Decimation,825,24.4637
+April tag 2x Decimation,826,24.317
+April tag 2x Decimation,827,16.5895
+April tag 2x Decimation,828,18.4003
+April tag 2x Decimation,829,20.1664
+April tag 2x Decimation,830,20.3647
+April tag 2x Decimation,831,20.3832
+April tag 2x Decimation,832,28.8819
+April tag 2x Decimation,833,17.7944
+April tag 2x Decimation,834,25.5927
+April tag 2x Decimation,835,17.6274

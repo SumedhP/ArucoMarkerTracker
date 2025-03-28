@@ -40,7 +40,7 @@ def crop_roi(image: cvt.MatLike, ROI: cvt.Rect) -> cvt.MatLike:
     return image[y : y + height, x : x + width]
 
 
-def update_roi(corners, horizontal_padding: int = 75, vertical_padding: int = 25):
+def update_roi(corners, horizontal_padding: int = 100, vertical_padding: int = 50):
     rectangles: List[cvt.RotatedRect] = [
         cv2.minAreaRect(corners[i]) for i in range(len(corners))
     ]

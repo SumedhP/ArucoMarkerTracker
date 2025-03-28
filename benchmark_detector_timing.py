@@ -81,8 +81,8 @@ def displayResults():
     plt.xlabel("Frame")
     plt.ylabel("Time (ms)")
     plt.legend()
-    plt.show()
     plt.savefig("detector_timings.png")
+    plt.show()
 
 def main():
     takeBenchmarks()
