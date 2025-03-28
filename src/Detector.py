@@ -14,7 +14,7 @@ from cv2.aruco import (
 )
 import cv2.typing as cvt
 import numpy as np
-from Util import crop_top_bottom
+from .Util import crop_top_bottom
 
 
 def list_detectors():
@@ -48,7 +48,7 @@ class Detector(metaclass=abc.ABCMeta):
 
     @staticmethod
     def getName() -> str:
-        return "BaselineDetector"
+        return "Baseline"
 
     def getAnnotatedFrame(self, image: cvt.MatLike, corners, ids, rejected):
         frame = cv2.aruco.drawDetectedMarkers(image, corners, ids)
@@ -132,7 +132,6 @@ class AprilTagDetector(Detector):
 
 
 class CroppedDetector(Detector):
-
     def __init__(self, top_crop: int = 150, bottom_crop: int = 150):
         super().__init__()
         self.top_crop = top_crop
@@ -147,3 +146,7 @@ class CroppedDetector(Detector):
             corner += (0, top)
 
         return corners, ids, rejected
+    
+    @staticmethod
+    def getName() -> str:
+        return "Cropped"
