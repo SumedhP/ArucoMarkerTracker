@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 import cv2.typing as cvt
-from typing import Tuple, List
+from typing import Tuple
 
 
 def crop_top_bottom(
@@ -28,35 +28,50 @@ def crop_top_bottom(
     return image[top : height - bottom, :], top
 
 
-def crop_roi(image: cvt.MatLike, ROI: cvt.Rect) -> cvt.MatLike:
+def crop_roi(image: cvt.MatLike, roi: cvt.Rect) -> cvt.MatLike:
     """
     Crop the image to the region of interest.
 
     :param image: Input image.
-    :param ROI: Region of interest.
+    :param roi: Region of interest.
     :return: Cropped image.
     """
-    x, y, width, height = ROI
+    x, y, width, height = roi
     return image[y : y + height, x : x + width]
 
 
-def update_roi(corners, horizontal_padding: int = 100, vertical_padding: int = 50):
-    rectangles: List[cvt.RotatedRect] = [
-        cv2.minAreaRect(corners[i]) for i in range(len(corners))
-    ]
+def update_roi(
+    corners, horizontal_padding: int = 100, vertical_padding: int = 50
+) -> Tuple[int, int, int, int]:
+    """
+    Updates the region of interest (ROI) based on the largest detected marker.
+    The ROI is expanded by the specified padding.
 
-    largest_marker_corners = corners[np.argmax([max(r[1]) for r in rectangles])]
-    roi = cv2.boundingRect(np.array(largest_marker_corners))
+    :param corners: List of marker corner points.
+    :param horizontal_padding: Horizontal padding in pixels.
+    :param vertical_padding: Vertical padding in pixels.
+    :return: Updated ROI as (x, y, width, height).
+    """
+    if len(corners) == 0:
+        raise ValueError("No corners provided to update the ROI.")
 
-    # Expand the ROI by padding
-    x, y, w, h = roi
+    # Determine the rectangles for each set of corners
+    rectangles = [cv2.minAreaRect(np.array(marker)) for marker in corners]
+
+    # Find the largest rectangle based on its area
+    largest_index = np.argmax([w * h for _, (w, h), _ in rectangles])
+    largest_marker_corners = corners[largest_index]
+
+    # Get the dimensions of the largest rectangle and expand it by the padding
+    x, y, w, h = cv2.boundingRect(np.array(largest_marker_corners))
 
     roi = (
         max(0, x - horizontal_padding),
         max(0, y - vertical_padding),
-        w + horizontal_padding * 2,
-        h + vertical_padding * 2,
+        w + 2 * horizontal_padding,
+        h + 2 * vertical_padding,
     )
+
     return roi
 
 
@@ -64,49 +79,62 @@ def apply_color_threshold(
     image: cvt.MatLike,
 ) -> Tuple[bool, int, int, cvt.MatLike, cvt.MatLike]:
     """
-    Apple a color threshold to an image using the LAB color space.
+    Applies a color threshold to an image using the LAB color space.
 
     :param image: Input image.
-    :return: whether the image has red or blue color, the top left x and y coordinates of the detected color, the cropped image, and the mask.
+    :return: A tuple containing:
+        - A boolean indicating whether red or blue color was detected.
+        - The top-left x and y coordinates of the detected region.
+        - The cropped image (or None if no color detected).
+        - The generated mask.
     """
+    # LAB color space bounds for red and blue colors
+    RED_BOUNDS = (
+        np.array([130, 200, 190], dtype=np.uint8),
+        np.array([140, 210, 200], dtype=np.uint8),
+    )
+    BLUE_BOUNDS = (
+        np.array([75, 200, 15], dtype=np.uint8),
+        np.array([85, 210, 30], dtype=np.uint8),
+    )
 
-    RED_LOWER_BOUND = np.array([130, 200, 190], dtype=np.uint8)
-    RED_UPPER_BOUND = np.array([140, 210, 200], dtype=np.uint8)
+    DOWNSCALING_FACTOR = 4
+    PADDING = 50
 
-    BLUE_LOWER_BOUND = np.array([75, 200, 15], dtype=np.uint8)
-    BLUE_UPPER_BOUND = np.array([85, 210, 30], dtype=np.uint8)
+    # Downscale the image and convert to LAB color space
+    downscaled_image = image[::DOWNSCALING_FACTOR, ::DOWNSCALING_FACTOR, :]
+    lab_image = cv2.cvtColor(downscaled_image, cv2.COLOR_BGR2LAB)
 
-    IMAGE_STEP_SIZE = 4
+    # Generate masks for red and blue colors in the image
+    red_mask = cv2.inRange(lab_image, *RED_BOUNDS)
+    blue_mask = cv2.inRange(lab_image, *BLUE_BOUNDS)
+    mask = red_mask | blue_mask
 
-    downsampled_image = image[::IMAGE_STEP_SIZE, ::IMAGE_STEP_SIZE, :]
-
-    lab_space_image = cv2.cvtColor(downsampled_image, cv2.COLOR_BGR2LAB)
-    # Apply the mask to the original image
-    red_mask = cv2.inRange(lab_space_image, RED_LOWER_BOUND, RED_UPPER_BOUND)
-    blue_mask = cv2.inRange(lab_space_image, BLUE_LOWER_BOUND, BLUE_UPPER_BOUND)
-    mask = cv2.bitwise_or(red_mask, blue_mask)
-
-    # Check if the mask is empty
+    # If no colors are detected, return early
     if np.count_nonzero(mask) == 0:
         return False, 0, 0, None, mask
 
-    def get_min_max_index(arr, scalar, maximum):
-        PADDING = 50
-        lower_bound: int = np.argmax(arr).astype(int) * scalar
-        lower_bound = max(lower_bound - PADDING, 0)
-        upper_bound: int = (len(arr) - np.argmax(arr[::-1]).astype(int)) * scalar
-        upper_bound = min(upper_bound + PADDING, maximum)
-        return lower_bound, upper_bound
+    def get_bounding_indices(
+        arr: np.ndarray, scale: int, max_value: int
+    ) -> Tuple[int, int]:
+        """
+        Computes the minimum and maximum indices of the bounding box in the mask,
+        and scales them back up to original image size.
+        """
+        lower_bound = np.argmax(arr) * scale
+        upper_bound = (len(arr) - np.argmax(arr[::-1])) * scale
 
-    columns_in_mask = np.any(mask, axis=0)
-    rows_in_mask = np.any(mask, axis=1)
+        return max(lower_bound - PADDING, 0), min(upper_bound + PADDING, max_value)
 
-    min_col, max_col = get_min_max_index(
-        columns_in_mask, IMAGE_STEP_SIZE, image.shape[1]
+    # Get the bounding box indices for the mask
+    min_col, max_col = get_bounding_indices(
+        np.any(mask, axis=0), DOWNSCALING_FACTOR, image.shape[1]
     )
-    min_row, max_row = get_min_max_index(rows_in_mask, IMAGE_STEP_SIZE, image.shape[0])
+    min_row, max_row = get_bounding_indices(
+        np.any(mask, axis=1), DOWNSCALING_FACTOR, image.shape[0]
+    )
 
-    # Crop the image around this area
+    # Crop the image to the detected region
     cropped_image = image[min_row:max_row, min_col:max_col]
 
     return True, min_row, min_col, cropped_image, mask
