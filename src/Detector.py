@@ -11,6 +11,7 @@ from cv2.aruco import (
 import cv2.typing as cvt
 import numpy as np
 from .Util import *
+from line_profiler import profile
 
 
 def list_detectors():
@@ -41,7 +42,9 @@ class Detector(metaclass=abc.ABCMeta):
             self.dictionary, self.detector_params, RefineParameters()
         )
 
+    @profile
     def detectMarkers(self, image: cvt.MatLike):
+        # Baseline detector detectMarkers
         return self.detector.detectMarkers(image)
 
     @staticmethod
@@ -63,8 +66,10 @@ class Aruco3Detector(Detector):
         self.min_marker_size = 0
         self.detector.setDetectorParameters(self.detector_params)
 
+    @profile
     def detectMarkers(self, image: cvt.MatLike):
-        corners, ids, rejected = super().detectMarkers(image)
+        # Aruco3 detector detectMarkers
+        corners, ids, rejected = self.detector.detectMarkers(image)
 
         # Find the smallest marker size
         if len(corners) > 0:
@@ -122,6 +127,11 @@ class AprilTagDetector(Detector):
         self.detector_params.aprilTagQuadDecimate = decimation
         self.detector.setDetectorParameters(self.detector_params)
 
+    @profile
+    def detectMarkers(self, image: cvt.MatLike):
+        # AprilTag detector detectMarkers
+        return self.detector.detectMarkers(image)
+
     @staticmethod
     def getName() -> str:
         return "AprilTag"
@@ -133,9 +143,11 @@ class CroppedDetector(Detector):
         self.top_crop = top_crop
         self.bottom_crop = bottom_crop
 
+    @profile
     def detectMarkers(self, image: cvt.MatLike):
+        # Cropped detector detectMarkers
         cropped_image, top = crop_top_bottom(image, self.top_crop, self.bottom_crop)
-        corners, ids, rejected = super().detectMarkers(cropped_image)
+        corners, ids, rejected = self.detector.detectMarkers(cropped_image)
 
         # Adjust the corners to the original image to account for cropping
         for corner in corners:
@@ -155,7 +167,9 @@ class ROIDetector(Detector):
         self.resize = resize
         self.resize_height = resize_height
 
+    @profile
     def detectMarkers(self, image):
+        # ROI detector detectMarkers
         corners, ids, rejected = None, None, None
 
         if self.roi is not None:
@@ -167,7 +181,7 @@ class ROIDetector(Detector):
                 scale = self.resize_height / roi_image.shape[0]
                 roi_image = cv2.resize(roi_image, (0, 0), fx=scale, fy=scale)
 
-            corners, ids, rejected = super().detectMarkers(roi_image)
+            corners, ids, rejected = self.detector.detectMarkers(roi_image)
 
             roi_x, roi_y, _, _ = self.roi
             for corner in corners:
@@ -179,7 +193,7 @@ class ROIDetector(Detector):
 
         if corners is None or len(corners) == 0:
             # Either we don't have an ROI or no markers were found in the ROI, so we process the whole image
-            corners, ids, rejected = super().detectMarkers(image)
+            corners, ids, rejected = self.detector.detectMarkers(image)
 
         if len(corners) > 0:
             self.roi = update_roi(corners)
@@ -204,12 +218,14 @@ class ColorDetector(Detector):
     def __init__(self):
         super().__init__()
 
+    @profile
     def detectMarkers(self, image):
+        # Color detector detectMarkers
         success, top, left, cropped, _ = apply_color_threshold(image)
         if not success:
             return None, None, None
 
-        corners, ids, rejected = super().detectMarkers(cropped)
+        corners, ids, rejected = self.detector.detectMarkers(cropped)
         for corner in corners:
             corner += (top, left)
 

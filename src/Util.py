@@ -2,8 +2,9 @@ import numpy as np
 import cv2
 import cv2.typing as cvt
 from typing import Tuple
+from line_profiler import profile
 
-
+@profile
 def crop_top_bottom(
     image: cvt.MatLike, top: int, bottom: int
 ) -> Tuple[cvt.MatLike, int]:
@@ -16,18 +17,16 @@ def crop_top_bottom(
     :return: Cropped image and the top crop value.
     """
     if top < 0 or bottom < 0:
-        raise ValueError("Top and bottom crop values must be non-negative 🤦")
+        raise ValueError("Top and bottom crop values must be non-negative")
 
     height = image.shape[0]
 
     if top + bottom >= height:
-        raise ValueError(
-            "Cropping values are too large. The resulting image would be empty OwO 🫨"
-        )
+        raise ValueError("Cropping values are too large. The resulting image would be empty")
 
     return image[top : height - bottom, :], top
 
-
+@profile
 def crop_roi(image: cvt.MatLike, roi: cvt.Rect) -> cvt.MatLike:
     """
     Crop the image to the region of interest.
@@ -39,7 +38,7 @@ def crop_roi(image: cvt.MatLike, roi: cvt.Rect) -> cvt.MatLike:
     x, y, width, height = roi
     return image[y : y + height, x : x + width]
 
-
+@profile
 def update_roi(
     corners, horizontal_padding: int = 100, vertical_padding: int = 50
 ) -> Tuple[int, int, int, int]:
@@ -74,7 +73,7 @@ def update_roi(
 
     return roi
 
-
+@profile
 def apply_color_threshold(
     image: cvt.MatLike,
 ) -> Tuple[bool, int, int, cvt.MatLike, cvt.MatLike]:
@@ -98,11 +97,12 @@ def apply_color_threshold(
         np.array([85, 210, 30], dtype=np.uint8),
     )
 
-    DOWNSCALING_FACTOR = 4
+    DOWNSCALING_FACTOR = 10
     PADDING = 50
 
     # Downscale the image and convert to LAB color space
     downscaled_image = image[::DOWNSCALING_FACTOR, ::DOWNSCALING_FACTOR, :]
+    
     lab_image = cv2.cvtColor(downscaled_image, cv2.COLOR_BGR2LAB)
 
     # Generate masks for red and blue colors in the image

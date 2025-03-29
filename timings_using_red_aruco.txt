@@ -1,0 +1,307 @@
+Benchmarking detection using Baseline
+Benchmarking detection using Aruco3
+Benchmarking detection using Cropped
+Benchmarking detection using ROI
+Benchmarking detection using Color
+Wrote profile results to benchmark_detector_timing.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 5.42874 s
+File: C:\Users\Sumedh\Documents\Robotics\ArucoMarkerTracker\.\src\Detector.py
+Function: detectMarkers at line 45
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    45                                               @profile                                     
+    46                                               def detectMarkers(self, image: cvt.MatLike): 
+    47                                                   # Baseline detector detectMarkers        
+    48       300    5428743.1  18095.8    100.0          return self.detector.detectMarkers(image)
+
+
+Total time: 3.53585 s
+File: C:\Users\Sumedh\Documents\Robotics\ArucoMarkerTracker\.\src\Detector.py
+Function: detectMarkers at line 69
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    69                                               @profile                                                                       
+    70                                               def detectMarkers(self, image: cvt.MatLike):                                   
+    71                                                   # Aruco3 detector detectMarkers                                            
+    72       300    3531237.7  11770.8     99.9          corners, ids, rejected = self.detector.detectMarkers(image)                
+    73                                                                                                                              
+    74                                                   # Find the smallest marker size                                            
+    75       300       1281.2      4.3      0.0          if len(corners) > 0:                                                       
+    76                                                       # Determine the rectangles for each set of corners                     
+    77                                                       rectangles = [cv2.minAreaRect(corners[i]) for i in range(len(corners))]
+    78                                                       self.min_marker_size = min([w * h for _, (w, h), _ in rectangles])     
+    79                                                                                                                              
+    80                                                       # Update the minimum length being to be used for detection             
+    81                                                       self.detector_params.minMarkerLengthRatioOriginalImg = (               
+    82                                                           (self.min_marker_size * 0.5) / max(image.shape[:2]) / 100.0        
+    83                                                       )                                                                      
+    84                                                                                                                              
+    85                                                       self.detector.setDetectorParameters(self.detector_params)              
+    86                                                   else:                                                                      
+    87                                                       # If no markers are found, reset the min marker size                   
+    88       300        520.6      1.7      0.0              self.min_marker_size = 0                                               
+    89       300       1038.9      3.5      0.0              self.detector_params.minMarkerLengthRatioOriginalImg = 0               
+    90       300       1505.6      5.0      0.0              self.detector.setDetectorParameters(self.detector_params)              
+    91                                                                                                                              
+    92       300        269.3      0.9      0.0          return corners, ids, rejected                                              
+
+
+Total time: 0 s
+File: C:\Users\Sumedh\Documents\Robotics\ArucoMarkerTracker\.\src\Detector.py
+Function: detectMarkers at line 130
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   130                                               @profile                                     
+   131                                               def detectMarkers(self, image: cvt.MatLike): 
+   132                                                   # AprilTag detector detectMarkers        
+   133                                                   return self.detector.detectMarkers(image)
+
+
+Total time: 2.73604 s
+File: C:\Users\Sumedh\Documents\Robotics\ArucoMarkerTracker\.\src\Detector.py
+Function: detectMarkers at line 146
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   146                                               @profile                                                                        
+   147                                               def detectMarkers(self, image: cvt.MatLike):                                    
+   148                                                   # Cropped detector detectMarkers                                            
+   149       300       5874.0     19.6      0.2          cropped_image, top = crop_top_bottom(image, self.top_crop, self.bottom_crop)
+   150       300    2729174.4   9097.2     99.7          corners, ids, rejected = self.detector.detectMarkers(cropped_image)         
+   151                                                                                                                               
+   152                                                   # Adjust the corners to the original image to account for cropping          
+   153       300        754.1      2.5      0.0          for corner in corners:                                                      
+   154                                                       corner += (0, top)                                                      
+   155                                                                                                                               
+   156       300        241.4      0.8      0.0          return corners, ids, rejected                                               
+
+
+Total time: 3.42449 s
+File: C:\Users\Sumedh\Documents\Robotics\ArucoMarkerTracker\.\src\Detector.py
+Function: detectMarkers at line 170
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   170                                               @profile                                                                                                
+   171                                               def detectMarkers(self, image):                                                                         
+   172                                                   # ROI detector detectMarkers                                                                        
+   173       300        276.6      0.9      0.0          corners, ids, rejected = None, None, None                                                           
+   174                                                                                                                                                       
+   175       300        242.3      0.8      0.0          if self.roi is not None:                                                                            
+   176                                                       # If we have an ROI, crop the image to that region                                              
+   177                                                       roi_image = crop_roi(image, self.roi)                                                           
+   178                                                                                                                                                       
+   179                                                       if self.resize:                                                                                 
+   180                                                           # Resize so we maintain a fixed image size when processing                                  
+   181                                                           scale = self.resize_height / roi_image.shape[0]                                             
+   182                                                           roi_image = cv2.resize(roi_image, (0, 0), fx=scale, fy=scale)                               
+   183                                                                                                                                                       
+   184                                                       corners, ids, rejected = self.detector.detectMarkers(roi_image)                                 
+   185                                                                                                                                                       
+   186                                                       roi_x, roi_y, _, _ = self.roi                                                                   
+   187                                                       for corner in corners:                                                                          
+   188                                                           # Adjust the corners to the original image to account for cropping and resizing             
+   189                                                           if self.resize:                                                                             
+   190                                                               corner /= scale                                                                         
+   191                                                                                                                                                       
+   192                                                           corner += (roi_x, roi_y)                                                                    
+   193                                                                                                                                                       
+   194       300        166.4      0.6      0.0          if corners is None or len(corners) == 0:                                                            
+   195                                                       # Either we don't have an ROI or no markers were found in the ROI, so we process the whole image
+   196       300    3421716.2  11405.7     99.9              corners, ids, rejected = self.detector.detectMarkers(image)                                     
+   197                                                                                                                                                       
+   198       300       1256.2      4.2      0.0          if len(corners) > 0:                                                                                
+   199                                                       self.roi = update_roi(corners)                                                                  
+   200                                                   else:                                                                                               
+   201       300        582.2      1.9      0.0              self.roi = None                                                                                 
+   202                                                                                                                                                       
+   203       300        249.0      0.8      0.0          return corners, ids, rejected                                                                       
+
+
+Total time: 1.1884 s
+File: C:\Users\Sumedh\Documents\Robotics\ArucoMarkerTracker\.\src\Detector.py
+Function: detectMarkers at line 221
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   221                                               @profile                                                         
+   222                                               def detectMarkers(self, image):                                  
+   223                                                   # Color detector detectMarkers                               
+   224       300     283958.5    946.5     23.9          success, top, left, cropped, _ = apply_color_threshold(image)
+   225       300        177.1      0.6      0.0          if not success:                                              
+   226                                                       return None, None, None                                  
+   227                                                                                                                
+   228       300     903609.3   3012.0     76.0          corners, ids, rejected = self.detector.detectMarkers(cropped)
+   229       300        470.7      1.6      0.0          for corner in corners:                                       
+   230                                                       corner += (top, left)                                    
+   231                                                                                                                
+   232       300        181.0      0.6      0.0          return corners, ids, rejected                                
+
+
+Total time: 0.0028348 s
+File: C:\Users\Sumedh\Documents\Robotics\ArucoMarkerTracker\.\src\Util.py
+Function: crop_top_bottom at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile                                                                                     
+     8                                           def crop_top_bottom(                                                                         
+     9                                               image: cvt.MatLike, top: int, bottom: int                                                
+    10                                           ) -> Tuple[cvt.MatLike, int]:                                                                
+    11                                               """                                                                                      
+    12                                               Crop the top and bottom of the image.                                                    
+    13                                                                                                                                        
+    14                                               :param image: Input image.                                                               
+    15                                               :param top: Number of pixels to remove from the top.                                     
+    16                                               :param bottom: Number of pixels to remove from the bottom.                               
+    17                                               :return: Cropped image and the top crop value.                                           
+    18                                               """                                                                                      
+    19       300        275.4      0.9      9.7      if top < 0 or bottom < 0:                                                                
+    20                                                   raise ValueError("Top and bottom crop values must be non-negative")                  
+    21                                                                                                                                        
+    22       300        750.1      2.5     26.5      height = image.shape[0]                                                                  
+    23                                                                                                                                        
+    24       300        228.1      0.8      8.0      if top + bottom >= height:                                                               
+    25                                                   raise ValueError("Cropping values are too large. The resulting image would be empty")
+    26                                                                                                                                        
+    27       300       1581.2      5.3     55.8      return image[top : height - bottom, :], top                                              
+
+
+Total time: 0 s
+File: C:\Users\Sumedh\Documents\Robotics\ArucoMarkerTracker\.\src\Util.py
+Function: crop_roi at line 29
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    29                                           @profile                                                       
+    30                                           def crop_roi(image: cvt.MatLike, roi: cvt.Rect) -> cvt.MatLike:
+    31                                               """                                                        
+    32                                               Crop the image to the region of interest.                  
+    33                                                                                                          
+    34                                               :param image: Input image.                                 
+    35                                               :param roi: Region of interest.                            
+    36                                               :return: Cropped image.                                    
+    37                                               """                                                        
+    38                                               x, y, width, height = roi                                  
+    39                                               return image[y : y + height, x : x + width]                
+
+
+Total time: 0 s
+File: C:\Users\Sumedh\Documents\Robotics\ArucoMarkerTracker\.\src\Util.py
+Function: update_roi at line 41
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    41                                           @profile                                                                      
+    42                                           def update_roi(                                                               
+    43                                               corners, horizontal_padding: int = 100, vertical_padding: int = 50        
+    44                                           ) -> Tuple[int, int, int, int]:                                               
+    45                                               """                                                                       
+    46                                               Updates the region of interest (ROI) based on the largest detected marker.
+    47                                               The ROI is expanded by the specified padding.                             
+    48                                                                                                                         
+    49                                               :param corners: List of marker corner points.                             
+    50                                               :param horizontal_padding: Horizontal padding in pixels.                  
+    51                                               :param vertical_padding: Vertical padding in pixels.                      
+    52                                               :return: Updated ROI as (x, y, width, height).                            
+    53                                               """                                                                       
+    54                                               if len(corners) == 0:                                                     
+    55                                                   raise ValueError("No corners provided to update the ROI.")            
+    56                                                                                                                         
+    57                                               # Determine the rectangles for each set of corners                        
+    58                                               rectangles = [cv2.minAreaRect(np.array(marker)) for marker in corners]    
+    59                                                                                                                         
+    60                                               # Find the largest rectangle based on its area                            
+    61                                               largest_index = np.argmax([w * h for _, (w, h), _ in rectangles])         
+    62                                               largest_marker_corners = corners[largest_index]                           
+    63                                                                                                                         
+    64                                               # Get the dimensions of the largest rectangle and expand it by the padding
+    65                                               x, y, w, h = cv2.boundingRect(np.array(largest_marker_corners))           
+    66                                                                                                                         
+    67                                               roi = (                                                                   
+    68                                                   max(0, x - horizontal_padding),                                       
+    69                                                   max(0, y - vertical_padding),                                         
+    70                                                   w + 2 * horizontal_padding,                                           
+    71                                                   h + 2 * vertical_padding,                                             
+    72                                               )                                                                         
+    73                                                                                                                         
+    74                                               return roi                                                                
+
+
+Total time: 0.27776 s
+File: C:\Users\Sumedh\Documents\Robotics\ArucoMarkerTracker\.\src\Util.py
+Function: apply_color_threshold at line 76
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    76                                           @profile                                                                           
+    77                                           def apply_color_threshold(                                                         
+    78                                               image: cvt.MatLike,                                                            
+    79                                           ) -> Tuple[bool, int, int, cvt.MatLike, cvt.MatLike]:                              
+    80                                               """                                                                            
+    81                                               Applies a color threshold to an image using the LAB color space.               
+    82                                                                                                                              
+    83                                               :param image: Input image.                                                     
+    84                                               :return: A tuple containing:                                                   
+    85                                                   - A boolean indicating whether red or blue color was detected.             
+    86                                                   - The top-left x and y coordinates of the detected region.                 
+    87                                                   - The cropped image (or None if no color detected).                        
+    88                                                   - The generated mask.                                                      
+    89                                               """                                                                            
+    90                                               # LAB color space bounds for red and blue colors                               
+    91       300        158.2      0.5      0.1      RED_BOUNDS = (                                                                 
+    92       300       2771.6      9.2      1.0          np.array([130, 200, 190], dtype=np.uint8),                                 
+    93       300        510.9      1.7      0.2          np.array([140, 210, 200], dtype=np.uint8),                                 
+    94                                               )                                                                              
+    95       300        157.3      0.5      0.1      BLUE_BOUNDS = (                                                                
+    96       300        444.1      1.5      0.2          np.array([75, 200, 15], dtype=np.uint8),                                   
+    97       300        408.9      1.4      0.1          np.array([85, 210, 30], dtype=np.uint8),                                   
+    98                                               )                                                                              
+    99                                                                                                                              
+   100       300        181.0      0.6      0.1      DOWNSCALING_FACTOR = 4                                                         
+   101       300        148.5      0.5      0.1      PADDING = 50                                                                   
+   102                                                                                                                              
+   103                                               # Downscale the image and convert to LAB color space                           
+   104       300        984.3      3.3      0.4      downscaled_image = image[::DOWNSCALING_FACTOR, ::DOWNSCALING_FACTOR, :]        
+   105       300     206471.4    688.2     74.3      lab_image = cv2.cvtColor(downscaled_image, cv2.COLOR_BGR2LAB)                  
+   106                                                                                                                              
+   107                                               # Generate masks for red and blue colors in the image                          
+   108       300       7669.9     25.6      2.8      red_mask = cv2.inRange(lab_image, *RED_BOUNDS)                                 
+   109       300       6572.7     21.9      2.4      blue_mask = cv2.inRange(lab_image, *BLUE_BOUNDS)                               
+   110       300       5768.5     19.2      2.1      mask = red_mask | blue_mask                                                    
+   111                                                                                                                              
+   112                                               # If no colors are detected, return early                                      
+   113       300       3799.9     12.7      1.4      if np.count_nonzero(mask) == 0:                                                
+   114                                                   return False, 0, 0, None, mask                                             
+   115                                                                                                                              
+   116       300        636.1      2.1      0.2      def get_bounding_indices(                                                      
+   117       300        298.4      1.0      0.1          arr: np.ndarray, scale: int, max_value: int                                
+   118       300       3357.9     11.2      1.2      ) -> Tuple[int, int]:                                                          
+   119                                                   """                                                                        
+   120                                                   Computes the minimum and maximum indices of the bounding box in the mask,  
+   121                                                   and scales them back up to original image size.                            
+   122                                                   """                                                                        
+   123                                                   lower_bound = np.argmax(arr) * scale                                       
+   124                                                   upper_bound = (len(arr) - np.argmax(arr[::-1])) * scale                    
+   125                                                                                                                              
+   126                                                   return max(lower_bound - PADDING, 0), min(upper_bound + PADDING, max_value)
+   127                                                                                                                              
+   128                                               # Get the bounding box indices for the mask                                    
+   129       600       8251.1     13.8      3.0      min_col, max_col = get_bounding_indices(                                       
+   130       300      15042.7     50.1      5.4          np.any(mask, axis=0), DOWNSCALING_FACTOR, image.shape[1]                   
+   131                                               )                                                                              
+   132       600       5009.9      8.3      1.8      min_row, max_row = get_bounding_indices(                                       
+   133       300       8478.4     28.3      3.1          np.any(mask, axis=1), DOWNSCALING_FACTOR, image.shape[0]                   
+   134                                               )                                                                              
+   135                                                                                                                              
+   136                                               # Crop the image to the detected region                                        
+   137       300        501.2      1.7      0.2      cropped_image = image[min_row:max_row, min_col:max_col]                        
+   138                                                                                                                              
+   139       300        137.4      0.5      0.0      return True, min_row, min_col, cropped_image, mask                             
+
+
