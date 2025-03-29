@@ -69,7 +69,7 @@ def takeBenchmarks():
     # detector.setDecimation(2)
     # april_tag_decimation_times = timingFunction(detector, feed)
     # storeResults(april_tag_decimation_times, "April tag 2x Decimation")
-    
+
     # Color Detector
     detector = ColorDetector()
     color_times = timingFunction(detector, feed)

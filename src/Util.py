@@ -85,10 +85,10 @@ def apply_color_threshold(
     red_mask = cv2.inRange(lab_space_image, RED_LOWER_BOUND, RED_UPPER_BOUND)
     blue_mask = cv2.inRange(lab_space_image, BLUE_LOWER_BOUND, BLUE_UPPER_BOUND)
     mask = cv2.bitwise_or(red_mask, blue_mask)
-    
+
     # Check if the mask is empty
     if np.count_nonzero(mask) == 0:
-        return False, 0, 0, None, None
+        return False, 0, 0, None, mask
 
     def get_min_max_index(arr, scalar, maximum):
         PADDING = 50
