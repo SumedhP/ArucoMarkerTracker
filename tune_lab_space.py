@@ -19,24 +19,36 @@ class VideoApp:
         self.root = tk.Tk()
         self.root.title("LAB Color Mask Control")
 
+        LENGTH = 400
+
         self.l_min = Scale(
-            self.root, from_=0, to=255, orient=tk.HORIZONTAL, label="L Min",
+            self.root, from_=0, to=255, orient=tk.HORIZONTAL, label="L Min", length=LENGTH
         )
         self.l_max = Scale(
-            self.root, from_=0, to=255, orient=tk.HORIZONTAL, label="L Max"
+            self.root, from_=0, to=255, orient=tk.HORIZONTAL, label="L Max", length=LENGTH
         )
         self.a_min = Scale(
-            self.root, from_=0, to=255, orient=tk.HORIZONTAL, label="A Min"
+            self.root, from_=0, to=255, orient=tk.HORIZONTAL, label="A Min", length=LENGTH
         )
         self.a_max = Scale(
-            self.root, from_=0, to=255, orient=tk.HORIZONTAL, label="A Max"
+            self.root, from_=0, to=255, orient=tk.HORIZONTAL, label="A Max", length=LENGTH
         )
         self.b_min = Scale(
-            self.root, from_=0, to=255, orient=tk.HORIZONTAL, label="B Min"
+            self.root, from_=0, to=255, orient=tk.HORIZONTAL, label="B Min", length=LENGTH
         )
         self.b_max = Scale(
-            self.root, from_=0, to=255, orient=tk.HORIZONTAL, label="B Max"
+            self.root, from_=0, to=255, orient=tk.HORIZONTAL, label="B Max", length=LENGTH
         )
+        self.region_size = Scale(
+            self.root, from_=1, to=20, orient=tk.HORIZONTAL, label="Region Size", length=LENGTH
+        )
+        self.padding = Scale(
+            self.root, from_=0, to=20, orient=tk.HORIZONTAL, label="Padding", length=LENGTH
+        )
+        self.erode_amount = Scale(
+            self.root, from_=1, to=20, orient=tk.HORIZONTAL, label="Erode Amount", length=LENGTH
+        )
+
 
         self.update_bounds_btn = Button(
             self.root, text="Update Bounds", command=self.update_bounds
@@ -60,6 +72,9 @@ class VideoApp:
             self.b_max,
             self.update_bounds_btn,
             self.save_btn,
+            self.region_size,
+            self.padding,
+            self.erode_amount,
         ]:
             widget.pack()
 
@@ -76,6 +91,12 @@ class VideoApp:
         lower = np.array([self.l_min.get(), self.a_min.get(), self.b_min.get()])
         upper = np.array([self.l_max.get(), self.a_max.get(), self.b_max.get()])
         mask = cv2.inRange(lab_frame, lower, upper)
+        
+        # erode the mask
+        erode_amount = self.erode_amount.get()
+        kernel = np.ones((erode_amount, erode_amount), np.uint8)
+        mask = cv2.erode(mask, kernel, iterations=1)
+
 
         # Append mask to the side of the current frame for visualization
         mask_colored = cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR)
@@ -87,12 +108,12 @@ class VideoApp:
 
     def on_mouse_click(self, event, x, y, flags, param):
         if event == cv2.EVENT_LBUTTONDOWN:
-            region_size = 5
-            x1, x2 = max(0, x - region_size), min(
-                self.current_frame.shape[1], x + region_size
+            rs = self.region_size.get()
+            x1, x2 = max(0, x - rs), min(
+                self.current_frame.shape[1], x + rs
             )
-            y1, y2 = max(0, y - region_size), min(
-                self.current_frame.shape[0], y + region_size
+            y1, y2 = max(0, y - rs), min(
+                self.current_frame.shape[0], y + rs
             )
             region = self.current_frame[y1:y2, x1:x2]
             lab_region = cv2.cvtColor(region, cv2.COLOR_BGR2LAB)
@@ -104,7 +125,7 @@ class VideoApp:
 
     def update_bounds(self, event=None):
         if self.last_click_min is not None and self.last_click_max is not None:
-            PADDING = 20
+            PADDING = self.padding.get()
             self.l_min.set(self.last_click_min[0] - PADDING)
             self.l_max.set( self.last_click_max[0] + PADDING)
             self.a_min.set(self.last_click_min[1] - PADDING)
@@ -121,6 +142,12 @@ class VideoApp:
             f.write(f"A Max: {self.a_max.get()}\n")
             f.write(f"B Min: {self.b_min.get()}\n")
             f.write(f"B Max: {self.b_max.get()}\n")
+            # Write the bounds in RGB format as well
+            rgb_min = cv2.cvtColor(np.uint8([[self.last_click_min]]), cv2.COLOR_LAB2BGR)[0][0]
+            rgb_max = cv2.cvtColor(np.uint8([[self.last_click_max]]), cv2.COLOR_LAB2BGR)[0][0]
+            f.write(f"RGB Min: {rgb_min}\n")
+            f.write(f"RGB Max: {rgb_max}\n")
+        
         print(f"Bounds saved to {output_filename}")
 
     def next_frame(self, event=None):
