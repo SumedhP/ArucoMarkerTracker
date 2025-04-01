@@ -105,12 +105,12 @@ class VideoApp:
     def update_bounds(self, event=None):
         if self.last_click_min is not None and self.last_click_max is not None:
             PADDING = 20
-            self.l_min.set(min(self.l_min.get(), self.last_click_min[0] - PADDING))
-            self.l_max.set(max(self.l_max.get(), self.last_click_max[0] + PADDING))
-            self.a_min.set(min(self.a_min.get(), self.last_click_min[1] - PADDING))
-            self.a_max.set(max(self.a_max.get(), self.last_click_max[1] + PADDING))
-            self.b_min.set(min(self.b_min.get(), self.last_click_min[2] - PADDING))
-            self.b_max.set(max(self.b_max.get(), self.last_click_max[2] + PADDING))
+            self.l_min.set(self.last_click_min[0] - PADDING)
+            self.l_max.set( self.last_click_max[0] + PADDING)
+            self.a_min.set(self.last_click_min[1] - PADDING)
+            self.a_max.set(self.last_click_max[1] + PADDING)
+            self.b_min.set( self.last_click_min[2] - PADDING)
+            self.b_max.set(self.last_click_max[2] + PADDING)
             
     def save_bounds(self):
         output_filename = f"bounds_{self.video_filename}.txt"
@@ -133,4 +133,4 @@ class VideoApp:
 
 
 if __name__ == "__main__":
-    VideoApp("data/video/blue_aruco_marker.mp4")
+    VideoApp("data/video/red_aruco_marker.mp4")
