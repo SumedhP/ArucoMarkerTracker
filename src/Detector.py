@@ -116,10 +116,10 @@ class Aruco3Detector(Detector):
 
 
 class AprilTagDetector(Detector):
-    def __init__(self):
+    def __init__(self, decimation: float = 1.0):
         super().__init__()
         self.detector_params.cornerRefinementMethod = cv2.aruco.CORNER_REFINE_APRILTAG
-        self.setDecimation(1.0)
+        self.setDecimation(decimation)
 
     def setDecimation(self, decimation: float):
         if decimation < 1.0:

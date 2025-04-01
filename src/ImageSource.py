@@ -29,7 +29,6 @@ class VideoImageSource():
         self.frame_number = 0
 
     def get_image(self, increment=True) -> cvt.MatLike:
-        print("Calling get_image with frame_number:", self.frame_number)
         if self.frame_number >= len(self.frames):
             return None
 
@@ -43,7 +42,6 @@ class VideoImageSource():
             self.frame_number += 1
     
     def prev_frame(self):
-        print("Calling prev_frame with frame_number:", self.frame_number)
         if self.frame_number > 0:
             self.frame_number -= 1    
 

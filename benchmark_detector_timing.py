@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 BENCHMARK_FILE = "detector_timings.csv"
+VIDEO_FILE = "data/video/video1.avi"
 
 
 def timingFunction(detector: Detector, feed: VideoImageSource):
@@ -33,47 +34,34 @@ def storeResults(times_ms, detector_name):
 
 
 def takeBenchmarks():
-    detector = Detector()
-    feed = VideoImageSource("data/video/video1.avi")
+    feed = VideoImageSource(VIDEO_FILE)
 
     # Write initial header to the benchmark file
     with open(BENCHMARK_FILE, "w") as f:
         writer = csv.writer(f, lineterminator="\n", delimiter=",")
         writer.writerow(["Detector", "Frame", "Time (ms)"])
+        
+    def benchmark(detector, name = None):
+        detector_times = timingFunction(detector, feed)
+        storeResults(detector_times, name if name != None else detector.getName())
 
-    base_detector_times = timingFunction(detector, feed)
-    storeResults(base_detector_times, detector.getName())
+    # benchmark(Detector())
+    
+    # benchmark(Aruco3Detector())
+    
+    # benchmark(CroppedDetector())
+    
+    benchmark(ROIDetector())
+    
+    benchmark(ROIDetector(resize=False), "ROI Detector No Resize")
 
-    # Aruco3
-    detector = Aruco3Detector()
-    aruco_times = timingFunction(detector, feed)
-    storeResults(aruco_times, detector.getName())
-
-    # Cropped
-    detector = CroppedDetector()
-    cropped_times = timingFunction(detector, feed)
-    storeResults(cropped_times, detector.getName())
-
-    # ROI
-    detector = ROIDetector()
-    roi_times = timingFunction(detector, feed)
-    storeResults(roi_times, detector.getName())
-
-    # ROI no resize
-    # detector = ROIDetector(resize=False)
-    # roi_no_resize_times = timingFunction(detector, feed)
-    # storeResults(roi_no_resize_times, detector.getName() + " No Resize")
-
-    # AprilTag with 2x decimation
-    # detector = AprilTagDetector()
-    # detector.setDecimation(2)
-    # april_tag_decimation_times = timingFunction(detector, feed)
-    # storeResults(april_tag_decimation_times, "April tag 2x Decimation")
-
-    # Color Detector
-    detector = ColorDetector()
-    color_times = timingFunction(detector, feed)
-    storeResults(color_times, detector.getName())
+    # benchmark(AprilTagDetector(), "April Tag 1x Decimation")
+    
+    # benchmark(AprilTagDetector(decimation=2), "April Tag 2x Decimation")
+    
+    # benchmark(AprilTagDetector(decimation=3), "April Tag 3x Decimation")
+    
+    # benchmark(ColorDetector())
 
 
 def displayResults():
@@ -84,7 +72,7 @@ def displayResults():
 
     for detector_name, group in df:
         # Smooth out the data
-        group["Time (ms)"] = group["Time (ms)"].rolling(window=20).mean()
+        group["Time (ms)"] = group["Time (ms)"].rolling(window=30).mean()
         plt.plot(group["Frame"], group["Time (ms)"], label=detector_name)
 
     plt.xlabel("Frame")
