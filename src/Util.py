@@ -4,6 +4,7 @@ import cv2.typing as cvt
 from typing import Tuple
 from line_profiler import profile
 
+
 @profile
 def crop_top_bottom(
     image: cvt.MatLike, top: int, bottom: int
@@ -22,9 +23,12 @@ def crop_top_bottom(
     height = image.shape[0]
 
     if top + bottom >= height:
-        raise ValueError("Cropping values are too large. The resulting image would be empty")
+        raise ValueError(
+            "Cropping values are too large. The resulting image would be empty"
+        )
 
     return image[top : height - bottom, :], top
+
 
 @profile
 def crop_roi(image: cvt.MatLike, roi: cvt.Rect) -> cvt.MatLike:
@@ -37,6 +41,7 @@ def crop_roi(image: cvt.MatLike, roi: cvt.Rect) -> cvt.MatLike:
     """
     x, y, width, height = roi
     return image[y : y + height, x : x + width]
+
 
 @profile
 def update_roi(
@@ -73,6 +78,7 @@ def update_roi(
 
     return roi
 
+
 @profile
 def apply_color_threshold(
     image: cvt.MatLike,
@@ -102,7 +108,7 @@ def apply_color_threshold(
 
     # Downscale the image and convert to LAB color space
     downscaled_image = image[::DOWNSCALING_FACTOR, ::DOWNSCALING_FACTOR, :]
-    
+
     lab_image = cv2.cvtColor(downscaled_image, cv2.COLOR_BGR2LAB)
 
     # Generate masks for red and blue colors in the image
