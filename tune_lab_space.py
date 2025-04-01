@@ -2,7 +2,7 @@ import os
 import cv2
 import numpy as np
 import tkinter as tk
-from tkinter import Scale, Button
+from tkinter import Label, Scale, Button
 from src.ImageSource import VideoImageSource
 
 class VideoApp:
@@ -20,6 +20,14 @@ class VideoApp:
         self.root.title("LAB Color Mask Control")
 
         LENGTH = 400
+
+        self.explanation = Label(self.root, text="""
+                                 Use arrow keys to navigate frames
+                                 Click to sample LAB values, click update to set bounds based on the sample.
+                                 A higher A value means more red, a lower one means more green.
+                                 A higher B value means more yellow, a lower one means more blue.
+                                 The L value is for lightness, 0 being black and 255 being white.
+                                 """)
 
         self.l_min = Scale(
             self.root, from_=0, to=255, orient=tk.HORIZONTAL, label="L Min", length=LENGTH
@@ -64,6 +72,7 @@ class VideoApp:
         self.b_max.set(0)
 
         for widget in [
+            self.explanation,
             self.l_min,
             self.l_max,
             self.a_min,
@@ -109,12 +118,12 @@ class VideoApp:
     def on_mouse_click(self, event, x, y, flags, param):
         if event == cv2.EVENT_LBUTTONDOWN:
             rs = self.region_size.get()
-            x1, x2 = max(0, x - rs), min(
-                self.current_frame.shape[1], x + rs
-            )
-            y1, y2 = max(0, y - rs), min(
-                self.current_frame.shape[0], y + rs
-            )
+            
+            x1 = max(0, x - rs)
+            x2 = min(self.current_frame.shape[1], x + rs)
+            y1 = max(0, y - rs)
+            y2 = min(self.current_frame.shape[0], y + rs)
+            
             region = self.current_frame[y1:y2, x1:x2]
             lab_region = cv2.cvtColor(region, cv2.COLOR_BGR2LAB)
             min_val, max_val = lab_region.min(axis=(0, 1)), lab_region.max(axis=(0, 1))
@@ -125,13 +134,13 @@ class VideoApp:
 
     def update_bounds(self, event=None):
         if self.last_click_min is not None and self.last_click_max is not None:
-            PADDING = self.padding.get()
-            self.l_min.set(self.last_click_min[0] - PADDING)
-            self.l_max.set( self.last_click_max[0] + PADDING)
-            self.a_min.set(self.last_click_min[1] - PADDING)
-            self.a_max.set(self.last_click_max[1] + PADDING)
-            self.b_min.set( self.last_click_min[2] - PADDING)
-            self.b_max.set(self.last_click_max[2] + PADDING)
+            padding_amount = self.padding.get()
+            self.l_min.set(self.last_click_min[0] - padding_amount)
+            self.l_max.set( self.last_click_max[0] + padding_amount)
+            self.a_min.set(self.last_click_min[1] - padding_amount)
+            self.a_max.set(self.last_click_max[1] + padding_amount)
+            self.b_min.set( self.last_click_min[2] - padding_amount)
+            self.b_max.set(self.last_click_max[2] + padding_amount)
             
     def save_bounds(self):
         output_filename = f"bounds_{self.video_filename}.txt"
@@ -142,9 +151,12 @@ class VideoApp:
             f.write(f"A Max: {self.a_max.get()}\n")
             f.write(f"B Min: {self.b_min.get()}\n")
             f.write(f"B Max: {self.b_max.get()}\n")
+            current_lower_bound = np.array([self.l_min.get(), self.a_min.get(), self.b_min.get()])
+            current_upper_bound = np.array([self.l_max.get(), self.a_max.get(), self.b_max.get()])
+            
             # Write the bounds in RGB format as well
-            rgb_min = cv2.cvtColor(np.uint8([[self.last_click_min]]), cv2.COLOR_LAB2BGR)[0][0]
-            rgb_max = cv2.cvtColor(np.uint8([[self.last_click_max]]), cv2.COLOR_LAB2BGR)[0][0]
+            rgb_min = cv2.cvtColor(current_lower_bound.reshape(1, 1, 3).astype(np.uint8), cv2.COLOR_LAB2BGR)[0][0]
+            rgb_max = cv2.cvtColor(current_upper_bound.reshape(1, 1, 3).astype(np.uint8), cv2.COLOR_LAB2BGR)[0][0]
             f.write(f"RGB Min: {rgb_min}\n")
             f.write(f"RGB Max: {rgb_max}\n")
         
@@ -160,4 +172,4 @@ class VideoApp:
 
 
 if __name__ == "__main__":
-    VideoApp("data/video/red_aruco_marker.mp4")
+    VideoApp("data/video/2_7_output.mp4")
