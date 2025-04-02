@@ -8,7 +8,7 @@ from src.ImageSource import VideoImageSource
 class VideoApp:
     def __init__(self, video_path):
         self.source = VideoImageSource(video_path)
-        self.current_frame = self.source.get_image()
+        self.current_frame = self.makeImageSmall(self.source.get_image())
         self.last_click_min = None
         self.last_click_max = None
         self.video_filename = os.path.basename(video_path)
@@ -109,7 +109,7 @@ class VideoApp:
 
         # Append mask to the side of the current frame for visualization
         mask_colored = cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR)
-        combined_frame = np.hstack((self.current_frame, mask_colored))
+        combined_frame = np.vstack((self.current_frame, mask_colored))
 
         self.root.after(10, lambda: cv2.imshow("Video Frame", combined_frame))
 
@@ -164,12 +164,16 @@ class VideoApp:
 
     def next_frame(self, event=None):
         self.source.next_frame()
-        self.current_frame = self.source.get_image(increment=False)
+        self.current_frame = self.makeImageSmall(self.source.get_image(increment=False))
 
     def prev_frame(self, event=None):
         self.source.prev_frame()
-        self.current_frame = self.source.get_image(increment=False)
+        self.current_frame = self.makeImageSmall(self.source.get_image(increment=False))
+
+    def makeImageSmall(self, image):
+        scale = 0.5
+        return cv2.resize(image, (0, 0), fx=scale, fy=scale)
 
 
 if __name__ == "__main__":
-    VideoApp("data/video/2_7_output.mp4")
+    VideoApp("data/video/output.avi")
