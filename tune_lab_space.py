@@ -171,7 +171,7 @@ class VideoApp:
         self.current_frame = self.makeImageSmall(self.source.get_image(increment=False))
 
     def makeImageSmall(self, image):
-        scale = 0.5
+        scale = 0.4
         return cv2.resize(image, (0, 0), fx=scale, fy=scale)
 
 
