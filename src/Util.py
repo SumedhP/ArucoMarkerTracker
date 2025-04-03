@@ -114,7 +114,7 @@ def apply_color_threshold(
     # Generate masks for red and blue colors in the image
     red_mask = cv2.inRange(lab_image, *RED_BOUNDS)
     blue_mask = cv2.inRange(lab_image, *BLUE_BOUNDS)
-    mask = red_mask | blue_mask
+    mask = cv2.bitwise_or(red_mask, blue_mask)
 
     # If no colors are detected, return early
     if np.count_nonzero(mask) == 0:
