@@ -153,12 +153,7 @@ class VideoApp:
             f.write(f"B Max: {self.b_max.get()}\n")
             current_lower_bound = np.array([self.l_min.get(), self.a_min.get(), self.b_min.get()])
             current_upper_bound = np.array([self.l_max.get(), self.a_max.get(), self.b_max.get()])
-            
-            # Write the bounds in RGB format as well
-            rgb_min = cv2.cvtColor(current_lower_bound.reshape(1, 1, 3).astype(np.uint8), cv2.COLOR_LAB2BGR)[0][0]
-            rgb_max = cv2.cvtColor(current_upper_bound.reshape(1, 1, 3).astype(np.uint8), cv2.COLOR_LAB2BGR)[0][0]
-            f.write(f"RGB Min: {rgb_min}\n")
-            f.write(f"RGB Max: {rgb_max}\n")
+   
         
         print(f"Bounds saved to {output_filename}")
 
