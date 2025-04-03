@@ -95,15 +95,15 @@ def apply_color_threshold(
     """
     # LAB color space bounds for red and blue colors
     RED_BOUNDS = (
-        np.array([78, 145, 139], dtype=np.uint8),
-        np.array([191, 186, 189], dtype=np.uint8),
+        np.array([94, 161, 137], dtype=np.uint8),
+        np.array([191, 197, 166], dtype=np.uint8),
     )
     BLUE_BOUNDS = (
-        np.array([69, 93, 26], dtype=np.uint8),
-        np.array([200, 131, 120], dtype=np.uint8),
+        np.array([62, 98, 65], dtype=np.uint8),
+        np.array([179, 145, 114], dtype=np.uint8),
     )
 
-    DOWNSCALING_FACTOR = 1
+    DOWNSCALING_FACTOR = 4
     PADDING = 50
 
     # Downscale the image and convert to LAB color space
