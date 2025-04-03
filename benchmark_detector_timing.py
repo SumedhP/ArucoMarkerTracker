@@ -40,27 +40,27 @@ def takeBenchmarks():
     with open(BENCHMARK_FILE, "w") as f:
         writer = csv.writer(f, lineterminator="\n", delimiter=",")
         writer.writerow(["Detector", "Frame", "Time (ms)"])
-        
-    def benchmark(detector, name = None):
+
+    def benchmark(detector, name=None):
         detector_times = timingFunction(detector, feed)
         storeResults(detector_times, name if name != None else detector.getName())
 
     # benchmark(Detector())
-    
+
     # benchmark(Aruco3Detector())
-    
+
     # benchmark(CroppedDetector())
-    
+
     benchmark(ROIDetector())
-    
+
     benchmark(ROIDetector(resize=False), "ROI Detector No Resize")
 
     # benchmark(AprilTagDetector(), "April Tag 1x Decimation")
-    
+
     # benchmark(AprilTagDetector(decimation=2), "April Tag 2x Decimation")
-    
+
     # benchmark(AprilTagDetector(decimation=3), "April Tag 3x Decimation")
-    
+
     # benchmark(ColorDetector())
 
 

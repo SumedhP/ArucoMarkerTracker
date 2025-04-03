@@ -234,7 +234,7 @@ class ColorDetector(Detector):
     def getAnnotatedFrame(self, image, corners, ids, rejected):
         # Extend the size of the frame to also show the mask on the right side
         frame = super().getAnnotatedFrame(image, corners, ids, rejected)
-        success, _, _, _, mask = apply_color_threshold(image)
+        success, min_row, min_col, cropped_image, mask = apply_color_threshold(image)
 
         # Normalize and convert mask to uint8
         mask = (mask > 0).astype(np.uint8) * 255
@@ -245,11 +245,18 @@ class ColorDetector(Detector):
         # Convert to 3-channel image
         mask = np.stack([mask] * 3, axis=-1)
 
+        # Draw bounding box around the detected region
+        if success:
+            cv2.rectangle(
+                frame,
+                (min_col, min_row),
+                (min_col + cropped_image.shape[1], min_row + cropped_image.shape[0]),
+                (0, 255, 0),
+                2,
+            )
+
         # Create new frame with space for the mask
-        new_frame = np.zeros((image.shape[0], image.shape[1] * 2, 3), dtype=np.uint8)
-        new_frame[:, : image.shape[1]] = frame
-        new_frame[:, image.shape[1] :] = mask
-        frame = new_frame
+        frame = np.hstack([frame, mask])
 
         return frame
 

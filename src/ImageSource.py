@@ -3,7 +3,8 @@ import cv2
 import cv2.typing as cvt
 from tqdm import tqdm
 
-class VideoImageSource():
+
+class VideoImageSource:
     """
     Retrieves images from a video file, one at a time.
     """
@@ -36,14 +37,14 @@ class VideoImageSource():
         if increment:
             self.frame_number += 1
         return frame
-    
+
     def next_frame(self):
         if self.frame_number < len(self.frames) - 1:
             self.frame_number += 1
-    
+
     def prev_frame(self):
         if self.frame_number > 0:
-            self.frame_number -= 1    
+            self.frame_number -= 1
 
     def reset(self):
         self.frame_number = 0
